@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-navy: #0a1628;
+    --color-brand-blue: #1e40af;
+    --color-brand-electric: #0ea5e9;
+    --color-brand-cyan: #06b6d4;
+    --header-height: 72px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply font-sans antialiased text-gray-900 dark:text-gray-100 bg-white dark:bg-navy;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    @apply bg-brand-blue/20 text-brand-blue dark:bg-brand-electric/20 dark:text-brand-electric;
+  }
+
+  /* Focus styles */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-blue dark:outline-brand-electric;
+  }
+
+  /* Skip link */
+  .skip-link {
+    @apply absolute top-0 left-1/2 -translate-x-1/2 -translate-y-full z-50
+           bg-brand-blue text-white px-6 py-3 rounded-b-lg font-medium
+           transition-transform duration-200 focus:translate-y-0;
+  }
+}
+
+@layer components {
+  .container-wide {
+    @apply max-w-[1440px] mx-auto px-6 lg:px-8;
+  }
+
+  .container-narrow {
+    @apply max-w-[768px] mx-auto px-6;
+  }
+
+  .section-spacing {
+    @apply py-20 lg:py-28;
+  }
+
+  .section-spacing-lg {
+    @apply py-24 lg:py-32;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-blue to-brand-electric;
+  }
+
+  .card-base {
+    @apply bg-white dark:bg-navy-800 border border-gray-200 dark:border-white/10
+           rounded-card transition-all duration-250;
+  }
+
+  .card-hover {
+    @apply hover:border-brand-blue/30 dark:hover:border-brand-electric/30
+           hover:shadow-card-hover hover:-translate-y-0.5;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
