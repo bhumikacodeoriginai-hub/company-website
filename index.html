@@ -3,61 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Code Origin.AI — Engineering Intelligence for a Digital World. Enterprise AI, ML, and software engineering solutions.">
+  <meta name="description" content="Code Origin.AI — Global AI-first technology and software engineering company. Enterprise AI, cloud engineering, cybersecurity, and digital transformation solutions.">
+  <meta name="keywords" content="AI, artificial intelligence, software engineering, cloud, cybersecurity, enterprise technology, digital transformation, Code Origin AI">
+  <meta name="author" content="Code Origin.AI Private Limited">
+  <meta name="robots" content="index, follow">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Code Origin.AI — Engineering Intelligence for a Digital World">
+  <meta property="og:description" content="Global AI-first technology company delivering enterprise AI, software engineering, cloud, and cybersecurity solutions.">
+  <meta property="og:url" content="https://codeorigin.ai">
+  <meta property="og:site_name" content="Code Origin.AI">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Code Origin.AI — Engineering Intelligence for a Digital World">
+  <meta name="twitter:description" content="Global AI-first technology company delivering enterprise AI, software engineering, cloud, and cybersecurity solutions.">
   <title>Code Origin.AI — Engineering Intelligence for a Digital World</title>
+  <link rel="canonical" href="https://codeorigin.ai">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%232563eb'/><text x='50' y='66' text-anchor='middle' font-size='40' font-weight='bold' fill='white'>CO</text></svg>">
 </head>
 <body>
 
+
   <!-- ═══ HEADER ═══ -->
-  <header class="header">
+  <header class="header" role="banner">
     <div class="header-inner">
-      <a href="index.html" class="logo">
+      <a href="index.html" class="logo" aria-label="Code Origin.AI Home">
         <div class="logo-icon">CO</div>
         <div class="logo-text">Code Origin<span>.AI</span></div>
       </a>
-      <nav class="nav">
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a href="pages/about.html">Company</a>
         <a href="pages/services.html">Services</a>
         <a href="pages/products.html">Products</a>
         <a href="pages/industries.html">Industries</a>
         <a href="pages/insights.html">Insights</a>
         <a href="pages/careers.html">Careers</a>
-        <a href="pages/about.html">About</a>
       </nav>
       <div class="header-cta">
-        <a href="pages/contact.html" class="btn btn-primary">Get Started</a>
+        <a href="pages/contact.html" class="btn btn-primary">Talk to Our Experts</a>
       </div>
-      <button class="menu-btn" aria-label="Menu"><span></span></button>
+      <button class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false"><span></span></button>
     </div>
   </header>
 
   <!-- ═══ MOBILE NAV ═══ -->
-  <nav class="mobile-nav">
+  <nav class="mobile-nav" role="navigation" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="pages/about.html">Company</a>
     <a href="pages/services.html">Services</a>
     <a href="pages/products.html">Products</a>
     <a href="pages/industries.html">Industries</a>
     <a href="pages/insights.html">Insights</a>
     <a href="pages/careers.html">Careers</a>
-    <a href="pages/about.html">About</a>
-    <a href="pages/contact.html">Contact</a>
+    <a href="pages/contact.html" class="btn btn-primary">Talk to Our Experts</a>
   </nav>
 
+
   <!-- ═══ HERO ═══ -->
-  <section class="hero">
-    <div class="hero-canvas">
+  <section class="hero" aria-label="Hero introduction">
+    <div class="hero-canvas" aria-hidden="true">
       <canvas id="hero-3d"></canvas>
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <div class="hero-eyebrow">Next-Generation AI Solutions</div>
+      <div class="hero-eyebrow">Code Origin.AI</div>
       <h1>Engineering Intelligence<br>for a <span class="text-gradient">Digital World</span></h1>
-      <p class="hero-desc">We architect and deploy enterprise-grade AI systems that transform how organizations operate, innovate, and compete in the modern economy.</p>
+      <p class="hero-desc">We build intelligent software, AI-powered platforms, secure digital ecosystems and scalable cloud solutions for organizations building what comes next.</p>
       <div class="hero-actions">
-        <a href="pages/contact.html" class="btn btn-primary btn-lg">Start Your Project</a>
-        <a href="pages/services.html" class="btn btn-outline btn-lg">Explore Solutions</a>
+        <a href="pages/contact.html" class="btn btn-primary btn-lg">Talk to Our Experts</a>
+        <a href="pages/services.html" class="btn btn-outline btn-lg">Explore Our Capabilities</a>
       </div>
-      <div class="hero-metrics">
+      <div class="hero-metrics" aria-label="Key metrics">
         <div>
           <div class="metric-value" data-count="150" data-suffix="+">0</div>
           <div class="metric-label">Projects Delivered</div>
@@ -74,12 +90,161 @@
     </div>
   </section>
 
+
+  <!-- ═══ CAPABILITY ECOSYSTEM ═══ -->
+  <section class="section" id="capabilities" aria-labelledby="cap-heading">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div class="label">Our Ecosystem</div>
+        <h2 id="cap-heading">Technology That <span class="text-gradient">Connects Everything</span></h2>
+        <p>A unified approach to intelligent technology — where AI, software, cloud, security, and data converge to deliver transformative outcomes.</p>
+      </div>
+      <div class="ecosystem-canvas reveal" id="ecosystem-3d" aria-hidden="true"></div>
+      <!-- Accessible Fallback -->
+      <div class="ecosystem-fallback reveal" role="list" aria-label="Core capabilities">
+        <div class="ecosystem-node" role="listitem">
+          <div class="node-icon" aria-hidden="true">
+            <svg width="20" height="20" fill="none" stroke="white" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h5>Artificial Intelligence</h5>
+          <p class="text-xs" style="color:var(--gray-500)">Custom models, agents & automation</p>
+        </div>
+        <div class="ecosystem-node" role="listitem">
+          <div class="node-icon" aria-hidden="true">
+            <svg width="20" height="20" fill="none" stroke="white" stroke-width="2"><rect x="2" y="3" width="16" height="11" rx="2"/><path d="M6 18h8M10 14v4"/></svg>
+          </div>
+          <h5>Software Engineering</h5>
+          <p class="text-xs" style="color:var(--gray-500)">Scalable platforms & applications</p>
+        </div>
+        <div class="ecosystem-node" role="listitem">
+          <div class="node-icon" aria-hidden="true">
+            <svg width="20" height="20" fill="none" stroke="white" stroke-width="2"><path d="M18 10h-4l-3 9L5 1 2 10H0"/></svg>
+          </div>
+          <h5>Cloud & DevOps</h5>
+          <p class="text-xs" style="color:var(--gray-500)">Infrastructure at any scale</p>
+        </div>
+        <div class="ecosystem-node" role="listitem">
+          <div class="node-icon" aria-hidden="true">
+            <svg width="20" height="20" fill="none" stroke="white" stroke-width="2"><rect x="3" y="9" width="14" height="9" rx="2"/><path d="M6 9V6a4 4 0 018 0v3"/></svg>
+          </div>
+          <h5>Cybersecurity</h5>
+          <p class="text-xs" style="color:var(--gray-500)">Zero-trust protection</p>
+        </div>
+        <div class="ecosystem-node" role="listitem">
+          <div class="node-icon" aria-hidden="true">
+            <svg width="20" height="20" fill="none" stroke="white" stroke-width="2"><path d="M18 14V8a2 2 0 00-1-1.7l-6-3.5a2 2 0 00-2 0l-6 3.5A2 2 0 002 8v6a2 2 0 001 1.7l6 3.5a2 2 0 002 0l6-3.5A2 2 0 0018 14z"/></svg>
+          </div>
+          <h5>Data Engineering</h5>
+          <p class="text-xs" style="color:var(--gray-500)">Pipelines & intelligence</p>
+        </div>
+        <div class="ecosystem-node" role="listitem">
+          <div class="node-icon" aria-hidden="true">
+            <svg width="20" height="20" fill="none" stroke="white" stroke-width="2"><circle cx="10" cy="10" r="3"/><path d="M10 1v2M10 17v2M3.5 3.5l1.4 1.4M15.1 15.1l1.4 1.4M1 10h2M17 10h2M3.5 16.5l1.4-1.4M15.1 4.9l1.4-1.4"/></svg>
+          </div>
+          <h5>Digital Transformation</h5>
+          <p class="text-xs" style="color:var(--gray-500)">Strategy & modernization</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ COMPANY INTRODUCTION ═══ -->
+  <section class="section section-alt" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="grid-2" style="align-items:center;gap:4rem">
+        <div class="reveal-left">
+          <div class="label" style="display:inline-flex;align-items:center;gap:10px;font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue-400);margin-bottom:1rem">
+            <span style="width:20px;height:1px;background:var(--blue-400);opacity:.4"></span>About Us
+          </div>
+          <h2 id="about-heading" style="margin-bottom:1.25rem">A Global AI-First <span class="text-gradient-2">Technology Company</span></h2>
+          <p style="font-size:1.05rem;line-height:1.8;margin-bottom:1.5rem">Code Origin.AI Private Limited is a global technology and software engineering company. We combine deep expertise in artificial intelligence, cloud engineering, cybersecurity, and enterprise software to help organizations build what comes next.</p>
+          <p style="font-size:0.95rem;line-height:1.8;color:var(--gray-500)">From intelligent automation and AI agents to secure cloud platforms and scalable SaaS products — we engineer solutions that operate at the intersection of innovation and reliability.</p>
+          <div style="margin-top:2rem">
+            <a href="pages/about.html" class="btn btn-outline">Learn About Us</a>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <div class="grid-2" style="gap:16px">
+            <div class="glass glass-sm">
+              <h4 style="font-size:2rem;font-weight:800;margin-bottom:.25rem;background:var(--gradient-1);-webkit-background-clip:text;-webkit-text-fill-color:transparent">12+</h4>
+              <p style="font-size:.8rem;color:var(--gray-500)">Countries Served</p>
+            </div>
+            <div class="glass glass-sm">
+              <h4 style="font-size:2rem;font-weight:800;margin-bottom:.25rem;background:var(--gradient-2);-webkit-background-clip:text;-webkit-text-fill-color:transparent">85+</h4>
+              <p style="font-size:.8rem;color:var(--gray-500)">Team Members</p>
+            </div>
+            <div class="glass glass-sm">
+              <h4 style="font-size:2rem;font-weight:800;margin-bottom:.25rem;background:var(--gradient-1);-webkit-background-clip:text;-webkit-text-fill-color:transparent">150+</h4>
+              <p style="font-size:.8rem;color:var(--gray-500)">Projects Delivered</p>
+            </div>
+            <div class="glass glass-sm">
+              <h4 style="font-size:2rem;font-weight:800;margin-bottom:.25rem;background:var(--gradient-3);-webkit-background-clip:text;-webkit-text-fill-color:transparent">5+</h4>
+              <p style="font-size:.8rem;color:var(--gray-500)">Years of Innovation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ AI ARCHITECTURE ═══ -->
+  <section class="section" id="ai-section" aria-labelledby="ai-heading">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div class="label">Artificial Intelligence</div>
+        <h2 id="ai-heading">Intelligence <span class="text-gradient-2">by Design</span></h2>
+        <p>Purpose-built AI systems that move from data to business outcome through a rigorous engineering pipeline.</p>
+      </div>
+      <div class="grid-2" style="align-items:start;gap:4rem">
+        <div class="ai-flow reveal" aria-label="AI pipeline stages">
+          <div class="ai-flow-node">
+            <div class="node-num">1</div>
+            <div><h5>Data Ingestion</h5><p class="text-xs" style="color:var(--gray-500);margin-top:4px">Collect, clean, and structure enterprise data</p></div>
+          </div>
+          <div class="ai-flow-connector" aria-hidden="true"></div>
+          <div class="ai-flow-node">
+            <div class="node-num">2</div>
+            <div><h5>Model Architecture</h5><p class="text-xs" style="color:var(--gray-500);margin-top:4px">Design and train AI models for the task</p></div>
+          </div>
+          <div class="ai-flow-connector" aria-hidden="true"></div>
+          <div class="ai-flow-node">
+            <div class="node-num">3</div>
+            <div><h5>Reasoning & Inference</h5><p class="text-xs" style="color:var(--gray-500);margin-top:4px">Deploy intelligent decision-making systems</p></div>
+          </div>
+          <div class="ai-flow-connector" aria-hidden="true"></div>
+          <div class="ai-flow-node">
+            <div class="node-num">4</div>
+            <div><h5>Automation</h5><p class="text-xs" style="color:var(--gray-500);margin-top:4px">Orchestrate AI-powered workflows at scale</p></div>
+          </div>
+          <div class="ai-flow-connector" aria-hidden="true"></div>
+          <div class="ai-flow-node">
+            <div class="node-num">5</div>
+            <div><h5>Business Outcome</h5><p class="text-xs" style="color:var(--gray-500);margin-top:4px">Measurable impact and continuous optimization</p></div>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <div class="grid-2" style="gap:14px">
+            <div class="glass glass-sm"><h5>AI Agents</h5><p style="color:var(--gray-500);font-size:.8rem;margin-top:.4rem">Autonomous multi-step workflow execution</p></div>
+            <div class="glass glass-sm"><h5>Generative AI</h5><p style="color:var(--gray-500);font-size:.8rem;margin-top:.4rem">Custom LLMs, fine-tuning & content generation</p></div>
+            <div class="glass glass-sm"><h5>RAG Systems</h5><p style="color:var(--gray-500);font-size:.8rem;margin-top:.4rem">Grounded, accurate enterprise knowledge</p></div>
+            <div class="glass glass-sm"><h5>AI Copilots</h5><p style="color:var(--gray-500);font-size:.8rem;margin-top:.4rem">Intelligent assistants for every function</p></div>
+            <div class="glass glass-sm"><h5>Predictive AI</h5><p style="color:var(--gray-500);font-size:.8rem;margin-top:.4rem">Forecasting & anomaly detection</p></div>
+            <div class="glass glass-sm"><h5>Computer Vision</h5><p style="color:var(--gray-500);font-size:.8rem;margin-top:.4rem">Image recognition & visual analytics</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!-- ═══ SERVICES ═══ -->
-  <section class="section" id="services">
+  <section class="section section-alt" id="services" aria-labelledby="svc-heading">
     <div class="container">
       <div class="sec-head reveal">
         <div class="label">What We Do</div>
-        <h2>Enterprise-Grade <span class="text-gradient">Solutions</span></h2>
+        <h2 id="svc-heading">Enterprise-Grade <span class="text-gradient">Solutions</span></h2>
         <p>From concept to deployment, we deliver comprehensive technology services that drive measurable business outcomes.</p>
       </div>
       <div class="grid-3">
@@ -156,142 +321,263 @@
           </div>
         </div>
       </div>
+      <div style="text-align:center;margin-top:3rem" class="reveal">
+        <a href="pages/services.html" class="btn btn-outline">View All Services</a>
+      </div>
     </div>
   </section>
 
-  <!-- ═══ AI SOLUTIONS ═══ -->
-  <section class="section section-alt" id="ai">
+
+  <!-- ═══ SOFTWARE ARCHITECTURE ═══ -->
+  <section class="section" id="architecture" aria-labelledby="arch-heading">
     <div class="container">
       <div class="sec-head reveal">
-        <div class="label">AI Excellence</div>
-        <h2>Intelligent Solutions <span class="text-gradient-2">at Scale</span></h2>
-        <p>Purpose-built AI capabilities that integrate seamlessly with your existing systems and workflows.</p>
+        <div class="label">Engineering Excellence</div>
+        <h2 id="arch-heading">Engineering Built <span class="text-gradient">for Scale</span></h2>
+        <p>Layered, observable, secure architectures that anticipate growth from day one.</p>
       </div>
-      <div class="grid-4">
-        <div class="glass glass-sm reveal reveal-delay-1">
-          <h4>AI Agents</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem;line-height:1.6">Autonomous agents that reason, plan, and execute complex multi-step workflows.</p>
+      <div class="grid-2" style="align-items:start;gap:4rem">
+        <div class="layer-stack reveal" aria-label="Software architecture layers">
+          <div class="layer-item">
+            <div class="layer-dot" aria-hidden="true"></div>
+            <h5>Frontend Applications</h5>
+            <span class="layer-status">React · Vue · Next.js</span>
+          </div>
+          <div class="layer-item">
+            <div class="layer-dot" aria-hidden="true"></div>
+            <h5>API Gateway</h5>
+            <span class="layer-status">REST · GraphQL · gRPC</span>
+          </div>
+          <div class="layer-item">
+            <div class="layer-dot" aria-hidden="true"></div>
+            <h5>Microservices</h5>
+            <span class="layer-status">Go · Node · Python</span>
+          </div>
+          <div class="layer-item">
+            <div class="layer-dot" aria-hidden="true"></div>
+            <h5>Data Layer</h5>
+            <span class="layer-status">PostgreSQL · Redis · Kafka</span>
+          </div>
+          <div class="layer-item">
+            <div class="layer-dot" aria-hidden="true"></div>
+            <h5>Cloud Infrastructure</h5>
+            <span class="layer-status">AWS · Azure · GCP</span>
+          </div>
+          <div class="layer-item">
+            <div class="layer-dot" aria-hidden="true"></div>
+            <h5>Monitoring & Observability</h5>
+            <span class="layer-status">Prometheus · Grafana · ELK</span>
+          </div>
         </div>
-        <div class="glass glass-sm reveal reveal-delay-2">
-          <h4>Generative AI</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem;line-height:1.6">Custom LLM solutions, fine-tuning, and content generation for enterprise use cases.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-3">
-          <h4>RAG Systems</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem;line-height:1.6">Retrieval-augmented generation pipelines for accurate, grounded AI responses.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-4">
-          <h4>AI Copilots</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem;line-height:1.6">Intelligent assistants that augment human capabilities across business functions.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-1">
-          <h4>Predictive AI</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem;line-height:1.6">Forecasting models and anomaly detection for proactive decision-making.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-2">
-          <h4>NLP & Language</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem;line-height:1.6">Natural language understanding, sentiment analysis, and multilingual processing.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-3">
-          <h4>Computer Vision</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem;line-height:1.6">Image recognition, video analytics, and visual inspection systems.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-4">
-          <h4>Intelligent Automation</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem;line-height:1.6">End-to-end process automation combining RPA with AI decision-making.</p>
+        <div class="reveal-right">
+          <div class="grid-3" style="gap:14px">
+            <div class="glass glass-sm" style="text-align:center"><h5 style="font-size:.85rem">Security First</h5></div>
+            <div class="glass glass-sm" style="text-align:center"><h5 style="font-size:.85rem">Scalable</h5></div>
+            <div class="glass glass-sm" style="text-align:center"><h5 style="font-size:.85rem">Observable</h5></div>
+            <div class="glass glass-sm" style="text-align:center"><h5 style="font-size:.85rem">Clean Code</h5></div>
+            <div class="glass glass-sm" style="text-align:center"><h5 style="font-size:.85rem">Automated</h5></div>
+            <div class="glass glass-sm" style="text-align:center"><h5 style="font-size:.85rem">API-First</h5></div>
+            <div class="glass glass-sm" style="text-align:center"><h5 style="font-size:.85rem">Cloud Native</h5></div>
+            <div class="glass glass-sm" style="text-align:center"><h5 style="font-size:.85rem">CI/CD</h5></div>
+            <div class="glass glass-sm" style="text-align:center"><h5 style="font-size:.85rem">Data-Driven</h5></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+
   <!-- ═══ PRODUCTS ═══ -->
-  <section class="section" id="products">
+  <section class="section section-alt" id="products" aria-labelledby="prod-heading">
     <div class="container">
       <div class="sec-head reveal">
         <div class="label">Our Products</div>
-        <h2>Proprietary <span class="text-gradient">Platforms</span></h2>
-        <p>Next-generation products built on years of research and real-world deployment experience.</p>
+        <h2 id="prod-heading">Products Designed for the <span class="text-gradient-2">Real World</span></h2>
+        <p>Next-generation platforms built on years of research and real-world deployment experience.</p>
       </div>
       <div class="grid-2">
-        <div class="glass-card reveal reveal-delay-1">
+        <div class="product-card reveal reveal-delay-1">
           <span class="badge">In Development</span>
-          <h3 style="margin-top:1rem">Origin Neural Engine</h3>
+          <h3 style="margin-top:1.25rem">Origin Neural Engine</h3>
           <p style="color:var(--gray-400);margin-top:.75rem;font-size:.9rem;line-height:1.7">Enterprise AI orchestration platform for deploying, monitoring, and scaling machine learning models in production environments.</p>
+          <div class="svc-tags" style="margin-top:1rem">
+            <span class="tag">MLOps</span><span class="tag">Model Registry</span><span class="tag">Auto-scaling</span>
+          </div>
         </div>
-        <div class="glass-card reveal reveal-delay-2">
+        <div class="product-card reveal reveal-delay-2">
           <span class="badge">In Development</span>
-          <h3 style="margin-top:1rem">CodeFlow AI</h3>
+          <h3 style="margin-top:1.25rem">CodeFlow AI</h3>
           <p style="color:var(--gray-400);margin-top:.75rem;font-size:.9rem;line-height:1.7">AI-powered development platform that accelerates software delivery with intelligent code generation and automated testing.</p>
+          <div class="svc-tags" style="margin-top:1rem">
+            <span class="tag">Code Gen</span><span class="tag">Auto Testing</span><span class="tag">CI Integration</span>
+          </div>
         </div>
-        <div class="glass-card reveal reveal-delay-3">
+        <div class="product-card reveal reveal-delay-3">
           <span class="badge">In Development</span>
-          <h3 style="margin-top:1rem">Sentinel AI</h3>
+          <h3 style="margin-top:1.25rem">Sentinel AI</h3>
           <p style="color:var(--gray-400);margin-top:.75rem;font-size:.9rem;line-height:1.7">AI-driven cybersecurity platform providing real-time threat detection, automated response, and predictive threat intelligence.</p>
+          <div class="svc-tags" style="margin-top:1rem">
+            <span class="tag">Threat Intel</span><span class="tag">SOAR</span><span class="tag">Zero-Day</span>
+          </div>
         </div>
-        <div class="glass-card reveal reveal-delay-4">
+        <div class="product-card reveal reveal-delay-4">
           <span class="badge">In Development</span>
-          <h3 style="margin-top:1rem">DataPulse Analytics</h3>
+          <h3 style="margin-top:1.25rem">DataPulse Analytics</h3>
           <p style="color:var(--gray-400);margin-top:.75rem;font-size:.9rem;line-height:1.7">Real-time data intelligence platform with natural language querying and automated insight generation for business teams.</p>
+          <div class="svc-tags" style="margin-top:1rem">
+            <span class="tag">NL Queries</span><span class="tag">Real-time</span><span class="tag">Auto Insights</span>
+          </div>
         </div>
+      </div>
+      <div style="text-align:center;margin-top:3rem" class="reveal">
+        <a href="pages/products.html" class="btn btn-outline">Explore All Products</a>
       </div>
     </div>
   </section>
 
-  <!-- ═══ ENGINEERING ═══ -->
-  <section class="section section-alt" id="engineering">
+
+  <!-- ═══ CLOUD INFRASTRUCTURE ═══ -->
+  <section class="section" id="cloud" aria-labelledby="cloud-heading">
     <div class="container">
       <div class="sec-head reveal">
-        <div class="label">Our Approach</div>
-        <h2>Engineering <span class="text-gradient-2">Principles</span></h2>
-        <p>The core tenets that guide how we architect, build, and deliver every solution.</p>
+        <div class="label">Cloud Engineering</div>
+        <h2 id="cloud-heading">Cloud Infrastructure <span class="text-gradient">Without Limits</span></h2>
+        <p>Multi-cloud architectures designed for resilience, performance, and operational excellence.</p>
       </div>
-      <div class="grid-3">
-        <div class="glass glass-sm reveal reveal-delay-1">
-          <h4>Security First</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem">Security is embedded at every layer, not bolted on as an afterthought.</p>
+      <div class="grid-2" style="align-items:start;gap:4rem">
+        <div class="reveal">
+          <div class="layer-stack">
+            <div class="layer-item"><div class="layer-dot" aria-hidden="true"></div><h5>Applications</h5><span class="layer-status">Active</span></div>
+            <div class="layer-item"><div class="layer-dot" aria-hidden="true"></div><h5>API Layer</h5><span class="layer-status">Active</span></div>
+            <div class="layer-item"><div class="layer-dot" aria-hidden="true"></div><h5>Compute & Containers</h5><span class="layer-status">Active</span></div>
+            <div class="layer-item"><div class="layer-dot" aria-hidden="true"></div><h5>Kubernetes Orchestration</h5><span class="layer-status">Active</span></div>
+            <div class="layer-item"><div class="layer-dot" aria-hidden="true"></div><h5>Databases & Storage</h5><span class="layer-status">Active</span></div>
+            <div class="layer-item"><div class="layer-dot" aria-hidden="true"></div><h5>Networking & CDN</h5><span class="layer-status">Active</span></div>
+            <div class="layer-item"><div class="layer-dot" aria-hidden="true"></div><h5>Monitoring & Alerts</h5><span class="layer-status">Active</span></div>
+          </div>
         </div>
-        <div class="glass glass-sm reveal reveal-delay-2">
-          <h4>Scalable by Design</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem">Architecture decisions anticipate 10x growth from day one.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-3">
-          <h4>Observable Systems</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem">Full telemetry, distributed tracing, and proactive monitoring throughout.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-1">
-          <h4>Clean Architecture</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem">Separation of concerns, SOLID principles, and maintainable codebases.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-2">
-          <h4>Automated Testing</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem">Comprehensive test suites at unit, integration, and E2E levels.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-3">
-          <h4>CI/CD Excellence</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem">Automated pipelines that deliver code to production safely and rapidly.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-1">
-          <h4>API-First Design</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem">Every system built with well-documented, versioned APIs for integration.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-2">
-          <h4>Cloud Native</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem">Containerized, orchestrated, and optimized for modern cloud platforms.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-3">
-          <h4>Data-Driven Decisions</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem">Every decision backed by metrics, experiments, and evidence.</p>
+        <div class="reveal-right">
+          <h3 style="margin-bottom:1rem">Multi-Cloud Expertise</h3>
+          <p style="font-size:.95rem;line-height:1.8;margin-bottom:1.5rem">We architect cloud solutions across AWS, Azure, and Google Cloud Platform — optimizing for performance, cost, and reliability.</p>
+          <div class="grid-2" style="gap:12px">
+            <div class="glass glass-sm"><h5 style="font-size:.85rem">99.99% Uptime</h5><p style="color:var(--gray-500);font-size:.75rem;margin-top:.25rem">High-availability architectures</p></div>
+            <div class="glass glass-sm"><h5 style="font-size:.85rem">Auto-Scaling</h5><p style="color:var(--gray-500);font-size:.75rem;margin-top:.25rem">Handle any traffic spike</p></div>
+            <div class="glass glass-sm"><h5 style="font-size:.85rem">IaC</h5><p style="color:var(--gray-500);font-size:.75rem;margin-top:.25rem">Terraform & Pulumi</p></div>
+            <div class="glass glass-sm"><h5 style="font-size:.85rem">Cost Optimized</h5><p style="color:var(--gray-500);font-size:.75rem;margin-top:.25rem">Right-sized resources</p></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ TECHNOLOGY ═══ -->
-  <section class="section" id="technology">
+
+  <!-- ═══ CYBERSECURITY ═══ -->
+  <section class="section section-alt" id="security" aria-labelledby="sec-heading">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div class="label">Cybersecurity</div>
+        <h2 id="sec-heading">Security at <span class="text-gradient-2">Every Layer</span></h2>
+        <p>Enterprise-grade security engineering that protects your digital assets from evolving threats.</p>
+      </div>
+      <div class="grid-2" style="align-items:center;gap:4rem">
+        <div class="reveal">
+          <div class="security-visual" aria-hidden="true">
+            <div class="security-ring"></div>
+            <div class="security-ring"></div>
+            <div class="security-ring"></div>
+            <div class="security-core">
+              <svg width="24" height="24" fill="none" stroke="white" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div class="glass glass-sm" style="display:flex;align-items:center;gap:1rem">
+              <div style="width:8px;height:8px;border-radius:50%;background:var(--gradient-1);flex-shrink:0"></div>
+              <div><h5 style="font-size:.9rem">Identity & Access</h5><p style="color:var(--gray-500);font-size:.78rem;margin-top:.2rem">Zero-trust identity management</p></div>
+            </div>
+            <div class="glass glass-sm" style="display:flex;align-items:center;gap:1rem">
+              <div style="width:8px;height:8px;border-radius:50%;background:var(--gradient-2);flex-shrink:0"></div>
+              <div><h5 style="font-size:.9rem">Application Security</h5><p style="color:var(--gray-500);font-size:.78rem;margin-top:.2rem">SAST, DAST & code review</p></div>
+            </div>
+            <div class="glass glass-sm" style="display:flex;align-items:center;gap:1rem">
+              <div style="width:8px;height:8px;border-radius:50%;background:var(--gradient-3);flex-shrink:0"></div>
+              <div><h5 style="font-size:.9rem">Network Protection</h5><p style="color:var(--gray-500);font-size:.78rem;margin-top:.2rem">Firewalls, IDS/IPS & segmentation</p></div>
+            </div>
+            <div class="glass glass-sm" style="display:flex;align-items:center;gap:1rem">
+              <div style="width:8px;height:8px;border-radius:50%;background:var(--gradient-1);flex-shrink:0"></div>
+              <div><h5 style="font-size:.9rem">Cloud Security</h5><p style="color:var(--gray-500);font-size:.78rem;margin-top:.2rem">CSPM, workload protection</p></div>
+            </div>
+            <div class="glass glass-sm" style="display:flex;align-items:center;gap:1rem">
+              <div style="width:8px;height:8px;border-radius:50%;background:var(--gradient-2);flex-shrink:0"></div>
+              <div><h5 style="font-size:.9rem">Data Protection</h5><p style="color:var(--gray-500);font-size:.78rem;margin-top:.2rem">Encryption, DLP & compliance</p></div>
+            </div>
+            <div class="glass glass-sm" style="display:flex;align-items:center;gap:1rem">
+              <div style="width:8px;height:8px;border-radius:50%;background:var(--gradient-3);flex-shrink:0"></div>
+              <div><h5 style="font-size:.9rem">Threat Monitoring</h5><p style="color:var(--gray-500);font-size:.78rem;margin-top:.2rem">24/7 SOC & incident response</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ INDUSTRIES ═══ -->
+  <section class="section" id="industries" aria-labelledby="ind-heading">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div class="label">Industries</div>
+        <h2 id="ind-heading">Technology Across <span class="text-gradient">Industries</span></h2>
+        <p>Deep domain expertise applied to complex challenges across critical sectors of the global economy.</p>
+      </div>
+      <div class="grid-4">
+        <div class="industry-card reveal reveal-delay-1">
+          <div class="industry-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4l3-1M3 20h18M5 20V8l7-4 7 4v12"/></svg></div>
+          <h5>Financial Services</h5>
+        </div>
+        <div class="industry-card reveal reveal-delay-2">
+          <div class="industry-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+          <h5>Healthcare</h5>
+        </div>
+        <div class="industry-card reveal reveal-delay-3">
+          <div class="industry-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20M5 20V4a1 1 0 011-1h4a1 1 0 011 1v16M13 20V10a1 1 0 011-1h4a1 1 0 011 1v10"/></svg></div>
+          <h5>Manufacturing</h5>
+        </div>
+        <div class="industry-card reveal reveal-delay-4">
+          <div class="industry-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10" cy="14" r="4"/><path d="M10 10V6M4 6h12M6 6v4M14 6v4"/></svg></div>
+          <h5>Retail & E-Commerce</h5>
+        </div>
+        <div class="industry-card reveal reveal-delay-1">
+          <div class="industry-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2"/><path d="M1 10h18M5 14h2"/></svg></div>
+          <h5>Logistics & Supply Chain</h5>
+        </div>
+        <div class="industry-card reveal reveal-delay-2">
+          <div class="industry-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-6 9 6v9a1 1 0 01-1 1H4a1 1 0 01-1-1V9z"/><path d="M9 19v-6h6v6"/></svg></div>
+          <h5>Real Estate</h5>
+        </div>
+        <div class="industry-card reveal reveal-delay-3">
+          <div class="industry-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="16" height="11" rx="2"/><path d="M6 18h8M10 14v4"/></svg></div>
+          <h5>Technology & SaaS</h5>
+        </div>
+        <div class="industry-card reveal reveal-delay-4">
+          <div class="industry-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg></div>
+          <h5>Professional Services</h5>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:3rem" class="reveal">
+        <a href="pages/industries.html" class="btn btn-outline">Explore Industries</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ TECHNOLOGY STACK ═══ -->
+  <section class="section section-alt" id="technology" aria-labelledby="tech-heading">
     <div class="container">
       <div class="sec-head reveal">
         <div class="label">Technology Stack</div>
-        <h2>Built with <span class="text-gradient">Best-in-Class</span> Tools</h2>
+        <h2 id="tech-heading">Built with <span class="text-gradient">Best-in-Class</span> Tools</h2>
         <p>We leverage the most powerful and proven technologies across the full development lifecycle.</p>
       </div>
       <div class="grid-3">
@@ -307,7 +593,7 @@
           </div>
         </div>
         <div class="glass glass-sm reveal tech-cat">
-          <h4>AI / ML</h4>
+          <h4>AI & ML</h4>
           <div class="tech-items">
             <span class="tech-pill">PyTorch</span>
             <span class="tech-pill">TensorFlow</span>
@@ -318,13 +604,13 @@
           </div>
         </div>
         <div class="glass glass-sm reveal tech-cat">
-          <h4>Cloud</h4>
+          <h4>Cloud & Infra</h4>
           <div class="tech-items">
             <span class="tech-pill">AWS</span>
             <span class="tech-pill">Azure</span>
             <span class="tech-pill">GCP</span>
-            <span class="tech-pill">Kubernetes</span>
             <span class="tech-pill">Terraform</span>
+            <span class="tech-pill">Kubernetes</span>
             <span class="tech-pill">Docker</span>
           </div>
         </div>
@@ -334,9 +620,9 @@
             <span class="tech-pill">React</span>
             <span class="tech-pill">Next.js</span>
             <span class="tech-pill">Vue</span>
-            <span class="tech-pill">Svelte</span>
             <span class="tech-pill">Tailwind</span>
             <span class="tech-pill">Three.js</span>
+            <span class="tech-pill">TypeScript</span>
           </div>
         </div>
         <div class="glass glass-sm reveal tech-cat">
@@ -345,9 +631,9 @@
             <span class="tech-pill">Node.js</span>
             <span class="tech-pill">FastAPI</span>
             <span class="tech-pill">Spring</span>
-            <span class="tech-pill">gRPC</span>
             <span class="tech-pill">GraphQL</span>
-            <span class="tech-pill">Kafka</span>
+            <span class="tech-pill">gRPC</span>
+            <span class="tech-pill">Redis</span>
           </div>
         </div>
         <div class="glass glass-sm reveal tech-cat">
@@ -355,40 +641,159 @@
           <div class="tech-items">
             <span class="tech-pill">PostgreSQL</span>
             <span class="tech-pill">MongoDB</span>
-            <span class="tech-pill">Redis</span>
-            <span class="tech-pill">Elasticsearch</span>
+            <span class="tech-pill">Kafka</span>
+            <span class="tech-pill">Spark</span>
             <span class="tech-pill">Snowflake</span>
-            <span class="tech-pill">Pinecone</span>
+            <span class="tech-pill">Elasticsearch</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ CTA ═══ -->
-  <section class="section cta-block">
-    <div class="container" style="max-width:800px">
-      <div class="reveal" style="text-align:center">
-        <h2>Ready to Build the <span class="text-gradient">Future</span>?</h2>
-        <p style="color:var(--gray-400);font-size:1.1rem;margin:1.5rem 0 2.5rem;line-height:1.8">Let's discuss how our engineering expertise and AI capabilities can accelerate your most ambitious projects.</p>
-        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-          <a href="pages/contact.html" class="btn btn-primary btn-lg">Schedule a Consultation</a>
-          <a href="pages/services.html" class="btn btn-outline btn-lg">View All Services</a>
+
+  <!-- ═══ GLOBAL PRESENCE ═══ -->
+  <section class="section" id="global" aria-labelledby="global-heading">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div class="label">Global Reach</div>
+        <h2 id="global-heading">Serving Organizations <span class="text-gradient-2">Worldwide</span></h2>
+        <p>Delivering technology solutions across global markets with distributed engineering teams.</p>
+      </div>
+      <div class="grid-2" style="align-items:center;gap:4rem">
+        <div class="reveal">
+          <div class="globe-container" aria-hidden="true">
+            <div class="globe-fallback">
+              <svg width="120" height="120" fill="none" stroke="var(--blue-400)" stroke-width="0.5" opacity="0.6"><circle cx="60" cy="60" r="55"/><ellipse cx="60" cy="60" rx="55" ry="22"/><ellipse cx="60" cy="60" rx="55" ry="40"/><ellipse cx="60" cy="60" rx="22" ry="55"/><line x1="5" y1="60" x2="115" y2="60"/><line x1="60" y1="5" x2="60" y2="115"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <h3 style="margin-bottom:1rem">Serving organizations across global markets</h3>
+          <p style="font-size:.95rem;line-height:1.8;margin-bottom:2rem;color:var(--gray-400)">Our distributed engineering teams work across time zones to deliver seamless collaboration and round-the-clock development velocity.</p>
+          <div class="stats-row" style="padding:0">
+            <div class="glass glass-sm" style="text-align:center">
+              <div style="font-size:1.75rem;font-weight:800;color:var(--white)">12+</div>
+              <p style="font-size:.75rem;color:var(--gray-500);margin-top:.25rem">Countries</p>
+            </div>
+            <div class="glass glass-sm" style="text-align:center">
+              <div style="font-size:1.75rem;font-weight:800;color:var(--white)">4</div>
+              <p style="font-size:.75rem;color:var(--gray-500);margin-top:.25rem">Time Zones</p>
+            </div>
+            <div class="glass glass-sm" style="text-align:center">
+              <div style="font-size:1.75rem;font-weight:800;color:var(--white)">24/7</div>
+              <p style="font-size:.75rem;color:var(--gray-500);margin-top:.25rem">Delivery</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+
+  <!-- ═══ INSIGHTS PREVIEW ═══ -->
+  <section class="section section-alt" id="insights" aria-labelledby="ins-heading">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div class="label">Insights</div>
+        <h2 id="ins-heading">Thinking & <span class="text-gradient">Perspectives</span></h2>
+        <p>Technical insights, industry analysis, and engineering perspectives from our team.</p>
+      </div>
+      <div class="grid-3">
+        <div class="insight-card reveal reveal-delay-1">
+          <div class="insight-meta">
+            <span class="insight-category">AI</span>
+            <span class="insight-date">5 min read</span>
+          </div>
+          <h3>Building Production-Ready AI Agents for Enterprise</h3>
+          <p>How we architect autonomous AI agents that operate reliably within complex enterprise environments.</p>
+          <a href="pages/insights.html" class="insight-link">Read More <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="insight-card reveal reveal-delay-2">
+          <div class="insight-meta">
+            <span class="insight-category">Cloud</span>
+            <span class="insight-date">7 min read</span>
+          </div>
+          <h3>Multi-Cloud Architecture: Strategies for Enterprise Resilience</h3>
+          <p>A deep dive into designing cloud architectures that balance performance, cost, and disaster recovery.</p>
+          <a href="pages/insights.html" class="insight-link">Read More <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="insight-card reveal reveal-delay-3">
+          <div class="insight-meta">
+            <span class="insight-category">Security</span>
+            <span class="insight-date">6 min read</span>
+          </div>
+          <h3>Zero-Trust Security in the Age of AI-Powered Threats</h3>
+          <p>Why traditional perimeter security fails and how zero-trust architecture protects modern enterprises.</p>
+          <a href="pages/insights.html" class="insight-link">Read More <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:3rem" class="reveal">
+        <a href="pages/insights.html" class="btn btn-outline">View All Insights</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ CAREERS PREVIEW ═══ -->
+  <section class="section" id="careers" aria-labelledby="career-heading">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div class="label">Careers</div>
+        <h2 id="career-heading">Build What <span class="text-gradient-2">Comes Next</span></h2>
+        <p>Join a team of engineers, researchers, and strategists solving the hardest problems in enterprise technology.</p>
+      </div>
+      <div class="reveal" style="max-width:700px;margin:0 auto">
+        <div class="job-card">
+          <div>
+            <div class="job-title">Senior AI Engineer</div>
+            <div class="job-meta"><span>AI & ML</span><span>Remote</span><span>Full-time</span></div>
+          </div>
+          <a href="pages/careers.html" class="btn btn-sm btn-outline">View Role</a>
+        </div>
+        <div class="job-card">
+          <div>
+            <div class="job-title">Cloud Solutions Architect</div>
+            <div class="job-meta"><span>Cloud & DevOps</span><span>Remote</span><span>Full-time</span></div>
+          </div>
+          <a href="pages/careers.html" class="btn btn-sm btn-outline">View Role</a>
+        </div>
+        <div class="job-card">
+          <div>
+            <div class="job-title">Full Stack Engineer</div>
+            <div class="job-meta"><span>Engineering</span><span>Remote</span><span>Full-time</span></div>
+          </div>
+          <a href="pages/careers.html" class="btn btn-sm btn-outline">View Role</a>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem" class="reveal">
+        <a href="pages/careers.html" class="btn btn-outline">View All Openings</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ FINAL CTA ═══ -->
+  <section class="cta-block" aria-labelledby="cta-heading">
+    <div class="container" style="position:relative;z-index:2">
+      <h2 id="cta-heading" class="reveal">Let's Build What's Next.</h2>
+      <p class="reveal">Have a complex technology challenge, product idea, or digital transformation initiative? Let's explore what we can build together.</p>
+      <div class="reveal">
+        <a href="pages/contact.html" class="btn btn-primary btn-lg">Talk to Our Experts</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ═══ FOOTER ═══ -->
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo">
+          <a href="index.html" class="logo" aria-label="Code Origin.AI Home">
             <div class="logo-icon">CO</div>
             <div class="logo-text">Code Origin<span>.AI</span></div>
           </a>
-          <p>Engineering intelligence for a digital world. We build enterprise-grade AI systems that transform how organizations operate and innovate.</p>
+          <p>Engineering intelligence for a digital world. We build enterprise-grade AI systems, scalable platforms, and secure digital ecosystems.</p>
         </div>
         <div class="footer-col">
           <h4>Services</h4>
@@ -397,6 +802,7 @@
           <a href="pages/services.html">Cloud & DevOps</a>
           <a href="pages/services.html">Cybersecurity</a>
           <a href="pages/services.html">Data & Analytics</a>
+          <a href="pages/services.html">Digital Transformation</a>
         </div>
         <div class="footer-col">
           <h4>Company</h4>
@@ -414,14 +820,14 @@
         </div>
         <div class="footer-col">
           <h4>Connect</h4>
-          <a href="#">LinkedIn</a>
-          <a href="#">GitHub</a>
-          <a href="#">Twitter / X</a>
-          <a href="#">Blog</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+          <a href="pages/insights.html">Blog</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>&copy; 2024 Code Origin.AI. All rights reserved.</span>
+        <p>&copy; 2024 Code Origin.AI Private Limited. All rights reserved.</p>
         <div class="footer-links">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>
@@ -431,9 +837,28 @@
     </div>
   </footer>
 
-  <!-- ═══ SCRIPTS ═══ -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="js/three-hero.js"></script>
-  <script src="js/app.js"></script>
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/three-hero.js" defer></script>
+  <script src="js/three-sections.js" defer></script>
+  <script src="js/app.js" defer></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Code Origin.AI Private Limited",
+    "url": "https://codeorigin.ai",
+    "description": "Global AI-first technology and software engineering company delivering enterprise AI, cloud engineering, cybersecurity, and digital transformation solutions.",
+    "sameAs": ["https://linkedin.com", "https://github.com", "https://twitter.com"],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "email": "hello@codeorigin.ai"
+    },
+    "knowsAbout": ["Artificial Intelligence", "Software Engineering", "Cloud Engineering", "Cybersecurity", "Data Engineering", "Digital Transformation"]
+  }
+  </script>
 </body>
 </html>
