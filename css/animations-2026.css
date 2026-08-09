@@ -1776,3 +1776,257 @@ body.mode-2d .bento-item:hover {
     display: none;
   }
 }
+
+
+
+/* ═══════════════════════════════════════════════════════
+   FULL 3D MODE — Immersive 3D Website Experience
+   When body has .mode-3d class, the entire site transforms
+   into a 3D perspective space with depth and parallax
+   ═══════════════════════════════════════════════════════ */
+
+/* 3D Perspective Container — entire page becomes 3D space */
+body.mode-3d {
+  perspective: 1200px;
+  perspective-origin: 50% 0%;
+}
+body.mode-3d main {
+  transform-style: preserve-3d;
+}
+
+/* Sections float in 3D space at different depths */
+body.mode-3d .section,
+body.mode-3d .hero,
+body.mode-3d .video-showcase,
+body.mode-3d .capability-band,
+body.mode-3d .cta-section {
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Cards pop out toward user in 3D */
+body.mode-3d .glass-card-animated,
+body.mode-3d .impact-card,
+body.mode-3d .product-card,
+body.mode-3d .bento-item,
+body.mode-3d .testimonial-card,
+body.mode-3d .diff-card,
+body.mode-3d .stat-card,
+body.mode-3d .insight-card {
+  transform: translateZ(0px);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+body.mode-3d .glass-card-animated:hover,
+body.mode-3d .impact-card:hover,
+body.mode-3d .product-card:hover,
+body.mode-3d .bento-item:hover,
+body.mode-3d .testimonial-card:hover,
+body.mode-3d .diff-card:hover,
+body.mode-3d .stat-card:hover,
+body.mode-3d .insight-card:hover {
+  transform: translateZ(40px) rotateX(-2deg) rotateY(2deg) scale(1.02) !important;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.5), 0 0 60px rgba(212,164,24,0.1) !important;
+}
+
+/* Section headers float slightly toward user */
+body.mode-3d .section-header {
+  transform: translateZ(20px);
+  transform-style: preserve-3d;
+}
+body.mode-3d .section-header h2 {
+  transform: translateZ(10px);
+}
+
+/* Hero content pops forward dramatically */
+body.mode-3d .hero-content {
+  transform: translateZ(60px);
+  transform-style: preserve-3d;
+}
+body.mode-3d .hero h1 {
+  transform: translateZ(30px);
+}
+body.mode-3d .hero-desc {
+  transform: translateZ(15px);
+}
+body.mode-3d .hero-actions {
+  transform: translateZ(20px);
+}
+
+/* Buttons have 3D depth */
+body.mode-3d .btn {
+  transform: translateZ(5px);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s;
+}
+body.mode-3d .btn:hover {
+  transform: translateZ(15px) translateY(-2px) !important;
+  box-shadow: 0 15px 40px rgba(212,164,24,0.3) !important;
+}
+
+/* Grids have layered depth */
+body.mode-3d .impact-grid,
+body.mode-3d .product-grid,
+body.mode-3d .bento-grid,
+body.mode-3d .testimonial-grid,
+body.mode-3d .differentiators-grid,
+body.mode-3d .stats-grid,
+body.mode-3d .insights-grid {
+  transform-style: preserve-3d;
+}
+
+/* Stagger z-depth on grid children */
+body.mode-3d .impact-grid > *:nth-child(1) { transform: translateZ(10px); }
+body.mode-3d .impact-grid > *:nth-child(2) { transform: translateZ(20px); }
+body.mode-3d .impact-grid > *:nth-child(3) { transform: translateZ(30px); }
+
+body.mode-3d .bento-grid > *:nth-child(1) { transform: translateZ(15px); }
+body.mode-3d .bento-grid > *:nth-child(2) { transform: translateZ(25px); }
+body.mode-3d .bento-grid > *:nth-child(3) { transform: translateZ(10px); }
+body.mode-3d .bento-grid > *:nth-child(4) { transform: translateZ(20px); }
+body.mode-3d .bento-grid > *:nth-child(5) { transform: translateZ(30px); }
+body.mode-3d .bento-grid > *:nth-child(6) { transform: translateZ(5px); }
+
+/* Architecture layers slide into depth */
+body.mode-3d .arch-layer {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+body.mode-3d .arch-layer:nth-child(1) { transform: translateZ(35px); }
+body.mode-3d .arch-layer:nth-child(2) { transform: translateZ(30px); }
+body.mode-3d .arch-layer:nth-child(3) { transform: translateZ(25px); }
+body.mode-3d .arch-layer:nth-child(4) { transform: translateZ(20px); }
+body.mode-3d .arch-layer:nth-child(5) { transform: translateZ(15px); }
+body.mode-3d .arch-layer:nth-child(6) { transform: translateZ(10px); }
+body.mode-3d .arch-layer:nth-child(7) { transform: translateZ(5px); }
+body.mode-3d .arch-layer:hover {
+  transform: translateZ(50px) scale(1.03) !important;
+}
+
+/* Service nav tabs float */
+body.mode-3d .service-nav-item {
+  transition: transform 0.3s ease;
+}
+body.mode-3d .service-nav-item:hover {
+  transform: translateZ(10px) translateX(4px);
+}
+body.mode-3d .service-nav-content {
+  transform: translateZ(15px);
+}
+
+/* Tech pills pop out */
+body.mode-3d .tech-pill {
+  transition: transform 0.25s ease;
+}
+body.mode-3d .tech-pill:hover {
+  transform: translateZ(20px) translateY(-3px) scale(1.1) !important;
+}
+
+/* AI flow steps have depth */
+body.mode-3d .ai-flow-step {
+  transition: transform 0.3s ease;
+}
+body.mode-3d .ai-flow-step:hover,
+body.mode-3d .ai-flow-step.active {
+  transform: translateZ(20px) scale(1.05);
+}
+
+/* Tags/badges pop */
+body.mode-3d .tag,
+body.mode-3d .insight-badge,
+body.mode-3d .product-status {
+  transition: transform 0.2s ease;
+}
+body.mode-3d .tag:hover {
+  transform: translateZ(8px) scale(1.05);
+}
+
+/* Footer gets slight perspective tilt */
+body.mode-3d .footer {
+  transform: translateZ(-10px);
+}
+
+/* Logo has 3D pop effect */
+body.mode-3d .logo-img {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+body.mode-3d .logo:hover .logo-img {
+  transform: translateZ(20px) scale(1.08) rotateY(-3deg) !important;
+}
+
+/* Process nodes float at different levels */
+body.mode-3d .process-node:nth-child(odd) { transform: translateZ(15px); }
+body.mode-3d .process-node:nth-child(even) { transform: translateZ(25px); }
+body.mode-3d .process-node:hover {
+  transform: translateZ(40px) scale(1.05) !important;
+}
+
+/* Security grid with perspective */
+body.mode-3d .security-grid {
+  transform-style: preserve-3d;
+}
+body.mode-3d .security-layer {
+  transition: transform 0.3s ease;
+}
+body.mode-3d .security-layer:hover {
+  transform: translateZ(25px) scale(1.05) rotateX(-2deg);
+}
+
+/* Industry cards pop out */
+body.mode-3d .industry-card {
+  transition: transform 0.3s ease;
+}
+body.mode-3d .industry-card:hover {
+  transform: translateZ(30px) scale(1.05) !important;
+}
+
+/* Testimonial cards at varying depth */
+body.mode-3d .testimonial-grid > *:nth-child(1) { transform: translateZ(10px) rotateY(1deg); }
+body.mode-3d .testimonial-grid > *:nth-child(2) { transform: translateZ(20px); }
+body.mode-3d .testimonial-grid > *:nth-child(3) { transform: translateZ(10px) rotateY(-1deg); }
+
+/* Header in 3D stays flat but elevated */
+body.mode-3d .header {
+  transform: translateZ(80px);
+  transform-style: preserve-3d;
+}
+
+/* 3D mode enhanced shadows for depth perception */
+body.mode-3d .section {
+  --shadow-3d: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+/* Chat widget pops forward */
+body.mode-3d .ai-chat-fab {
+  transform: translateZ(60px);
+}
+body.mode-3d .ai-chat-window {
+  transform: translateZ(70px);
+}
+body.mode-3d .ai-chat-window.open {
+  transform: translateZ(70px) translateY(0) scale(1);
+}
+
+/* Globe animation enhanced in 3D */
+body.mode-3d .globe-container {
+  transform: translateZ(30px);
+}
+
+/* Disable 3D on mobile — too heavy */
+@media (max-width: 768px) {
+  body.mode-3d {
+    perspective: none;
+  }
+  body.mode-3d main {
+    transform-style: flat;
+  }
+  body.mode-3d .section,
+  body.mode-3d .hero,
+  body.mode-3d .hero-content,
+  body.mode-3d .glass-card-animated,
+  body.mode-3d .impact-card,
+  body.mode-3d .bento-item,
+  body.mode-3d .header {
+    transform: none !important;
+    transform-style: flat;
+  }
+}

@@ -25,16 +25,56 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateModeUI() {
       if (is3D) {
         document.body.classList.remove('mode-2d');
+        document.body.classList.add('mode-3d');
         modeToggle.setAttribute('aria-checked', 'true');
         modeToggle.querySelector('.mode-label-3d').classList.add('active');
         modeToggle.querySelector('.mode-label-2d').classList.remove('active');
+        // Enable 3D scroll parallax
+        enable3DScroll();
       } else {
         document.body.classList.add('mode-2d');
+        document.body.classList.remove('mode-3d');
         modeToggle.setAttribute('aria-checked', 'false');
         modeToggle.querySelector('.mode-label-2d').classList.add('active');
         modeToggle.querySelector('.mode-label-3d').classList.remove('active');
+        // Disable 3D scroll parallax
+        disable3DScroll();
       }
       localStorage.setItem('codeorigin-view-mode', is3D ? '3d' : '2d');
+    }
+
+    // 3D Scroll Depth Effect — sections tilt based on scroll position
+    var scrollHandler3D = null;
+
+    function enable3DScroll() {
+      if (window.innerWidth < 768) return;
+      scrollHandler3D = function() {
+        var sections = document.querySelectorAll('.section, .video-showcase, .capability-band, .cta-section');
+        sections.forEach(function(section) {
+          var rect = section.getBoundingClientRect();
+          var viewHeight = window.innerHeight;
+          var center = rect.top + rect.height / 2;
+          var distFromCenter = (center - viewHeight / 2) / viewHeight;
+          // Subtle tilt based on distance from viewport center
+          var rotateX = distFromCenter * 2; // max 2 degrees
+          var translateZ = Math.abs(distFromCenter) * -15; // push away from center
+          section.style.transform = 'rotateX(' + rotateX + 'deg) translateZ(' + translateZ + 'px)';
+        });
+      };
+      window.addEventListener('scroll', scrollHandler3D, { passive: true });
+      scrollHandler3D(); // Apply immediately
+    }
+
+    function disable3DScroll() {
+      if (scrollHandler3D) {
+        window.removeEventListener('scroll', scrollHandler3D);
+        scrollHandler3D = null;
+      }
+      // Reset all section transforms
+      var sections = document.querySelectorAll('.section, .video-showcase, .capability-band, .cta-section');
+      sections.forEach(function(section) {
+        section.style.transform = '';
+      });
     }
 
     function toggleMode() {
