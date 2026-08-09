@@ -2642,18 +2642,27 @@ h6 { font-size: var(--text-sm); font-weight: 600; text-transform: uppercase; let
   border: 1px solid var(--glass-border);
   box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.03);
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 ratio fallback */
+  max-width: 100%;
   aspect-ratio: 16 / 9;
   background: var(--navy-900);
 }
+/* Fallback for browsers that don't support aspect-ratio */
+@supports not (aspect-ratio: 16 / 9) {
+  .video-wrapper {
+    padding-bottom: 56.25%;
+  }
+  .video-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
 .video-player {
-  width: 100% !important;
-  height: 100% !important;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
+  border-radius: 16px;
 }
 .video-wrapper:hover {
   box-shadow: 0 24px 70px rgba(0,0,0,0.5), 0 0 60px rgba(37,99,235,0.06);
@@ -2662,4 +2671,5 @@ h6 { font-size: var(--text-sm); font-weight: 600; text-transform: uppercase; let
 @media (max-width: 768px) {
   .video-showcase { padding: 40px 0; }
   .video-wrapper { border-radius: 12px; }
+  .video-player { border-radius: 12px; }
 }

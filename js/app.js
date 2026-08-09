@@ -7,6 +7,31 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // ═══════════════════════════════════════════
+  // VIDEO AUTOPLAY HANDLER
+  // ═══════════════════════════════════════════
+  const videoPlayer = document.querySelector('.video-player');
+  if (videoPlayer) {
+    // Ensure video plays (some browsers block autoplay)
+    const playVideo = function() {
+      videoPlayer.play().catch(function() {
+        // Autoplay blocked — add click-to-play fallback
+        videoPlayer.closest('.video-wrapper').style.cursor = 'pointer';
+        videoPlayer.closest('.video-wrapper').addEventListener('click', function() {
+          videoPlayer.play();
+          this.style.cursor = 'default';
+        }, { once: true });
+      });
+    };
+
+    // Try playing when video is ready
+    if (videoPlayer.readyState >= 3) {
+      playVideo();
+    } else {
+      videoPlayer.addEventListener('loadeddata', playVideo);
+    }
+  }
+
+  // ═══════════════════════════════════════════
   // HEADER — Scroll state
   // ═══════════════════════════════════════════
   const header = document.querySelector('.header');
