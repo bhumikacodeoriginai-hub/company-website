@@ -45,7 +45,29 @@
   <main id="main-content">
 
 
-  <!-- HERO -->
+  <!-- ANIMATED INTRO SPLASH -->
+  <section class="about-splash" id="about-splash">
+    <div class="about-splash-bg">
+      <div class="splash-particle splash-p1"></div>
+      <div class="splash-particle splash-p2"></div>
+      <div class="splash-particle splash-p3"></div>
+      <div class="splash-particle splash-p4"></div>
+      <div class="splash-particle splash-p5"></div>
+      <div class="splash-line splash-line-1"></div>
+      <div class="splash-line splash-line-2"></div>
+      <div class="splash-line splash-line-3"></div>
+    </div>
+    <div class="about-splash-content">
+      <p class="splash-label" id="splash-label">About Code Origin.AI</p>
+      <h1 class="splash-title" id="splash-title">
+        <span class="splash-line-text" id="splash-line1">We build the technology</span><br>
+        <span class="splash-line-text splash-gold" id="splash-line2">that builds the future.</span>
+      </h1>
+      <div class="splash-underline" id="splash-underline"></div>
+    </div>
+  </section>
+
+  <!-- HERO (appears after splash) -->
   <section class="about-hero">
     <div class="container">
       <p class="about-hero-label reveal">About Code Origin.AI</p>
@@ -248,5 +270,43 @@
   </footer>
   <script src="../js/app.js"></script>
   <script src="../js/innovative-2026.js"></script>
+  <script>
+    // About page splash animation — auto-fade after animations complete
+    (function() {
+      var splash = document.getElementById('about-splash');
+      if (!splash) return;
+      
+      // After all animations play (about 3.5s), start fading out
+      setTimeout(function() {
+        splash.classList.add('fade-out');
+        // After fade-out animation (1s), collapse the element
+        setTimeout(function() {
+          splash.classList.add('collapsed');
+          // Smooth scroll to top of actual content
+          window.scrollTo({ top: 0, behavior: 'instant' });
+        }, 1000);
+      }, 4000);
+      
+      // Also allow click/scroll to skip the splash
+      splash.addEventListener('click', function() {
+        splash.classList.add('fade-out');
+        setTimeout(function() {
+          splash.classList.add('collapsed');
+        }, 600);
+      });
+      
+      // Skip on scroll
+      var scrollSkip = function() {
+        if (window.scrollY > 50 && !splash.classList.contains('fade-out')) {
+          splash.classList.add('fade-out');
+          setTimeout(function() {
+            splash.classList.add('collapsed');
+          }, 600);
+          window.removeEventListener('scroll', scrollSkip);
+        }
+      };
+      window.addEventListener('scroll', scrollSkip, { passive: true });
+    })();
+  </script>
 </body>
 </html>
