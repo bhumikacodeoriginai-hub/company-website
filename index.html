@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <!-- ═══ HEADER ═══ -->
+  <!-- HEADER -->
   <header class="header">
     <div class="header-inner">
       <a href="index.html" class="logo">
@@ -32,7 +32,7 @@
     </div>
   </header>
 
-  <!-- ═══ MOBILE NAV ═══ -->
+  <!-- MOBILE NAV -->
   <nav class="mobile-nav">
     <a href="pages/services.html">Services</a>
     <a href="pages/products.html">Products</a>
@@ -43,7 +43,8 @@
     <a href="pages/contact.html">Contact</a>
   </nav>
 
-  <!-- ═══ HERO ═══ -->
+
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-canvas">
       <canvas id="hero-3d"></canvas>
@@ -74,9 +75,37 @@
     </div>
   </section>
 
-  <!-- ═══ SERVICES ═══ -->
+
+  <!-- CLIENT LOGOS -->
+  <section class="logo-strip">
+    <div class="logo-strip-title">Trusted by Industry Leaders</div>
+    <div style="overflow:hidden">
+      <div class="logo-scroll">
+        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=120&h=32&fit=crop&auto=format" alt="Partner" class="logo-scroll-item" style="height:28px;width:auto;border-radius:4px">
+        <svg class="logo-scroll-item" width="120" height="32" viewBox="0 0 120 32"><text x="10" y="22" font-family="Inter,sans-serif" font-weight="700" font-size="14" fill="white">TechVault</text></svg>
+        <svg class="logo-scroll-item" width="120" height="32" viewBox="0 0 120 32"><text x="10" y="22" font-family="Inter,sans-serif" font-weight="700" font-size="14" fill="white">NexaFlow</text></svg>
+        <svg class="logo-scroll-item" width="120" height="32" viewBox="0 0 120 32"><text x="10" y="22" font-family="Inter,sans-serif" font-weight="700" font-size="14" fill="white">DataSphere</text></svg>
+        <svg class="logo-scroll-item" width="120" height="32" viewBox="0 0 120 32"><text x="10" y="22" font-family="Inter,sans-serif" font-weight="700" font-size="14" fill="white">CloudNine</text></svg>
+        <svg class="logo-scroll-item" width="130" height="32" viewBox="0 0 130 32"><text x="10" y="22" font-family="Inter,sans-serif" font-weight="700" font-size="14" fill="white">Quantum Labs</text></svg>
+        <svg class="logo-scroll-item" width="120" height="32" viewBox="0 0 120 32"><text x="10" y="22" font-family="Inter,sans-serif" font-weight="700" font-size="14" fill="white">SynapseAI</text></svg>
+        <svg class="logo-scroll-item" width="120" height="32" viewBox="0 0 120 32"><text x="10" y="22" font-family="Inter,sans-serif" font-weight="700" font-size="14" fill="white">Meridian</text></svg>
+        <!-- Duplicate for infinite scroll -->
+        <svg class="logo-scroll-item" width="120" height="32" viewBox="0 0 120 32"><text x="10" y="22" font-family="Inter,sans-serif" font-weight="700" font-size="14" fill="white">TechVault</text></svg>
+        <svg class="logo-scroll-item" width="120" height="32" viewBox="0 0 120 32"><text x="10" y="22" font-family="Inter,sans-serif" font-weight="700" font-size="14" fill="white">NexaFlow</text></svg>
+        <svg class="logo-scroll-item" width="120" height="32" viewBox="0 0 120 32"><text x="10" y="22" font-family="Inter,sans-serif" font-weight="700" font-size="14" fill="white">DataSphere</text></svg>
+        <svg class="logo-scroll-item" width="120" height="32" viewBox="0 0 120 32"><text x="10" y="22" font-family="Inter,sans-serif" font-weight="700" font-size="14" fill="white">CloudNine</text></svg>
+        <svg class="logo-scroll-item" width="130" height="32" viewBox="0 0 130 32"><text x="10" y="22" font-family="Inter,sans-serif" font-weight="700" font-size="14" fill="white">Quantum Labs</text></svg>
+        <svg class="logo-scroll-item" width="120" height="32" viewBox="0 0 120 32"><text x="10" y="22" font-family="Inter,sans-serif" font-weight="700" font-size="14" fill="white">SynapseAI</text></svg>
+        <svg class="logo-scroll-item" width="120" height="32" viewBox="0 0 120 32"><text x="10" y="22" font-family="Inter,sans-serif" font-weight="700" font-size="14" fill="white">Meridian</text></svg>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SERVICES -->
   <section class="section" id="services">
     <div class="container">
+      <div class="float-element float-element-1"></div>
       <div class="sec-head reveal">
         <div class="label">What We Do</div>
         <h2>Enterprise-Grade <span class="text-gradient">Solutions</span></h2>
@@ -159,53 +188,67 @@
     </div>
   </section>
 
-  <!-- ═══ AI SOLUTIONS ═══ -->
-  <section class="section section-alt" id="ai">
+
+  <!-- AI SHOWCASE - Split Section with Image -->
+  <section class="section section-alt">
     <div class="container">
-      <div class="sec-head reveal">
-        <div class="label">AI Excellence</div>
-        <h2>Intelligent Solutions <span class="text-gradient-2">at Scale</span></h2>
-        <p>Purpose-built AI capabilities that integrate seamlessly with your existing systems and workflows.</p>
-      </div>
-      <div class="grid-4">
-        <div class="glass glass-sm reveal reveal-delay-1">
-          <h4>AI Agents</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem;line-height:1.6">Autonomous agents that reason, plan, and execute complex multi-step workflows.</p>
+      <div class="split-section reveal">
+        <div class="split-img">
+          <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop&auto=format&q=80" alt="AI Neural Network Visualization" loading="lazy">
         </div>
-        <div class="glass glass-sm reveal reveal-delay-2">
-          <h4>Generative AI</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem;line-height:1.6">Custom LLM solutions, fine-tuning, and content generation for enterprise use cases.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-3">
-          <h4>RAG Systems</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem;line-height:1.6">Retrieval-augmented generation pipelines for accurate, grounded AI responses.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-4">
-          <h4>AI Copilots</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem;line-height:1.6">Intelligent assistants that augment human capabilities across business functions.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-1">
-          <h4>Predictive AI</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem;line-height:1.6">Forecasting models and anomaly detection for proactive decision-making.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-2">
-          <h4>NLP & Language</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem;line-height:1.6">Natural language understanding, sentiment analysis, and multilingual processing.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-3">
-          <h4>Computer Vision</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem;line-height:1.6">Image recognition, video analytics, and visual inspection systems.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-4">
-          <h4>Intelligent Automation</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem;line-height:1.6">End-to-end process automation combining RPA with AI decision-making.</p>
+        <div class="split-content">
+          <div class="label" style="font-size:0.7rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--blue-400);margin-bottom:1rem">AI Excellence</div>
+          <h2>Intelligent Solutions <span class="text-gradient-2">at Scale</span></h2>
+          <p>Purpose-built AI capabilities that integrate seamlessly with your existing systems and workflows. From generative AI to autonomous agents, we deliver the future today.</p>
+          <ul class="feature-list">
+            <li>Custom LLM fine-tuning & deployment</li>
+            <li>Autonomous AI agents for complex workflows</li>
+            <li>RAG systems for enterprise knowledge</li>
+            <li>Computer vision & NLP solutions</li>
+          </ul>
+          <a href="pages/services.html" class="btn btn-primary" style="margin-top:1.5rem">Explore AI Services</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ PRODUCTS ═══ -->
-  <section class="section" id="products">
+
+  <!-- PROCESS -->
+  <section class="section">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div class="label">How We Work</div>
+        <h2>Our Proven <span class="text-gradient">Process</span></h2>
+        <p>A systematic approach refined across 150+ successful enterprise engagements.</p>
+      </div>
+      <div class="process-grid reveal">
+        <div class="process-step">
+          <div class="process-num">01</div>
+          <h4>Discovery</h4>
+          <p>Deep dive into your business challenges, data landscape, and technology ecosystem.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">02</div>
+          <h4>Architecture</h4>
+          <p>Design scalable solutions with clear milestones and measurable outcomes.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">03</div>
+          <h4>Engineering</h4>
+          <p>Agile development with continuous integration, testing, and stakeholder feedback.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">04</div>
+          <h4>Deployment</h4>
+          <p>Production-grade delivery with monitoring, optimization, and ongoing support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PRODUCTS - With Dashboard Imagery -->
+  <section class="section section-alt" id="products">
     <div class="container">
       <div class="sec-head reveal">
         <div class="label">Our Products</div>
@@ -213,173 +256,176 @@
         <p>Next-generation products built on years of research and real-world deployment experience.</p>
       </div>
       <div class="grid-2">
-        <div class="glass-card reveal reveal-delay-1">
-          <span class="badge">In Development</span>
-          <h3 style="margin-top:1rem">Origin Neural Engine</h3>
-          <p style="color:var(--gray-400);margin-top:.75rem;font-size:.9rem;line-height:1.7">Enterprise AI orchestration platform for deploying, monitoring, and scaling machine learning models in production environments.</p>
+        <div class="product-card reveal reveal-delay-1">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=300&fit=crop&auto=format&q=80" alt="Analytics Dashboard" class="product-card-img" loading="lazy">
+          <div class="product-card-body">
+            <span class="badge">In Development</span>
+            <h3 style="margin-top:1rem">Origin Neural Engine</h3>
+            <p style="color:var(--gray-400);margin-top:.75rem;font-size:.9rem;line-height:1.7">Enterprise AI orchestration platform for deploying, monitoring, and scaling machine learning models in production environments.</p>
+          </div>
         </div>
-        <div class="glass-card reveal reveal-delay-2">
-          <span class="badge">In Development</span>
-          <h3 style="margin-top:1rem">CodeFlow AI</h3>
-          <p style="color:var(--gray-400);margin-top:.75rem;font-size:.9rem;line-height:1.7">AI-powered development platform that accelerates software delivery with intelligent code generation and automated testing.</p>
+        <div class="product-card reveal reveal-delay-2">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=300&fit=crop&auto=format&q=80" alt="Code Editor Interface" class="product-card-img" loading="lazy">
+          <div class="product-card-body">
+            <span class="badge">In Development</span>
+            <h3 style="margin-top:1rem">CodeFlow AI</h3>
+            <p style="color:var(--gray-400);margin-top:.75rem;font-size:.9rem;line-height:1.7">AI-powered development platform that accelerates software delivery with intelligent code generation and automated testing.</p>
+          </div>
         </div>
-        <div class="glass-card reveal reveal-delay-3">
-          <span class="badge">In Development</span>
-          <h3 style="margin-top:1rem">Sentinel AI</h3>
-          <p style="color:var(--gray-400);margin-top:.75rem;font-size:.9rem;line-height:1.7">AI-driven cybersecurity platform providing real-time threat detection, automated response, and predictive threat intelligence.</p>
+        <div class="product-card reveal reveal-delay-3">
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?w=600&h=300&fit=crop&auto=format&q=80" alt="Security Operations Center" class="product-card-img" loading="lazy">
+          <div class="product-card-body">
+            <span class="badge">In Development</span>
+            <h3 style="margin-top:1rem">Sentinel AI</h3>
+            <p style="color:var(--gray-400);margin-top:.75rem;font-size:.9rem;line-height:1.7">AI-driven cybersecurity platform providing real-time threat detection, automated response, and predictive threat intelligence.</p>
+          </div>
         </div>
-        <div class="glass-card reveal reveal-delay-4">
-          <span class="badge">In Development</span>
-          <h3 style="margin-top:1rem">DataPulse Analytics</h3>
-          <p style="color:var(--gray-400);margin-top:.75rem;font-size:.9rem;line-height:1.7">Real-time data intelligence platform with natural language querying and automated insight generation for business teams.</p>
+        <div class="product-card reveal reveal-delay-4">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&auto=format&q=80" alt="Data Analytics Platform" class="product-card-img" loading="lazy">
+          <div class="product-card-body">
+            <span class="badge">In Development</span>
+            <h3 style="margin-top:1rem">DataPulse Analytics</h3>
+            <p style="color:var(--gray-400);margin-top:.75rem;font-size:.9rem;line-height:1.7">Real-time data intelligence platform with natural language querying and automated insight generation for business teams.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ ENGINEERING ═══ -->
-  <section class="section section-alt" id="engineering">
+
+  <!-- ENGINEERING SPLIT - Image Right -->
+  <section class="section">
+    <div class="container">
+      <div class="split-section reverse reveal">
+        <div class="split-img">
+          <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=800&h=600&fit=crop&auto=format&q=80" alt="Team collaborating on technology project" loading="lazy">
+        </div>
+        <div class="split-content">
+          <div class="label" style="font-size:0.7rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--blue-400);margin-bottom:1rem">Our Approach</div>
+          <h2>Engineering <span class="text-gradient-2">Principles</span></h2>
+          <p>We don't just write code — we architect solutions built on rigorous engineering principles that ensure reliability, scalability, and maintainability at every layer.</p>
+          <ul class="feature-list">
+            <li>Infrastructure as Code with GitOps workflows</li>
+            <li>Zero-downtime deployments & auto-scaling</li>
+            <li>Comprehensive observability & monitoring</li>
+            <li>Security-first architecture patterns</li>
+            <li>Automated testing at every layer</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section-alt">
     <div class="container">
       <div class="sec-head reveal">
-        <div class="label">Our Approach</div>
-        <h2>Engineering <span class="text-gradient-2">Principles</span></h2>
-        <p>The core tenets that guide how we architect, build, and deliver every solution.</p>
+        <div class="label">Client Stories</div>
+        <h2>What Our Clients <span class="text-gradient">Say</span></h2>
+        <p>Real results from real partnerships. Here's what enterprise leaders say about working with us.</p>
       </div>
       <div class="grid-3">
-        <div class="glass glass-sm reveal reveal-delay-1">
-          <h4>Security First</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem">Security is embedded at every layer, not bolted on as an afterthought.</p>
+        <div class="testimonial-card reveal reveal-delay-1">
+          <p class="testimonial-text">Code Origin.AI transformed our data infrastructure. Their team delivered an ML pipeline that reduced our prediction latency by 90% and increased accuracy by 35%.</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=96&h=96&fit=crop&crop=face&auto=format&q=80" alt="James Morrison" class="testimonial-avatar" loading="lazy">
+            <div>
+              <div class="testimonial-name">James Morrison</div>
+              <div class="testimonial-role">CTO, NexaFlow Technologies</div>
+            </div>
+          </div>
         </div>
-        <div class="glass glass-sm reveal reveal-delay-2">
-          <h4>Scalable by Design</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem">Architecture decisions anticipate 10x growth from day one.</p>
+        <div class="testimonial-card reveal reveal-delay-2">
+          <p class="testimonial-text">The AI copilot they built for our support team handles 60% of tickets autonomously. Implementation was seamless and ROI was visible within the first month.</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&fit=crop&crop=face&auto=format&q=80" alt="Sarah Chen" class="testimonial-avatar" loading="lazy">
+            <div>
+              <div class="testimonial-name">Sarah Chen</div>
+              <div class="testimonial-role">VP Engineering, DataSphere Inc</div>
+            </div>
+          </div>
         </div>
-        <div class="glass glass-sm reveal reveal-delay-3">
-          <h4>Observable Systems</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem">Full telemetry, distributed tracing, and proactive monitoring throughout.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-1">
-          <h4>Clean Architecture</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem">Separation of concerns, SOLID principles, and maintainable codebases.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-2">
-          <h4>Automated Testing</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem">Comprehensive test suites at unit, integration, and E2E levels.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-3">
-          <h4>CI/CD Excellence</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem">Automated pipelines that deliver code to production safely and rapidly.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-1">
-          <h4>API-First Design</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem">Every system built with well-documented, versioned APIs for integration.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-2">
-          <h4>Cloud Native</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem">Containerized, orchestrated, and optimized for modern cloud platforms.</p>
-        </div>
-        <div class="glass glass-sm reveal reveal-delay-3">
-          <h4>Data-Driven Decisions</h4>
-          <p style="color:var(--gray-500);font-size:.82rem;margin-top:.5rem">Every decision backed by metrics, experiments, and evidence.</p>
+        <div class="testimonial-card reveal reveal-delay-3">
+          <p class="testimonial-text">Their security audit uncovered critical vulnerabilities our previous vendor missed. The zero-trust architecture they implemented gives us complete confidence.</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=96&h=96&fit=crop&crop=face&auto=format&q=80" alt="Michael Torres" class="testimonial-avatar" loading="lazy">
+            <div>
+              <div class="testimonial-name">Michael Torres</div>
+              <div class="testimonial-role">CISO, Quantum Labs</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ TECHNOLOGY ═══ -->
-  <section class="section" id="technology">
+
+  <!-- TECHNOLOGY STACK -->
+  <section class="section" id="engineering">
     <div class="container">
       <div class="sec-head reveal">
         <div class="label">Technology Stack</div>
-        <h2>Built with <span class="text-gradient">Best-in-Class</span> Tools</h2>
-        <p>We leverage the most powerful and proven technologies across the full development lifecycle.</p>
+        <h2>Built With the <span class="text-gradient-2">Best Tools</span></h2>
+        <p>We leverage cutting-edge technologies across the full stack to deliver optimal solutions.</p>
       </div>
       <div class="grid-3">
-        <div class="glass glass-sm reveal tech-cat">
-          <h4>Languages</h4>
+        <div class="glass glass-sm tech-cat reveal reveal-delay-1">
+          <h4>AI & ML</h4>
           <div class="tech-items">
-            <span class="tech-pill">Python</span>
-            <span class="tech-pill">TypeScript</span>
-            <span class="tech-pill">Go</span>
-            <span class="tech-pill">Rust</span>
-            <span class="tech-pill">Java</span>
-            <span class="tech-pill">Kotlin</span>
+            <span class="tech-pill">PyTorch</span><span class="tech-pill">TensorFlow</span><span class="tech-pill">LangChain</span><span class="tech-pill">Hugging Face</span><span class="tech-pill">OpenAI</span>
           </div>
         </div>
-        <div class="glass glass-sm reveal tech-cat">
-          <h4>AI / ML</h4>
-          <div class="tech-items">
-            <span class="tech-pill">PyTorch</span>
-            <span class="tech-pill">TensorFlow</span>
-            <span class="tech-pill">LangChain</span>
-            <span class="tech-pill">Hugging Face</span>
-            <span class="tech-pill">OpenAI</span>
-            <span class="tech-pill">MLflow</span>
-          </div>
-        </div>
-        <div class="glass glass-sm reveal tech-cat">
-          <h4>Cloud</h4>
-          <div class="tech-items">
-            <span class="tech-pill">AWS</span>
-            <span class="tech-pill">Azure</span>
-            <span class="tech-pill">GCP</span>
-            <span class="tech-pill">Kubernetes</span>
-            <span class="tech-pill">Terraform</span>
-            <span class="tech-pill">Docker</span>
-          </div>
-        </div>
-        <div class="glass glass-sm reveal tech-cat">
-          <h4>Frontend</h4>
-          <div class="tech-items">
-            <span class="tech-pill">React</span>
-            <span class="tech-pill">Next.js</span>
-            <span class="tech-pill">Vue</span>
-            <span class="tech-pill">Svelte</span>
-            <span class="tech-pill">Tailwind</span>
-            <span class="tech-pill">Three.js</span>
-          </div>
-        </div>
-        <div class="glass glass-sm reveal tech-cat">
+        <div class="glass glass-sm tech-cat reveal reveal-delay-2">
           <h4>Backend</h4>
           <div class="tech-items">
-            <span class="tech-pill">Node.js</span>
-            <span class="tech-pill">FastAPI</span>
-            <span class="tech-pill">Spring</span>
-            <span class="tech-pill">gRPC</span>
-            <span class="tech-pill">GraphQL</span>
-            <span class="tech-pill">Kafka</span>
+            <span class="tech-pill">Python</span><span class="tech-pill">Go</span><span class="tech-pill">Rust</span><span class="tech-pill">Node.js</span><span class="tech-pill">Java</span>
           </div>
         </div>
-        <div class="glass glass-sm reveal tech-cat">
+        <div class="glass glass-sm tech-cat reveal reveal-delay-3">
+          <h4>Frontend</h4>
+          <div class="tech-items">
+            <span class="tech-pill">React</span><span class="tech-pill">Next.js</span><span class="tech-pill">TypeScript</span><span class="tech-pill">Vue.js</span><span class="tech-pill">Tailwind</span>
+          </div>
+        </div>
+        <div class="glass glass-sm tech-cat reveal reveal-delay-1">
+          <h4>Cloud & Infra</h4>
+          <div class="tech-items">
+            <span class="tech-pill">AWS</span><span class="tech-pill">GCP</span><span class="tech-pill">Azure</span><span class="tech-pill">Kubernetes</span><span class="tech-pill">Terraform</span>
+          </div>
+        </div>
+        <div class="glass glass-sm tech-cat reveal reveal-delay-2">
           <h4>Data</h4>
           <div class="tech-items">
-            <span class="tech-pill">PostgreSQL</span>
-            <span class="tech-pill">MongoDB</span>
-            <span class="tech-pill">Redis</span>
-            <span class="tech-pill">Elasticsearch</span>
-            <span class="tech-pill">Snowflake</span>
-            <span class="tech-pill">Pinecone</span>
+            <span class="tech-pill">PostgreSQL</span><span class="tech-pill">MongoDB</span><span class="tech-pill">Redis</span><span class="tech-pill">Kafka</span><span class="tech-pill">Spark</span>
+          </div>
+        </div>
+        <div class="glass glass-sm tech-cat reveal reveal-delay-3">
+          <h4>DevOps & Security</h4>
+          <div class="tech-items">
+            <span class="tech-pill">Docker</span><span class="tech-pill">GitHub Actions</span><span class="tech-pill">ArgoCD</span><span class="tech-pill">Vault</span><span class="tech-pill">Datadog</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ CTA ═══ -->
+  <!-- CTA -->
   <section class="section cta-block">
     <div class="container" style="max-width:800px">
+      <div class="float-element float-element-2"></div>
       <div class="reveal" style="text-align:center">
-        <h2>Ready to Build the <span class="text-gradient">Future</span>?</h2>
-        <p style="color:var(--gray-400);font-size:1.1rem;margin:1.5rem 0 2.5rem;line-height:1.8">Let's discuss how our engineering expertise and AI capabilities can accelerate your most ambitious projects.</p>
+        <h2>Ready to Transform Your <span class="text-gradient">Business</span>?</h2>
+        <p style="color:var(--gray-400);font-size:1.1rem;margin:1.5rem 0 2.5rem;line-height:1.8">Let's discuss how AI and modern engineering can solve your most complex challenges. Our team is ready to help.</p>
         <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-          <a href="pages/contact.html" class="btn btn-primary btn-lg">Schedule a Consultation</a>
-          <a href="pages/services.html" class="btn btn-outline btn-lg">View All Services</a>
+          <a href="pages/contact.html" class="btn btn-primary btn-lg">Start a Conversation</a>
+          <a href="pages/about.html" class="btn btn-outline btn-lg">Learn About Us</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ FOOTER ═══ -->
+
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
@@ -431,7 +477,6 @@
     </div>
   </footer>
 
-  <!-- ═══ SCRIPTS ═══ -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="js/three-hero.js"></script>
   <script src="js/app.js"></script>

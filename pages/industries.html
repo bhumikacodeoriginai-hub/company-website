@@ -23,7 +23,12 @@
     <a href="services.html">Services</a><a href="products.html">Products</a><a href="industries.html">Industries</a><a href="insights.html">Insights</a><a href="careers.html">Careers</a><a href="about.html">About</a><a href="contact.html">Contact</a>
   </nav>
 
-  <section class="page-hero">
+
+  <!-- PAGE HERO WITH BACKGROUND -->
+  <section class="page-hero-visual">
+    <div class="page-hero-bg">
+      <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&h=600&fit=crop&auto=format&q=80" alt="Modern corporate skyline" loading="eager">
+    </div>
     <div class="container">
       <span class="label reveal">Industries</span>
       <h1 class="reveal">AI Solutions for<br><span class="text-gradient">Every Sector</span></h1>
@@ -31,106 +36,129 @@
     </div>
   </section>
 
+  <!-- INDUSTRIES GRID WITH IMAGES -->
+  <section class="section" style="padding-top:60px">
+    <div class="container">
+      <div class="grid-2" style="gap:1.5rem">
+
+        <!-- Healthcare -->
+        <div class="industry-card reveal reveal-delay-1">
+          <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=240&fit=crop&auto=format&q=80" alt="Healthcare technology and diagnostics" class="industry-card-img" loading="lazy">
+          <div class="industry-card-body">
+            <h3>Healthcare & Life Sciences</h3>
+            <p style="color:var(--gray-400);margin-top:.75rem;font-size:.88rem;line-height:1.7">AI-powered diagnostics, drug discovery acceleration, patient outcome prediction, and clinical workflow optimization.</p>
+            <div class="svc-tags" style="margin-top:1rem"><span class="tag">Diagnostics AI</span><span class="tag">Drug Discovery</span><span class="tag">EHR Systems</span></div>
+          </div>
+        </div>
+
+        <!-- Financial Services -->
+        <div class="industry-card reveal reveal-delay-2">
+          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=240&fit=crop&auto=format&q=80" alt="Financial trading and analytics" class="industry-card-img" loading="lazy">
+          <div class="industry-card-body">
+            <h3>Financial Services</h3>
+            <p style="color:var(--gray-400);margin-top:.75rem;font-size:.88rem;line-height:1.7">Fraud detection, algorithmic trading, risk modeling, regulatory compliance automation, and personalized banking.</p>
+            <div class="svc-tags" style="margin-top:1rem"><span class="tag">Fraud Detection</span><span class="tag">Risk AI</span><span class="tag">RegTech</span></div>
+          </div>
+        </div>
+
+        <!-- Retail -->
+        <div class="industry-card reveal reveal-delay-3">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=240&fit=crop&auto=format&q=80" alt="Modern retail and e-commerce" class="industry-card-img" loading="lazy">
+          <div class="industry-card-body">
+            <h3>Retail & E-Commerce</h3>
+            <p style="color:var(--gray-400);margin-top:.75rem;font-size:.88rem;line-height:1.7">Personalization engines, demand forecasting, inventory optimization, and intelligent customer experiences.</p>
+            <div class="svc-tags" style="margin-top:1rem"><span class="tag">Personalization</span><span class="tag">Demand Forecasting</span><span class="tag">Chatbots</span></div>
+          </div>
+        </div>
+
+        <!-- Manufacturing -->
+        <div class="industry-card reveal reveal-delay-4">
+          <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=600&h=240&fit=crop&auto=format&q=80" alt="Smart manufacturing and robotics" class="industry-card-img" loading="lazy">
+          <div class="industry-card-body">
+            <h3>Manufacturing</h3>
+            <p style="color:var(--gray-400);margin-top:.75rem;font-size:.88rem;line-height:1.7">Predictive maintenance, quality inspection AI, supply chain optimization, and smart factory automation.</p>
+            <div class="svc-tags" style="margin-top:1rem"><span class="tag">Predictive Maintenance</span><span class="tag">Quality AI</span><span class="tag">IoT</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- MORE INDUSTRIES -->
   <section class="section" style="padding-top:0">
     <div class="container">
       <div class="grid-2" style="gap:1.5rem">
 
-        <div class="glass-card reveal reveal-delay-1">
-          <div class="svc-icon">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        <!-- Technology -->
+        <div class="industry-card reveal reveal-delay-1">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=240&fit=crop&auto=format&q=80" alt="Technology team collaboration" class="industry-card-img" loading="lazy">
+          <div class="industry-card-body">
+            <h3>Technology & SaaS</h3>
+            <p style="color:var(--gray-400);margin-top:.75rem;font-size:.88rem;line-height:1.7">AI feature development, platform scaling, developer tooling, and intelligent product experiences.</p>
+            <div class="svc-tags" style="margin-top:1rem"><span class="tag">AI Features</span><span class="tag">Platform Scale</span><span class="tag">DevTools</span></div>
           </div>
-          <h3>Healthcare & Life Sciences</h3>
-          <p style="color:var(--gray-400);margin-top:.75rem;font-size:.88rem;line-height:1.7">AI-powered diagnostics, drug discovery acceleration, patient outcome prediction, and clinical workflow optimization.</p>
-          <div class="svc-tags"><span class="tag">Diagnostics AI</span><span class="tag">Drug Discovery</span><span class="tag">EHR Systems</span></div>
         </div>
 
-        <div class="glass-card reveal reveal-delay-2">
-          <div class="svc-icon">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 10h20"/></svg>
+        <!-- Education -->
+        <div class="industry-card reveal reveal-delay-2">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=240&fit=crop&auto=format&q=80" alt="Modern education technology" class="industry-card-img" loading="lazy">
+          <div class="industry-card-body">
+            <h3>Education & EdTech</h3>
+            <p style="color:var(--gray-400);margin-top:.75rem;font-size:.88rem;line-height:1.7">Adaptive learning platforms, intelligent tutoring systems, automated grading, and student analytics.</p>
+            <div class="svc-tags" style="margin-top:1rem"><span class="tag">Adaptive Learning</span><span class="tag">AI Tutors</span><span class="tag">Analytics</span></div>
           </div>
-          <h3>Financial Services</h3>
-          <p style="color:var(--gray-400);margin-top:.75rem;font-size:.88rem;line-height:1.7">Fraud detection, algorithmic trading, risk modeling, regulatory compliance automation, and personalized banking.</p>
-          <div class="svc-tags"><span class="tag">Fraud Detection</span><span class="tag">Risk AI</span><span class="tag">RegTech</span></div>
         </div>
 
-        <div class="glass-card reveal reveal-delay-3">
-          <div class="svc-icon">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
+        <!-- Media -->
+        <div class="industry-card reveal reveal-delay-3">
+          <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?w=600&h=240&fit=crop&auto=format&q=80" alt="Media production and streaming" class="industry-card-img" loading="lazy">
+          <div class="industry-card-body">
+            <h3>Media & Entertainment</h3>
+            <p style="color:var(--gray-400);margin-top:.75rem;font-size:.88rem;line-height:1.7">Content recommendation engines, generative AI for creative workflows, audience analytics, and streaming optimization.</p>
+            <div class="svc-tags" style="margin-top:1rem"><span class="tag">Recommendations</span><span class="tag">Gen AI</span><span class="tag">Streaming</span></div>
           </div>
-          <h3>Retail & E-Commerce</h3>
-          <p style="color:var(--gray-400);margin-top:.75rem;font-size:.88rem;line-height:1.7">Personalization engines, demand forecasting, inventory optimization, and intelligent customer experiences.</p>
-          <div class="svc-tags"><span class="tag">Personalization</span><span class="tag">Demand Forecasting</span><span class="tag">Chatbots</span></div>
         </div>
 
-        <div class="glass-card reveal reveal-delay-4">
-          <div class="svc-icon">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20M5 20V8l7-5 7 5v12"/><rect x="9" y="12" width="6" height="8"/></svg>
+        <!-- Energy -->
+        <div class="industry-card reveal reveal-delay-4">
+          <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&h=240&fit=crop&auto=format&q=80" alt="Energy grid and wind turbines" class="industry-card-img" loading="lazy">
+          <div class="industry-card-body">
+            <h3>Energy & Utilities</h3>
+            <p style="color:var(--gray-400);margin-top:.75rem;font-size:.88rem;line-height:1.7">Grid optimization, predictive maintenance for infrastructure, energy trading AI, and sustainability analytics.</p>
+            <div class="svc-tags" style="margin-top:1rem"><span class="tag">Grid AI</span><span class="tag">Sustainability</span><span class="tag">Forecasting</span></div>
           </div>
-          <h3>Manufacturing</h3>
-          <p style="color:var(--gray-400);margin-top:.75rem;font-size:.88rem;line-height:1.7">Predictive maintenance, quality inspection AI, supply chain optimization, and smart factory automation.</p>
-          <div class="svc-tags"><span class="tag">Predictive Maintenance</span><span class="tag">Quality AI</span><span class="tag">IoT</span></div>
         </div>
 
-        <div class="glass-card reveal reveal-delay-1">
-          <div class="svc-icon">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        <!-- Government -->
+        <div class="industry-card reveal reveal-delay-1">
+          <img src="https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?w=600&h=240&fit=crop&auto=format&q=80" alt="Government and civic institutions" class="industry-card-img" loading="lazy">
+          <div class="industry-card-body">
+            <h3>Government & Public Sector</h3>
+            <p style="color:var(--gray-400);margin-top:.75rem;font-size:.88rem;line-height:1.7">Citizen services automation, policy analysis AI, infrastructure monitoring, and secure data platforms.</p>
+            <div class="svc-tags" style="margin-top:1rem"><span class="tag">Citizen AI</span><span class="tag">Policy Analysis</span><span class="tag">Security</span></div>
           </div>
-          <h3>Technology & SaaS</h3>
-          <p style="color:var(--gray-400);margin-top:.75rem;font-size:.88rem;line-height:1.7">AI feature development, platform scaling, developer tooling, and intelligent product experiences.</p>
-          <div class="svc-tags"><span class="tag">AI Features</span><span class="tag">Platform Scale</span><span class="tag">DevTools</span></div>
         </div>
 
-        <div class="glass-card reveal reveal-delay-2">
-          <div class="svc-icon">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+        <!-- Logistics -->
+        <div class="industry-card reveal reveal-delay-2">
+          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=240&fit=crop&auto=format&q=80" alt="Logistics and supply chain" class="industry-card-img" loading="lazy">
+          <div class="industry-card-body">
+            <h3>Logistics & Transportation</h3>
+            <p style="color:var(--gray-400);margin-top:.75rem;font-size:.88rem;line-height:1.7">Route optimization, fleet management AI, demand prediction, warehouse automation, and last-mile delivery intelligence.</p>
+            <div class="svc-tags" style="margin-top:1rem"><span class="tag">Route AI</span><span class="tag">Fleet Management</span><span class="tag">Automation</span></div>
           </div>
-          <h3>Education & EdTech</h3>
-          <p style="color:var(--gray-400);margin-top:.75rem;font-size:.88rem;line-height:1.7">Adaptive learning platforms, intelligent tutoring systems, automated grading, and student analytics.</p>
-          <div class="svc-tags"><span class="tag">Adaptive Learning</span><span class="tag">AI Tutors</span><span class="tag">Analytics</span></div>
-        </div>
-
-        <div class="glass-card reveal reveal-delay-3">
-          <div class="svc-icon">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="23 7 16 12 16 7"/></svg>
-          </div>
-          <h3>Media & Entertainment</h3>
-          <p style="color:var(--gray-400);margin-top:.75rem;font-size:.88rem;line-height:1.7">Content recommendation engines, generative AI for creative workflows, audience analytics, and streaming optimization.</p>
-          <div class="svc-tags"><span class="tag">Recommendations</span><span class="tag">Gen AI</span><span class="tag">Streaming</span></div>
-        </div>
-
-        <div class="glass-card reveal reveal-delay-4">
-          <div class="svc-icon">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></svg>
-          </div>
-          <h3>Energy & Utilities</h3>
-          <p style="color:var(--gray-400);margin-top:.75rem;font-size:.88rem;line-height:1.7">Grid optimization, predictive maintenance for infrastructure, energy trading AI, and sustainability analytics.</p>
-          <div class="svc-tags"><span class="tag">Grid AI</span><span class="tag">Sustainability</span><span class="tag">Forecasting</span></div>
-        </div>
-
-        <div class="glass-card reveal reveal-delay-1">
-          <div class="svc-icon">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></svg>
-          </div>
-          <h3>Government & Public Sector</h3>
-          <p style="color:var(--gray-400);margin-top:.75rem;font-size:.88rem;line-height:1.7">Citizen services automation, policy analysis AI, infrastructure monitoring, and secure data platforms.</p>
-          <div class="svc-tags"><span class="tag">Citizen AI</span><span class="tag">Policy Analysis</span><span class="tag">Security</span></div>
-        </div>
-
-        <div class="glass-card reveal reveal-delay-2">
-          <div class="svc-icon">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="22" height="12" rx="2"/><path d="M1 10h22"/></svg>
-          </div>
-          <h3>Logistics & Transportation</h3>
-          <p style="color:var(--gray-400);margin-top:.75rem;font-size:.88rem;line-height:1.7">Route optimization, fleet management AI, demand prediction, warehouse automation, and last-mile delivery intelligence.</p>
-          <div class="svc-tags"><span class="tag">Route AI</span><span class="tag">Fleet Management</span><span class="tag">Automation</span></div>
         </div>
 
       </div>
     </div>
   </section>
 
+
+  <!-- CTA -->
   <section class="section cta-block">
     <div class="container" style="max-width:800px">
+      <div class="float-element float-element-3"></div>
       <div class="reveal" style="text-align:center">
         <h2>Your Industry, <span class="text-gradient">Our Expertise</span></h2>
         <p style="color:var(--gray-400);font-size:1.1rem;margin:1.5rem 0 2.5rem;line-height:1.8">Let's explore how AI can transform your specific industry challenges into competitive advantages.</p>
@@ -139,6 +167,7 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">

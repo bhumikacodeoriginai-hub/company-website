@@ -10,7 +10,6 @@
 </head>
 <body>
 
-  <!-- ═══ HEADER ═══ -->
   <header class="header">
     <div class="header-inner">
       <a href="../index.html" class="logo">
@@ -32,7 +31,6 @@
     </div>
   </header>
 
-  <!-- ═══ MOBILE NAV ═══ -->
   <nav class="mobile-nav">
     <a href="services.html">Services</a>
     <a href="products.html">Products</a>
@@ -43,8 +41,12 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- ═══ PAGE HERO ═══ -->
-  <section class="page-hero">
+
+  <!-- PAGE HERO WITH BACKGROUND IMAGE -->
+  <section class="page-hero-visual">
+    <div class="page-hero-bg">
+      <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&h=600&fit=crop&auto=format&q=80" alt="Technology network visualization" loading="eager">
+    </div>
     <div class="container">
       <span class="label reveal">Our Services</span>
       <h1 class="reveal">Technology Solutions<br>That <span class="text-gradient">Drive Results</span></h1>
@@ -52,160 +54,169 @@
     </div>
   </section>
 
-  <!-- ═══ SERVICE BLOCKS ═══ -->
+  <!-- AI & ML SERVICE -->
   <section class="section">
     <div class="container">
-
-      <!-- AI & ML -->
-      <div class="glass-card reveal" style="margin-bottom:2rem;padding:3rem">
-        <div style="display:flex;align-items:flex-start;gap:2rem;flex-wrap:wrap">
-          <div class="svc-icon" style="flex-shrink:0">
+      <div class="split-section reveal">
+        <div class="split-img">
+          <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=700&h=500&fit=crop&auto=format&q=80" alt="AI neural network abstract visualization" loading="lazy">
+        </div>
+        <div class="split-content">
+          <div class="svc-icon" style="margin-bottom:1.25rem">
             <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
           </div>
-          <div style="flex:1;min-width:280px">
-            <h2>AI & Machine Learning</h2>
-            <p style="color:var(--gray-400);margin-top:1rem;font-size:.95rem;line-height:1.8">We design, train, and deploy custom AI models that solve complex business problems. From computer vision to natural language processing, our ML engineers build systems that learn, adapt, and scale.</p>
-            <div style="margin-top:2rem">
-              <h4 style="color:var(--gray-200);margin-bottom:1rem;font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em">Capabilities</h4>
-              <div class="grid-3" style="gap:12px">
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Custom Model Development</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Deep Learning Pipelines</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">MLOps & Model Monitoring</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">LLM Fine-Tuning</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Generative AI Solutions</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">AI Strategy Consulting</span></div>
-              </div>
-            </div>
-          </div>
+          <h2>AI & Machine Learning</h2>
+          <p>We design, train, and deploy custom AI models that solve complex business problems. From computer vision to natural language processing, our ML engineers build systems that learn, adapt, and scale.</p>
+          <ul class="feature-list">
+            <li>Custom Model Development & Training</li>
+            <li>Deep Learning Pipelines</li>
+            <li>MLOps & Model Monitoring</li>
+            <li>LLM Fine-Tuning & Deployment</li>
+            <li>Generative AI Solutions</li>
+            <li>AI Strategy Consulting</li>
+          </ul>
         </div>
       </div>
-
-      <!-- Software Engineering -->
-      <div class="glass-card reveal" style="margin-bottom:2rem;padding:3rem">
-        <div style="display:flex;align-items:flex-start;gap:2rem;flex-wrap:wrap">
-          <div class="svc-icon" style="flex-shrink:0">
-            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-          </div>
-          <div style="flex:1;min-width:280px">
-            <h2>Software Engineering</h2>
-            <p style="color:var(--gray-400);margin-top:1rem;font-size:.95rem;line-height:1.8">Scalable, maintainable, and performant software solutions built with modern engineering practices. We craft architectures that stand the test of time and grow with your business.</p>
-            <div style="margin-top:2rem">
-              <h4 style="color:var(--gray-200);margin-bottom:1rem;font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em">Capabilities</h4>
-              <div class="grid-3" style="gap:12px">
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Microservices Architecture</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Full Stack Development</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">API Design & Development</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Mobile Applications</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Legacy Modernization</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Performance Optimization</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Cloud & DevOps -->
-      <div class="glass-card reveal" style="margin-bottom:2rem;padding:3rem">
-        <div style="display:flex;align-items:flex-start;gap:2rem;flex-wrap:wrap">
-          <div class="svc-icon" style="flex-shrink:0">
-            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-          </div>
-          <div style="flex:1;min-width:280px">
-            <h2>Cloud & DevOps</h2>
-            <p style="color:var(--gray-400);margin-top:1rem;font-size:.95rem;line-height:1.8">Cloud-native architectures and DevOps excellence that enable rapid, reliable software delivery. We build infrastructure that scales automatically and recovers gracefully.</p>
-            <div style="margin-top:2rem">
-              <h4 style="color:var(--gray-200);margin-bottom:1rem;font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em">Capabilities</h4>
-              <div class="grid-3" style="gap:12px">
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Cloud Migration & Strategy</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Infrastructure as Code</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">CI/CD Pipeline Design</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Kubernetes Orchestration</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Multi-Cloud Architecture</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Cost Optimization</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Cybersecurity -->
-      <div class="glass-card reveal" style="margin-bottom:2rem;padding:3rem">
-        <div style="display:flex;align-items:flex-start;gap:2rem;flex-wrap:wrap">
-          <div class="svc-icon" style="flex-shrink:0">
-            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
-          </div>
-          <div style="flex:1;min-width:280px">
-            <h2>Cybersecurity</h2>
-            <p style="color:var(--gray-400);margin-top:1rem;font-size:.95rem;line-height:1.8">Comprehensive security solutions that protect your digital assets and ensure compliance. We implement defense-in-depth strategies powered by AI-driven threat detection.</p>
-            <div style="margin-top:2rem">
-              <h4 style="color:var(--gray-200);margin-bottom:1rem;font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em">Capabilities</h4>
-              <div class="grid-3" style="gap:12px">
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Zero-Trust Architecture</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Penetration Testing</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Security Operations (SOC)</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Compliance & Audit</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Incident Response</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">AI Threat Detection</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Data & Analytics -->
-      <div class="glass-card reveal" style="margin-bottom:2rem;padding:3rem">
-        <div style="display:flex;align-items:flex-start;gap:2rem;flex-wrap:wrap">
-          <div class="svc-icon" style="flex-shrink:0">
-            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0022 16z"/></svg>
-          </div>
-          <div style="flex:1;min-width:280px">
-            <h2>Data & Analytics</h2>
-            <p style="color:var(--gray-400);margin-top:1rem;font-size:.95rem;line-height:1.8">Transform raw data into actionable intelligence. We build modern data platforms that enable real-time analytics, predictive modeling, and data-driven decision making.</p>
-            <div style="margin-top:2rem">
-              <h4 style="color:var(--gray-200);margin-bottom:1rem;font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em">Capabilities</h4>
-              <div class="grid-3" style="gap:12px">
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Data Platform Design</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Real-Time ETL Pipelines</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Business Intelligence</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Predictive Analytics</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Data Governance</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Data Lake Architecture</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Digital Transformation -->
-      <div class="glass-card reveal" style="margin-bottom:2rem;padding:3rem">
-        <div style="display:flex;align-items:flex-start;gap:2rem;flex-wrap:wrap">
-          <div class="svc-icon" style="flex-shrink:0">
-            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-          </div>
-          <div style="flex:1;min-width:280px">
-            <h2>Digital Transformation</h2>
-            <p style="color:var(--gray-400);margin-top:1rem;font-size:.95rem;line-height:1.8">End-to-end digital strategy that aligns technology investments with business objectives. We guide organizations through comprehensive modernization journeys.</p>
-            <div style="margin-top:2rem">
-              <h4 style="color:var(--gray-200);margin-bottom:1rem;font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em">Capabilities</h4>
-              <div class="grid-3" style="gap:12px">
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Digital Strategy</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Technology Roadmapping</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Process Automation</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Change Management</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Legacy Modernization</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Innovation Labs</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <!-- ═══ CTA ═══ -->
+
+  <!-- SOFTWARE ENGINEERING -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="split-section reverse reveal">
+        <div class="split-img">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=700&h=500&fit=crop&auto=format&q=80" alt="Modern code on screen" loading="lazy">
+        </div>
+        <div class="split-content">
+          <div class="svc-icon" style="margin-bottom:1.25rem">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h2>Software Engineering</h2>
+          <p>Scalable, maintainable, and performant software solutions built with modern engineering practices. We craft architectures that stand the test of time and grow with your business.</p>
+          <ul class="feature-list">
+            <li>Microservices Architecture</li>
+            <li>Full Stack Development</li>
+            <li>API Design & Development</li>
+            <li>Mobile Applications</li>
+            <li>Legacy Modernization</li>
+            <li>Performance Optimization</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOUD & DEVOPS -->
+  <section class="section">
+    <div class="container">
+      <div class="split-section reveal">
+        <div class="split-img">
+          <img src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=700&h=500&fit=crop&auto=format&q=80" alt="Cloud infrastructure server room" loading="lazy">
+        </div>
+        <div class="split-content">
+          <div class="svc-icon" style="margin-bottom:1.25rem">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h2>Cloud & DevOps</h2>
+          <p>Cloud-native architectures and DevOps excellence that enable rapid, reliable software delivery. We build infrastructure that scales automatically and recovers gracefully.</p>
+          <ul class="feature-list">
+            <li>Cloud Migration & Strategy</li>
+            <li>Infrastructure as Code</li>
+            <li>CI/CD Pipeline Design</li>
+            <li>Kubernetes Orchestration</li>
+            <li>Multi-Cloud Architecture</li>
+            <li>Cost Optimization</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CYBERSECURITY -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="split-section reverse reveal">
+        <div class="split-img">
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?w=700&h=500&fit=crop&auto=format&q=80" alt="Cybersecurity operations monitoring" loading="lazy">
+        </div>
+        <div class="split-content">
+          <div class="svc-icon" style="margin-bottom:1.25rem">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          </div>
+          <h2>Cybersecurity</h2>
+          <p>Comprehensive security solutions that protect your digital assets and ensure compliance. We implement defense-in-depth strategies powered by AI-driven threat detection.</p>
+          <ul class="feature-list">
+            <li>Zero-Trust Architecture</li>
+            <li>Penetration Testing</li>
+            <li>Security Operations (SOC)</li>
+            <li>Compliance & Audit</li>
+            <li>Incident Response</li>
+            <li>AI Threat Detection</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DATA & ANALYTICS -->
+  <section class="section">
+    <div class="container">
+      <div class="split-section reveal">
+        <div class="split-img">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&h=500&fit=crop&auto=format&q=80" alt="Data analytics dashboard visualization" loading="lazy">
+        </div>
+        <div class="split-content">
+          <div class="svc-icon" style="margin-bottom:1.25rem">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0022 16z"/></svg>
+          </div>
+          <h2>Data & Analytics</h2>
+          <p>Transform raw data into actionable intelligence. We build modern data platforms that enable real-time analytics, predictive modeling, and data-driven decision making.</p>
+          <ul class="feature-list">
+            <li>Data Platform Design</li>
+            <li>Real-Time ETL Pipelines</li>
+            <li>Business Intelligence</li>
+            <li>Predictive Analytics</li>
+            <li>Data Governance</li>
+            <li>Data Lake Architecture</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- DIGITAL TRANSFORMATION -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="split-section reverse reveal">
+        <div class="split-img">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=700&h=500&fit=crop&auto=format&q=80" alt="Team strategy planning session" loading="lazy">
+        </div>
+        <div class="split-content">
+          <div class="svc-icon" style="margin-bottom:1.25rem">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </div>
+          <h2>Digital Transformation</h2>
+          <p>End-to-end digital strategy that aligns technology investments with business objectives. We guide organizations through comprehensive modernization journeys.</p>
+          <ul class="feature-list">
+            <li>Digital Strategy</li>
+            <li>Technology Roadmapping</li>
+            <li>Process Automation</li>
+            <li>Change Management</li>
+            <li>Legacy Modernization</li>
+            <li>Innovation Labs</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
   <section class="section cta-block">
     <div class="container" style="max-width:800px">
+      <div class="float-element float-element-2"></div>
       <div class="reveal" style="text-align:center">
         <h2>Let's Build Something <span class="text-gradient">Extraordinary</span></h2>
         <p style="color:var(--gray-400);font-size:1.1rem;margin:1.5rem 0 2.5rem;line-height:1.8">Ready to transform your technology landscape? Let's start a conversation about your goals.</p>
@@ -214,7 +225,7 @@
     </div>
   </section>
 
-  <!-- ═══ FOOTER ═══ -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">

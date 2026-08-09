@@ -23,7 +23,12 @@
     <a href="services.html">Services</a><a href="products.html">Products</a><a href="industries.html">Industries</a><a href="insights.html">Insights</a><a href="careers.html">Careers</a><a href="about.html">About</a><a href="contact.html">Contact</a>
   </nav>
 
-  <section class="page-hero">
+
+  <!-- PAGE HERO WITH BACKGROUND -->
+  <section class="page-hero-visual">
+    <div class="page-hero-bg">
+      <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1600&h=600&fit=crop&auto=format&q=80" alt="Data visualization and insights" loading="eager">
+    </div>
     <div class="container">
       <span class="label reveal">Insights & Research</span>
       <h1 class="reveal">Thought Leadership in<br><span class="text-gradient">AI & Engineering</span></h1>
@@ -31,85 +36,119 @@
     </div>
   </section>
 
+  <!-- BLOG CARDS WITH IMAGES -->
+  <section class="section" style="padding-top:60px">
+    <div class="container">
+      <div class="grid-3" style="gap:1.5rem">
+
+        <!-- Article 1 -->
+        <div class="blog-card reveal reveal-delay-1">
+          <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&h=280&fit=crop&auto=format&q=80" alt="AI neural network visualization" class="blog-card-img" loading="lazy">
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="badge">AI / ML</span>
+              <span class="badge badge-outline">10 min read</span>
+            </div>
+            <h3 class="blog-card-title">Building Production-Ready RAG Systems: Lessons from 50+ Deployments</h3>
+            <p class="blog-card-excerpt">A comprehensive guide to architecting retrieval-augmented generation systems that perform reliably at enterprise scale.</p>
+            <div class="blog-card-footer">
+              <span class="blog-card-date">January 15, 2024</span>
+              <a href="#" class="btn-ghost" style="font-size:.8rem">Read More &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="blog-card reveal reveal-delay-2">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500&h=280&fit=crop&auto=format&q=80" alt="Server infrastructure and microservices" class="blog-card-img" loading="lazy">
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="badge">Engineering</span>
+              <span class="badge badge-outline">8 min read</span>
+            </div>
+            <h3 class="blog-card-title">Microservices at Scale: When to Split and When to Merge</h3>
+            <p class="blog-card-excerpt">Practical guidance on service boundaries, data ownership, and the organizational patterns that make microservices succeed.</p>
+            <div class="blog-card-footer">
+              <span class="blog-card-date">January 8, 2024</span>
+              <a href="#" class="btn-ghost" style="font-size:.8rem">Read More &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="blog-card reveal reveal-delay-3">
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?w=500&h=280&fit=crop&auto=format&q=80" alt="Cybersecurity and zero trust" class="blog-card-img" loading="lazy">
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="badge">Security</span>
+              <span class="badge badge-outline">12 min read</span>
+            </div>
+            <h3 class="blog-card-title">Zero-Trust Architecture in the Age of AI: A Complete Framework</h3>
+            <p class="blog-card-excerpt">How to implement zero-trust security when AI models become first-class citizens in your infrastructure.</p>
+            <div class="blog-card-footer">
+              <span class="blog-card-date">December 22, 2023</span>
+              <a href="#" class="btn-ghost" style="font-size:.8rem">Read More &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- MORE ARTICLES -->
   <section class="section" style="padding-top:0">
     <div class="container">
       <div class="grid-3" style="gap:1.5rem">
 
-        <div class="glass-card reveal reveal-delay-1">
-          <div style="display:flex;gap:8px;margin-bottom:1rem">
-            <span class="badge">AI / ML</span>
-            <span class="badge badge-outline">10 min read</span>
-          </div>
-          <h3 style="font-size:1.15rem;line-height:1.3">Building Production-Ready RAG Systems: Lessons from 50+ Deployments</h3>
-          <p style="color:var(--gray-500);margin-top:.75rem;font-size:.85rem;line-height:1.7">A comprehensive guide to architecting retrieval-augmented generation systems that perform reliably at enterprise scale.</p>
-          <div style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--glass-border);display:flex;justify-content:space-between;align-items:center">
-            <span style="font-size:.75rem;color:var(--gray-600)">January 15, 2024</span>
-            <a href="#" class="btn-ghost" style="font-size:.8rem">Read More →</a>
-          </div>
-        </div>
-
-        <div class="glass-card reveal reveal-delay-2">
-          <div style="display:flex;gap:8px;margin-bottom:1rem">
-            <span class="badge">Engineering</span>
-            <span class="badge badge-outline">8 min read</span>
-          </div>
-          <h3 style="font-size:1.15rem;line-height:1.3">Microservices at Scale: When to Split and When to Merge</h3>
-          <p style="color:var(--gray-500);margin-top:.75rem;font-size:.85rem;line-height:1.7">Practical guidance on service boundaries, data ownership, and the organizational patterns that make microservices succeed.</p>
-          <div style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--glass-border);display:flex;justify-content:space-between;align-items:center">
-            <span style="font-size:.75rem;color:var(--gray-600)">January 8, 2024</span>
-            <a href="#" class="btn-ghost" style="font-size:.8rem">Read More →</a>
+        <!-- Article 4 -->
+        <div class="blog-card reveal reveal-delay-1">
+          <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500&h=280&fit=crop&auto=format&q=80" alt="Multi-cloud architecture" class="blog-card-img" loading="lazy">
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="badge">Cloud</span>
+              <span class="badge badge-outline">7 min read</span>
+            </div>
+            <h3 class="blog-card-title">Multi-Cloud Strategy: Beyond Vendor Lock-In to True Portability</h3>
+            <p class="blog-card-excerpt">A pragmatic approach to multi-cloud that maximizes flexibility without sacrificing the unique strengths of each provider.</p>
+            <div class="blog-card-footer">
+              <span class="blog-card-date">December 10, 2023</span>
+              <a href="#" class="btn-ghost" style="font-size:.8rem">Read More &rarr;</a>
+            </div>
           </div>
         </div>
 
-        <div class="glass-card reveal reveal-delay-3">
-          <div style="display:flex;gap:8px;margin-bottom:1rem">
-            <span class="badge">Security</span>
-            <span class="badge badge-outline">12 min read</span>
-          </div>
-          <h3 style="font-size:1.15rem;line-height:1.3">Zero-Trust Architecture in the Age of AI: A Complete Framework</h3>
-          <p style="color:var(--gray-500);margin-top:.75rem;font-size:.85rem;line-height:1.7">How to implement zero-trust security when AI models become first-class citizens in your infrastructure.</p>
-          <div style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--glass-border);display:flex;justify-content:space-between;align-items:center">
-            <span style="font-size:.75rem;color:var(--gray-600)">December 22, 2023</span>
-            <a href="#" class="btn-ghost" style="font-size:.8rem">Read More →</a>
-          </div>
-        </div>
-
-        <div class="glass-card reveal reveal-delay-1">
-          <div style="display:flex;gap:8px;margin-bottom:1rem">
-            <span class="badge">Cloud</span>
-            <span class="badge badge-outline">7 min read</span>
-          </div>
-          <h3 style="font-size:1.15rem;line-height:1.3">Multi-Cloud Strategy: Beyond Vendor Lock-In to True Portability</h3>
-          <p style="color:var(--gray-500);margin-top:.75rem;font-size:.85rem;line-height:1.7">A pragmatic approach to multi-cloud that maximizes flexibility without sacrificing the unique strengths of each provider.</p>
-          <div style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--glass-border);display:flex;justify-content:space-between;align-items:center">
-            <span style="font-size:.75rem;color:var(--gray-600)">December 10, 2023</span>
-            <a href="#" class="btn-ghost" style="font-size:.8rem">Read More →</a>
+        <!-- Article 5 -->
+        <div class="blog-card reveal reveal-delay-2">
+          <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=500&h=280&fit=crop&auto=format&q=80" alt="AI agents and autonomous systems" class="blog-card-img" loading="lazy">
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="badge">AI / ML</span>
+              <span class="badge badge-outline">15 min read</span>
+            </div>
+            <h3 class="blog-card-title">The Rise of AI Agents: From Chatbots to Autonomous Workflow Engines</h3>
+            <p class="blog-card-excerpt">How AI agents are evolving from simple conversational tools into complex, multi-step reasoning systems for the enterprise.</p>
+            <div class="blog-card-footer">
+              <span class="blog-card-date">November 28, 2023</span>
+              <a href="#" class="btn-ghost" style="font-size:.8rem">Read More &rarr;</a>
+            </div>
           </div>
         </div>
 
-        <div class="glass-card reveal reveal-delay-2">
-          <div style="display:flex;gap:8px;margin-bottom:1rem">
-            <span class="badge">AI / ML</span>
-            <span class="badge badge-outline">15 min read</span>
-          </div>
-          <h3 style="font-size:1.15rem;line-height:1.3">The Rise of AI Agents: From Chatbots to Autonomous Workflow Engines</h3>
-          <p style="color:var(--gray-500);margin-top:.75rem;font-size:.85rem;line-height:1.7">How AI agents are evolving from simple conversational tools into complex, multi-step reasoning systems for the enterprise.</p>
-          <div style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--glass-border);display:flex;justify-content:space-between;align-items:center">
-            <span style="font-size:.75rem;color:var(--gray-600)">November 28, 2023</span>
-            <a href="#" class="btn-ghost" style="font-size:.8rem">Read More →</a>
-          </div>
-        </div>
-
-        <div class="glass-card reveal reveal-delay-3">
-          <div style="display:flex;gap:8px;margin-bottom:1rem">
-            <span class="badge">Data</span>
-            <span class="badge badge-outline">9 min read</span>
-          </div>
-          <h3 style="font-size:1.15rem;line-height:1.3">Real-Time Data Pipelines: Choosing Between Kafka, Flink, and Spark Streaming</h3>
-          <p style="color:var(--gray-500);margin-top:.75rem;font-size:.85rem;line-height:1.7">An honest comparison of streaming frameworks based on latency, throughput, and operational complexity requirements.</p>
-          <div style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--glass-border);display:flex;justify-content:space-between;align-items:center">
-            <span style="font-size:.75rem;color:var(--gray-600)">November 15, 2023</span>
-            <a href="#" class="btn-ghost" style="font-size:.8rem">Read More →</a>
+        <!-- Article 6 -->
+        <div class="blog-card reveal reveal-delay-3">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&h=280&fit=crop&auto=format&q=80" alt="Data streaming and pipelines" class="blog-card-img" loading="lazy">
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="badge">Data</span>
+              <span class="badge badge-outline">9 min read</span>
+            </div>
+            <h3 class="blog-card-title">Real-Time Data Pipelines: Choosing Between Kafka, Flink, and Spark Streaming</h3>
+            <p class="blog-card-excerpt">An honest comparison of streaming frameworks based on latency, throughput, and operational complexity requirements.</p>
+            <div class="blog-card-footer">
+              <span class="blog-card-date">November 15, 2023</span>
+              <a href="#" class="btn-ghost" style="font-size:.8rem">Read More &rarr;</a>
+            </div>
           </div>
         </div>
 
@@ -117,6 +156,7 @@
     </div>
   </section>
 
+  <!-- CTA -->
   <section class="section cta-block">
     <div class="container" style="max-width:800px">
       <div class="reveal" style="text-align:center">
@@ -127,6 +167,7 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">

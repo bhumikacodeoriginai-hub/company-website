@@ -23,7 +23,12 @@
     <a href="services.html">Services</a><a href="products.html">Products</a><a href="industries.html">Industries</a><a href="insights.html">Insights</a><a href="careers.html">Careers</a><a href="about.html">About</a><a href="contact.html">Contact</a>
   </nav>
 
-  <section class="page-hero">
+
+  <!-- PAGE HERO WITH BACKGROUND -->
+  <section class="page-hero-visual">
+    <div class="page-hero-bg">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&h=600&fit=crop&auto=format&q=80" alt="Circuit board technology abstract" loading="eager">
+    </div>
     <div class="container">
       <span class="label reveal">Our Products</span>
       <h1 class="reveal">Proprietary <span class="text-gradient">AI Platforms</span></h1>
@@ -31,68 +36,149 @@
     </div>
   </section>
 
-  <section class="section" style="padding-top:0">
+  <!-- FEATURED PRODUCT - Origin Neural Engine -->
+  <section class="section">
     <div class="container">
-      <div class="grid-2" style="gap:2rem">
-
-        <div class="glass-card reveal reveal-delay-1">
-          <span class="badge">In Development</span>
-          <h3 style="margin-top:1.25rem">Origin Neural Engine</h3>
-          <p style="color:var(--gray-400);margin-top:1rem;font-size:.9rem;line-height:1.7">Enterprise AI orchestration platform for deploying, monitoring, and scaling machine learning models in production. Unified control plane for all your AI workloads.</p>
-          <div class="svc-tags" style="margin-top:1.25rem">
+      <div class="split-section reveal">
+        <div class="split-img">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&h=500&fit=crop&auto=format&q=80" alt="Origin Neural Engine - AI analytics dashboard" loading="lazy">
+        </div>
+        <div class="split-content">
+          <span class="badge" style="margin-bottom:1rem">Flagship Product</span>
+          <h2>Origin Neural Engine</h2>
+          <p>Enterprise AI orchestration platform for deploying, monitoring, and scaling machine learning models in production. Unified control plane for all your AI workloads.</p>
+          <ul class="feature-list">
+            <li>One-click model deployment to any cloud</li>
+            <li>Real-time performance monitoring & alerts</li>
+            <li>Auto-scaling based on traffic patterns</li>
+            <li>A/B testing & canary deployments</li>
+            <li>Built-in model versioning & rollback</li>
+          </ul>
+          <div class="svc-tags" style="margin-top:1.5rem">
             <span class="tag">MLOps</span><span class="tag">Model Serving</span><span class="tag">Monitoring</span><span class="tag">Auto-Scaling</span>
           </div>
         </div>
-
-        <div class="glass-card reveal reveal-delay-2">
-          <span class="badge">In Development</span>
-          <h3 style="margin-top:1.25rem">CodeFlow AI</h3>
-          <p style="color:var(--gray-400);margin-top:1rem;font-size:.9rem;line-height:1.7">AI-powered development platform that accelerates software delivery with intelligent code generation, automated testing, and smart code review assistance.</p>
-          <div class="svc-tags" style="margin-top:1.25rem">
-            <span class="tag">Code Gen</span><span class="tag">Auto Testing</span><span class="tag">Code Review</span><span class="tag">IDE Plugin</span>
-          </div>
-        </div>
-
-        <div class="glass-card reveal reveal-delay-3">
-          <span class="badge">In Development</span>
-          <h3 style="margin-top:1.25rem">Sentinel AI</h3>
-          <p style="color:var(--gray-400);margin-top:1rem;font-size:.9rem;line-height:1.7">AI-driven cybersecurity platform providing real-time threat detection, automated incident response, and predictive threat intelligence for enterprise environments.</p>
-          <div class="svc-tags" style="margin-top:1.25rem">
-            <span class="tag">Threat Detection</span><span class="tag">SIEM</span><span class="tag">Auto Response</span><span class="tag">Zero-Day</span>
-          </div>
-        </div>
-
-        <div class="glass-card reveal reveal-delay-4">
-          <span class="badge">In Development</span>
-          <h3 style="margin-top:1.25rem">DataPulse Analytics</h3>
-          <p style="color:var(--gray-400);margin-top:1rem;font-size:.9rem;line-height:1.7">Real-time data intelligence platform with natural language querying, automated insight generation, and predictive analytics for business teams.</p>
-          <div class="svc-tags" style="margin-top:1.25rem">
-            <span class="tag">NL Query</span><span class="tag">Real-Time</span><span class="tag">Dashboards</span><span class="tag">Predictions</span>
-          </div>
-        </div>
-
-        <div class="glass-card reveal reveal-delay-1">
-          <span class="badge">In Development</span>
-          <h3 style="margin-top:1.25rem">Origin Agent Framework</h3>
-          <p style="color:var(--gray-400);margin-top:1rem;font-size:.9rem;line-height:1.7">Enterprise-grade framework for building, deploying, and managing autonomous AI agents that can reason, plan, and execute complex multi-step workflows.</p>
-          <div class="svc-tags" style="margin-top:1.25rem">
-            <span class="tag">AI Agents</span><span class="tag">Multi-Step</span><span class="tag">Orchestration</span><span class="tag">RAG</span>
-          </div>
-        </div>
-
-        <div class="glass-card reveal reveal-delay-2">
-          <span class="badge">In Development</span>
-          <h3 style="margin-top:1.25rem">CloudForge IaC</h3>
-          <p style="color:var(--gray-400);margin-top:1rem;font-size:.9rem;line-height:1.7">AI-assisted infrastructure-as-code platform that generates, validates, and optimizes cloud infrastructure configurations across multi-cloud environments.</p>
-          <div class="svc-tags" style="margin-top:1.25rem">
-            <span class="tag">Multi-Cloud</span><span class="tag">IaC Gen</span><span class="tag">Cost Optimize</span><span class="tag">Compliance</span>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
+
+  <!-- CodeFlow AI -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="split-section reverse reveal">
+        <div class="split-img">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=700&h=500&fit=crop&auto=format&q=80" alt="CodeFlow AI - Intelligent code editor" loading="lazy">
+        </div>
+        <div class="split-content">
+          <span class="badge" style="margin-bottom:1rem">In Development</span>
+          <h2>CodeFlow AI</h2>
+          <p>AI-powered development platform that accelerates software delivery with intelligent code generation, automated testing, and smart code review assistance.</p>
+          <ul class="feature-list">
+            <li>Context-aware code generation</li>
+            <li>Automated test suite creation</li>
+            <li>AI-powered code review & suggestions</li>
+            <li>IDE plugins for VS Code & JetBrains</li>
+            <li>Security vulnerability scanning</li>
+          </ul>
+          <div class="svc-tags" style="margin-top:1.5rem">
+            <span class="tag">Code Gen</span><span class="tag">Auto Testing</span><span class="tag">Code Review</span><span class="tag">IDE Plugin</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sentinel AI -->
+  <section class="section">
+    <div class="container">
+      <div class="split-section reveal">
+        <div class="split-img">
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?w=700&h=500&fit=crop&auto=format&q=80" alt="Sentinel AI - Security operations dashboard" loading="lazy">
+        </div>
+        <div class="split-content">
+          <span class="badge" style="margin-bottom:1rem">In Development</span>
+          <h2>Sentinel AI</h2>
+          <p>AI-driven cybersecurity platform providing real-time threat detection, automated incident response, and predictive threat intelligence for enterprise environments.</p>
+          <ul class="feature-list">
+            <li>Real-time threat detection & classification</li>
+            <li>Automated incident response workflows</li>
+            <li>Predictive threat intelligence</li>
+            <li>Zero-day vulnerability protection</li>
+            <li>Compliance reporting & auditing</li>
+          </ul>
+          <div class="svc-tags" style="margin-top:1.5rem">
+            <span class="tag">Threat Detection</span><span class="tag">SIEM</span><span class="tag">Auto Response</span><span class="tag">Zero-Day</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- DataPulse Analytics -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="split-section reverse reveal">
+        <div class="split-img">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&h=500&fit=crop&auto=format&q=80" alt="DataPulse - Real-time data analytics" loading="lazy">
+        </div>
+        <div class="split-content">
+          <span class="badge" style="margin-bottom:1rem">In Development</span>
+          <h2>DataPulse Analytics</h2>
+          <p>Real-time data intelligence platform with natural language querying, automated insight generation, and predictive analytics for business teams.</p>
+          <ul class="feature-list">
+            <li>Ask questions in plain English</li>
+            <li>Auto-generated dashboards & reports</li>
+            <li>Predictive trend analysis</li>
+            <li>Anomaly detection & alerts</li>
+            <li>Connect to 50+ data sources</li>
+          </ul>
+          <div class="svc-tags" style="margin-top:1.5rem">
+            <span class="tag">NL Query</span><span class="tag">Real-Time</span><span class="tag">Dashboards</span><span class="tag">Predictions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MORE PRODUCTS GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div class="label">Coming Soon</div>
+        <h2>More <span class="text-gradient-2">Innovation</span></h2>
+        <p>Additional platforms currently in our R&D pipeline.</p>
+      </div>
+      <div class="grid-2">
+        <div class="product-card reveal reveal-delay-1">
+          <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=280&fit=crop&auto=format&q=80" alt="AI Agent autonomous systems" class="product-card-img" loading="lazy">
+          <div class="product-card-body">
+            <span class="badge">In Development</span>
+            <h3 style="margin-top:1rem">Origin Agent Framework</h3>
+            <p style="color:var(--gray-400);margin-top:.75rem;font-size:.9rem;line-height:1.7">Enterprise-grade framework for building, deploying, and managing autonomous AI agents that can reason, plan, and execute complex multi-step workflows.</p>
+            <div class="svc-tags" style="margin-top:1.25rem">
+              <span class="tag">AI Agents</span><span class="tag">Multi-Step</span><span class="tag">Orchestration</span><span class="tag">RAG</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card reveal reveal-delay-2">
+          <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&h=280&fit=crop&auto=format&q=80" alt="Cloud infrastructure management" class="product-card-img" loading="lazy">
+          <div class="product-card-body">
+            <span class="badge">In Development</span>
+            <h3 style="margin-top:1rem">CloudForge IaC</h3>
+            <p style="color:var(--gray-400);margin-top:.75rem;font-size:.9rem;line-height:1.7">AI-assisted infrastructure-as-code platform that generates, validates, and optimizes cloud infrastructure configurations across multi-cloud environments.</p>
+            <div class="svc-tags" style="margin-top:1.25rem">
+              <span class="tag">Multi-Cloud</span><span class="tag">IaC Gen</span><span class="tag">Cost Optimize</span><span class="tag">Compliance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA -->
   <section class="section cta-block">
     <div class="container" style="max-width:800px">
       <div class="reveal" style="text-align:center">
@@ -103,6 +189,7 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
