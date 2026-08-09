@@ -7,6 +7,7 @@
   <title>Company — Code Origin.AI</title>
   <link rel="canonical" href="https://codeorigin.ai/company">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/about.css">
   <link rel="icon" type="image/jpeg" href="../assets/logo.jpeg">
 </head>
 <body>
@@ -27,191 +28,195 @@
     </div>
   </header>
   <nav class="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
-    <a href="about.html">Company</a><a href="services.html">Services</a><a href="products.html">Products</a>
-    <a href="industries.html">Industries</a><a href="insights.html">Insights</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a>
+    <a href="about.html">Company</a><a href="services.html">Services</a>
+    <a href="products.html">Products</a><a href="industries.html">Industries</a>
+    <a href="insights.html">Insights</a><a href="careers.html">Careers</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
   <main id="main-content">
 
 
-  <!-- ═══ CINEMATIC HERO ═══ -->
-  <section class="page-hero" style="padding:180px 0 100px;position:relative;overflow:hidden">
-    <!-- Animated background orbs -->
-    <div class="hero-orb" style="width:500px;height:500px;top:-10%;left:-10%;background:radial-gradient(circle,rgba(37,99,235,0.08),transparent 70%);animation:float-slow 16s ease-in-out infinite" aria-hidden="true"></div>
-    <div class="hero-orb" style="width:350px;height:350px;bottom:0;right:-5%;background:radial-gradient(circle,rgba(139,92,246,0.06),transparent 70%);animation:float-subtle 12s ease-in-out infinite" aria-hidden="true"></div>
-    <div class="container" style="position:relative;z-index:1">
-      <div class="reveal-blur" style="max-width:800px">
-        <div class="section-label" style="margin-bottom:var(--space-6)">About Code Origin.AI</div>
-        <h1 style="font-size:clamp(2.8rem,5.5vw,4.5rem);line-height:1.05;letter-spacing:-0.03em">We Engineer the<br><span class="text-gradient">Intelligence Layer</span><br>of Modern Business.</h1>
-        <p style="color:var(--gray-400);font-size:var(--text-lg);line-height:1.9;margin-top:var(--space-6);max-width:620px">A technology company built by engineers, for engineers — delivering AI systems, cloud platforms, and secure architectures that power the next generation of digital business.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ MISSION & VISION — GLASSMORPHISM SPLIT ═══ -->
-  <section class="section" style="padding-top:0;position:relative;overflow:hidden">
+  <!-- HERO -->
+  <section class="about-hero">
     <div class="container">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-6);position:relative">
-        <!-- Connecting line -->
-        <div style="position:absolute;top:50%;left:50%;width:1px;height:60%;transform:translate(-50%,-50%);background:linear-gradient(180deg,transparent,rgba(37,99,235,0.2),transparent);display:none" aria-hidden="true"></div>
-
-        <!-- Mission -->
-        <div class="reveal-left" style="padding:var(--space-10);border-radius:var(--radius-2xl);border:1px solid rgba(37,99,235,0.15);background:linear-gradient(135deg,rgba(37,99,235,0.04),rgba(6,182,212,0.02));backdrop-filter:blur(20px);position:relative;overflow:hidden">
-          <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#2563eb,#06b6d4);opacity:0.7"></div>
-          <div style="position:absolute;top:var(--space-6);right:var(--space-6);font-size:6rem;font-weight:900;color:rgba(37,99,235,0.04);line-height:1;letter-spacing:-0.04em">M</div>
-          <div style="display:inline-flex;padding:6px 14px;border-radius:var(--radius-full);background:rgba(37,99,235,0.1);border:1px solid rgba(37,99,235,0.2);color:var(--blue-400);font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:var(--space-5)">Our Mission</div>
-          <h2 style="font-size:var(--text-3xl);margin-bottom:var(--space-4)">Make Advanced Technology <span class="text-gradient">Accessible</span></h2>
-          <p style="color:var(--gray-400);line-height:1.9;font-size:var(--text-base)">To make enterprise-grade AI, cloud, and security technology accessible, practical, and impactful for organizations of every size. We bridge the gap between cutting-edge research and real-world business value.</p>
-          <div style="margin-top:var(--space-6);display:flex;gap:var(--space-3);flex-wrap:wrap">
-            <span class="tag">AI for All</span><span class="tag">Real-World Impact</span><span class="tag">Enterprise Ready</span>
-          </div>
-        </div>
-
-        <!-- Vision -->
-        <div class="reveal-right" style="padding:var(--space-10);border-radius:var(--radius-2xl);border:1px solid rgba(139,92,246,0.15);background:linear-gradient(135deg,rgba(139,92,246,0.04),rgba(37,99,235,0.02));backdrop-filter:blur(20px);position:relative;overflow:hidden">
-          <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#8b5cf6,#3b82f6);opacity:0.7"></div>
-          <div style="position:absolute;top:var(--space-6);right:var(--space-6);font-size:6rem;font-weight:900;color:rgba(139,92,246,0.04);line-height:1;letter-spacing:-0.04em">V</div>
-          <div style="display:inline-flex;padding:6px 14px;border-radius:var(--radius-full);background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.2);color:var(--violet-400);font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:var(--space-5)">Our Vision</div>
-          <h2 style="font-size:var(--text-3xl);margin-bottom:var(--space-4)">Intelligence at <span class="text-gradient-subtle">Every Layer</span></h2>
-          <p style="color:var(--gray-400);line-height:1.9;font-size:var(--text-base)">A world where every organization can harness the power of intelligent systems to solve their most complex challenges, drive innovation, and create lasting positive impact at scale.</p>
-          <div style="margin-top:var(--space-6);display:flex;gap:var(--space-3);flex-wrap:wrap">
-            <span class="tag">System Intelligence</span><span class="tag">Global Scale</span><span class="tag">Lasting Impact</span>
-          </div>
-        </div>
-      </div>
+      <p class="about-hero-label reveal">About Code Origin.AI</p>
+      <h1 class="about-hero-title reveal">
+        We build the technology<br>
+        that builds the future.
+      </h1>
+      <p class="about-hero-sub reveal">
+        Code Origin.AI is an enterprise technology company specializing in AI engineering, cloud architecture, cybersecurity, and digital platform development for organizations worldwide.
+      </p>
     </div>
   </section>
 
-
-  <!-- ═══ VALUES — IMMERSIVE HEXAGONAL GRID ═══ -->
-  <section class="section section-alt" style="position:relative;overflow:hidden">
-    <!-- Background decoration -->
-    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:800px;height:800px;border-radius:50%;border:1px solid rgba(37,99,235,0.04);pointer-events:none" aria-hidden="true"></div>
-    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;border-radius:50%;border:1px solid rgba(37,99,235,0.06);pointer-events:none" aria-hidden="true"></div>
-    <div class="container" style="position:relative;z-index:1">
-      <div class="section-header center reveal-blur">
-        <div class="section-label">Core Values</div>
-        <h2>The Principles That<br><span class="text-gradient-subtle">Define Our DNA</span></h2>
-        <p>Six foundational beliefs that shape every system we architect, every line of code we write, and every relationship we build.</p>
-      </div>
-
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-5);margin-top:var(--space-8)" class="stagger-children reveal">
-        <div style="padding:var(--space-8);border-radius:var(--radius-xl);border:1px solid var(--glass-border);background:linear-gradient(160deg,rgba(37,99,235,0.03),transparent);position:relative;overflow:hidden;transition:all 0.4s ease" onmouseenter="this.style.transform='translateY(-8px)';this.style.borderColor='rgba(37,99,235,0.3)';this.style.boxShadow='0 20px 60px rgba(0,0,0,0.3),0 0 40px rgba(37,99,235,0.06)'" onmouseleave="this.style.transform='';this.style.borderColor='';this.style.boxShadow=''">
-          <div style="width:48px;height:48px;border-radius:var(--radius-lg);background:linear-gradient(135deg,rgba(37,99,235,0.12),rgba(6,182,212,0.06));border:1px solid rgba(37,99,235,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-5);color:var(--blue-400)">
-            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-          </div>
-          <h4 style="margin-bottom:var(--space-2)">Engineering Excellence</h4>
-          <p style="color:var(--gray-500);font-size:var(--text-sm);line-height:1.7">The highest standards of craftsmanship in architecture, code quality, testing, and delivery — always.</p>
-        </div>
-
-        <div style="padding:var(--space-8);border-radius:var(--radius-xl);border:1px solid var(--glass-border);background:linear-gradient(160deg,rgba(6,182,212,0.03),transparent);position:relative;overflow:hidden;transition:all 0.4s ease" onmouseenter="this.style.transform='translateY(-8px)';this.style.borderColor='rgba(6,182,212,0.3)';this.style.boxShadow='0 20px 60px rgba(0,0,0,0.3),0 0 40px rgba(6,182,212,0.06)'" onmouseleave="this.style.transform='';this.style.borderColor='';this.style.boxShadow=''">
-          <div style="width:48px;height:48px;border-radius:var(--radius-lg);background:linear-gradient(135deg,rgba(6,182,212,0.12),rgba(37,99,235,0.06));border:1px solid rgba(6,182,212,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-5);color:var(--cyan-400)">
-            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-          </div>
-          <h4 style="margin-bottom:var(--space-2)">Radical Transparency</h4>
-          <p style="color:var(--gray-500);font-size:var(--text-sm);line-height:1.7">Open communication with clients and within our team. Clear timelines, honest assessments, no surprises.</p>
-        </div>
-
-        <div style="padding:var(--space-8);border-radius:var(--radius-xl);border:1px solid var(--glass-border);background:linear-gradient(160deg,rgba(139,92,246,0.03),transparent);position:relative;overflow:hidden;transition:all 0.4s ease" onmouseenter="this.style.transform='translateY(-8px)';this.style.borderColor='rgba(139,92,246,0.3)';this.style.boxShadow='0 20px 60px rgba(0,0,0,0.3),0 0 40px rgba(139,92,246,0.06)'" onmouseleave="this.style.transform='';this.style.borderColor='';this.style.boxShadow=''">
-          <div style="width:48px;height:48px;border-radius:var(--radius-lg);background:linear-gradient(135deg,rgba(139,92,246,0.12),rgba(37,99,235,0.06));border:1px solid rgba(139,92,246,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-5);color:var(--violet-400)">
-            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4M12 16v4M4.93 4.93l2.83 2.83M14.24 14.24l2.83 2.83M2 12h4M16 12h4M4.93 19.07l2.83-2.83M14.24 7.76l2.83-2.83"/></svg>
-          </div>
-          <h4 style="margin-bottom:var(--space-2)">Continuous Innovation</h4>
-          <p style="color:var(--gray-500);font-size:var(--text-sm);line-height:1.7">Investing in R&D, exploring emerging tech, and staying at the absolute frontier of AI and engineering.</p>
-        </div>
-
-        <div style="padding:var(--space-8);border-radius:var(--radius-xl);border:1px solid var(--glass-border);background:linear-gradient(160deg,rgba(16,185,129,0.03),transparent);position:relative;overflow:hidden;transition:all 0.4s ease" onmouseenter="this.style.transform='translateY(-8px)';this.style.borderColor='rgba(16,185,129,0.3)';this.style.boxShadow='0 20px 60px rgba(0,0,0,0.3),0 0 40px rgba(16,185,129,0.06)'" onmouseleave="this.style.transform='';this.style.borderColor='';this.style.boxShadow=''">
-          <div style="width:48px;height:48px;border-radius:var(--radius-lg);background:linear-gradient(135deg,rgba(16,185,129,0.12),rgba(6,182,212,0.06));border:1px solid rgba(16,185,129,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-5);color:var(--emerald-500)">
-            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 14l2 2 4-4"/></svg>
-          </div>
-          <h4 style="margin-bottom:var(--space-2)">Client Partnership</h4>
-          <p style="color:var(--gray-500);font-size:var(--text-sm);line-height:1.7">We succeed when our clients succeed. Building long-term partnerships, not transactional relationships.</p>
-        </div>
-
-        <div style="padding:var(--space-8);border-radius:var(--radius-xl);border:1px solid var(--glass-border);background:linear-gradient(160deg,rgba(245,158,11,0.03),transparent);position:relative;overflow:hidden;transition:all 0.4s ease" onmouseenter="this.style.transform='translateY(-8px)';this.style.borderColor='rgba(245,158,11,0.3)';this.style.boxShadow='0 20px 60px rgba(0,0,0,0.3),0 0 40px rgba(245,158,11,0.06)'" onmouseleave="this.style.transform='';this.style.borderColor='';this.style.boxShadow=''">
-          <div style="width:48px;height:48px;border-radius:var(--radius-lg);background:linear-gradient(135deg,rgba(245,158,11,0.12),rgba(245,158,11,0.04));border:1px solid rgba(245,158,11,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-5);color:var(--amber-500)">
-            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a7 7 0 017 7c0 5-7 11-7 11S5 14 5 9a7 7 0 017-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-          </div>
-          <h4 style="margin-bottom:var(--space-2)">Responsible AI</h4>
-          <p style="color:var(--gray-500);font-size:var(--text-sm);line-height:1.7">Ethical, fair, and unbiased AI systems. Building technology that benefits humanity and respects privacy.</p>
-        </div>
-
-        <div style="padding:var(--space-8);border-radius:var(--radius-xl);border:1px solid var(--glass-border);background:linear-gradient(160deg,rgba(239,68,68,0.02),transparent);position:relative;overflow:hidden;transition:all 0.4s ease" onmouseenter="this.style.transform='translateY(-8px)';this.style.borderColor='rgba(239,68,68,0.2)';this.style.boxShadow='0 20px 60px rgba(0,0,0,0.3),0 0 40px rgba(239,68,68,0.04)'" onmouseleave="this.style.transform='';this.style.borderColor='';this.style.boxShadow=''">
-          <div style="width:48px;height:48px;border-radius:var(--radius-lg);background:linear-gradient(135deg,rgba(239,68,68,0.08),rgba(239,68,68,0.03));border:1px solid rgba(239,68,68,0.15);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-5);color:#f87171">
-            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/><path d="M9 12l2 2 4-4"/></svg>
-          </div>
-          <h4 style="margin-bottom:var(--space-2)">Security First</h4>
-          <p style="color:var(--gray-500);font-size:var(--text-sm);line-height:1.7">Security embedded at every layer — in architecture, code, deployment, and operations. Never an afterthought.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══ APPROACH — IMMERSIVE TIMELINE ═══ -->
-  <section class="section" style="overflow:hidden">
+  <!-- MISSION & VISION -->
+  <section class="about-mv">
     <div class="container">
-      <div class="section-header center reveal-blur">
-        <div class="section-label">Our Methodology</div>
-        <h2>Six Phases of<br><span class="text-gradient">Precision Engineering</span></h2>
-        <p>A battle-tested methodology refined over years of delivering enterprise-grade systems.</p>
+      <div class="about-mv-grid">
+        <article class="about-mv-card reveal">
+          <span class="about-mv-tag">Mission</span>
+          <h2>Make intelligent technology accessible to every organization.</h2>
+          <p>We bridge the gap between cutting-edge AI research and real-world business value — making enterprise-grade technology practical, deployable, and impactful regardless of organization size.</p>
+        </article>
+        <article class="about-mv-card reveal">
+          <span class="about-mv-tag about-mv-tag--vision">Vision</span>
+          <h2>Intelligence embedded at every layer of business.</h2>
+          <p>A world where AI, automation, and intelligent systems are seamlessly integrated into every business process — amplifying human capability and driving innovation at unprecedented scale.</p>
+        </article>
       </div>
-      <div class="process-immersive reveal">
-        <div class="process-track">
-          <div class="process-track-line"><div class="process-track-progress"></div></div>
-          <div class="process-node" data-phase="1"><div class="process-node-visual"><div class="process-icon-circle"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="14" cy="14" r="10"/><path d="M14 8v6l4 2"/></svg></div><span class="process-node-num">01</span></div><h4>Discover</h4><p>Requirements, constraints, stakeholder mapping</p></div>
-          <div class="process-node" data-phase="2"><div class="process-node-visual"><div class="process-icon-circle"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="4" y="4" width="20" height="20" rx="3"/><path d="M4 10h20M10 4v20"/></svg></div><span class="process-node-num">02</span></div><h4>Architect</h4><p>System design, technology selection, patterns</p></div>
-          <div class="process-node" data-phase="3"><div class="process-node-visual"><div class="process-icon-circle"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 18l5-5 4 4 7-9"/><path d="M17 8h5v5"/></svg></div><span class="process-node-num">03</span></div><h4>Build</h4><p>Agile delivery, CI/CD, iterative sprints</p></div>
-          <div class="process-node" data-phase="4"><div class="process-node-visual"><div class="process-icon-circle"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M20 7L11 16l-4-4"/><circle cx="14" cy="14" r="11"/></svg></div><span class="process-node-num">04</span></div><h4>Validate</h4><p>Testing, security audits, performance gates</p></div>
-          <div class="process-node" data-phase="5"><div class="process-node-visual"><div class="process-icon-circle"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 19l-2 3h8l-2-3"/><rect x="6" y="4" width="16" height="13" rx="2"/><path d="M10 21h8"/></svg></div><span class="process-node-num">05</span></div><h4>Deploy</h4><p>Zero-downtime, monitoring, rollback</p></div>
-          <div class="process-node" data-phase="6"><div class="process-node-visual"><div class="process-icon-circle"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 14a10 10 0 0 1 10-10"/><path d="M12 4l2 0 0 2"/><path d="M24 14a10 10 0 0 1-10 10"/><path d="M16 24l-2 0 0-2"/></svg></div><span class="process-node-num">06</span></div><h4>Evolve</h4><p>Optimization, scaling, innovation cycles</p></div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="about-values">
+    <div class="container">
+      <div class="about-values-header reveal">
+        <h2>Our values</h2>
+        <p>The principles behind every decision we make and every system we build.</p>
+      </div>
+      <div class="about-values-grid">
+        <div class="about-value reveal">
+          <div class="about-value-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3>Engineering excellence</h3>
+          <p>We write clean, tested, well-architected code. No shortcuts. Every system we build is designed to last and scale.</p>
+        </div>
+        <div class="about-value reveal">
+          <div class="about-value-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3>Radical transparency</h3>
+          <p>Clear timelines, honest assessments, open communication. Our clients always know exactly where things stand.</p>
+        </div>
+        <div class="about-value reveal">
+          <div class="about-value-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+          </div>
+          <h3>Continuous innovation</h3>
+          <p>We invest in R&D, explore emerging technologies, and bring the latest advances to our clients' solutions.</p>
+        </div>
+        <div class="about-value reveal">
+          <div class="about-value-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Client partnership</h3>
+          <p>Long-term relationships built on trust, shared goals, and mutual success — not one-off transactions.</p>
+        </div>
+        <div class="about-value reveal">
+          <div class="about-value-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Security first</h3>
+          <p>Security is foundational, not an afterthought. It's embedded in our architecture, code, and deployment practices.</p>
+        </div>
+        <div class="about-value reveal">
+          <div class="about-value-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Responsible AI</h3>
+          <p>We build AI that is ethical, fair, transparent, and governed — technology that benefits people and respects privacy.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ GLOBAL — NETWORK MAP ═══ -->
-  <section class="section section-alt" style="overflow:hidden">
+
+  <!-- APPROACH -->
+  <section class="about-approach">
     <div class="container">
-      <div class="section-header center reveal-blur">
-        <div class="section-label">Global Engineering</div>
-        <h2>Delivering Excellence<br><span class="text-gradient-subtle">Across Boundaries</span></h2>
-        <p>Distributed engineering teams working seamlessly across continents, languages, and time zones.</p>
+      <div class="about-approach-header reveal">
+        <h2>How we work</h2>
+        <p>Six disciplined phases from discovery to production — refined over hundreds of enterprise engagements.</p>
       </div>
-      <div class="world-map-section reveal">
-        <div class="world-map-visual" aria-hidden="true">
-          <div class="world-network">
-            <div class="network-node network-node-1"><div class="network-ping"></div></div>
-            <div class="network-node network-node-2"><div class="network-ping"></div></div>
-            <div class="network-node network-node-3"><div class="network-ping"></div></div>
-            <div class="network-node network-node-4"><div class="network-ping"></div></div>
-            <div class="network-node network-node-5"><div class="network-ping"></div></div>
-            <div class="network-node network-node-6"><div class="network-ping"></div></div>
-            <div class="network-line network-line-1"></div>
-            <div class="network-line network-line-2"></div>
-            <div class="network-line network-line-3"></div>
-            <div class="network-line network-line-4"></div>
+      <div class="about-approach-grid">
+        <div class="about-step reveal">
+          <div class="about-step-num">01</div>
+          <div class="about-step-body">
+            <h3>Discover</h3>
+            <p>Stakeholder interviews, technical discovery, requirements mapping, and constraint analysis.</p>
           </div>
         </div>
-        <div class="global-capabilities">
-          <div class="global-cap-item"><div class="global-cap-icon-wrap"><div class="global-cap-ring"></div><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 4.5 6 4.5 9s-1.5 6-4.5 9c-3-3-4.5-6-4.5-9s1.5-6 4.5-9z"/></svg></div><h4>Multi-Region<br>Delivery</h4><div class="global-cap-bar"><div class="global-cap-bar-fill" style="--fill:92%"></div></div></div>
-          <div class="global-cap-item"><div class="global-cap-icon-wrap"><div class="global-cap-ring"></div><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L3 7l9 4.5L21 7l-9-5zM3 17l9 4.5L21 17M3 12l9 4.5L21 12"/></svg></div><h4>Enterprise<br>Scale</h4><div class="global-cap-bar"><div class="global-cap-bar-fill" style="--fill:88%"></div></div></div>
-          <div class="global-cap-item"><div class="global-cap-icon-wrap"><div class="global-cap-ring"></div><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg></div><h4>24/7<br>Operations</h4><div class="global-cap-bar"><div class="global-cap-bar-fill" style="--fill:95%"></div></div></div>
-          <div class="global-cap-item"><div class="global-cap-icon-wrap"><div class="global-cap-ring"></div><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div><h4>Diverse<br>Perspectives</h4><div class="global-cap-bar"><div class="global-cap-bar-fill" style="--fill:85%"></div></div></div>
+        <div class="about-step reveal">
+          <div class="about-step-num">02</div>
+          <div class="about-step-body">
+            <h3>Architect</h3>
+            <p>System design, technology selection, scalability planning, and security architecture.</p>
+          </div>
+        </div>
+        <div class="about-step reveal">
+          <div class="about-step-num">03</div>
+          <div class="about-step-body">
+            <h3>Build</h3>
+            <p>Agile sprints, continuous integration, code reviews, and iterative feature delivery.</p>
+          </div>
+        </div>
+        <div class="about-step reveal">
+          <div class="about-step-num">04</div>
+          <div class="about-step-body">
+            <h3>Validate</h3>
+            <p>Automated testing, security audits, performance benchmarks, and QA certification.</p>
+          </div>
+        </div>
+        <div class="about-step reveal">
+          <div class="about-step-num">05</div>
+          <div class="about-step-body">
+            <h3>Deploy</h3>
+            <p>Zero-downtime releases, infrastructure provisioning, monitoring, and rollback procedures.</p>
+          </div>
+        </div>
+        <div class="about-step reveal">
+          <div class="about-step-num">06</div>
+          <div class="about-step-body">
+            <h3>Evolve</h3>
+            <p>Performance optimization, continuous improvement, scaling, and technology upgrades.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- GLOBAL -->
+  <section class="about-global">
+    <div class="container">
+      <div class="about-global-header reveal">
+        <h2>Global delivery</h2>
+        <p>Engineering excellence delivered across borders, time zones, and industries.</p>
+      </div>
+      <div class="about-global-grid">
+        <div class="about-global-card reveal">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <h3>Multi-region delivery</h3>
+          <p>Distributed engineering teams collaborating seamlessly across time zones.</p>
+        </div>
+        <div class="about-global-card reveal">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          <h3>Enterprise scale</h3>
+          <p>Solutions built for global compliance, performance, and reliability requirements.</p>
+        </div>
+        <div class="about-global-card reveal">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <h3>24/7 operations</h3>
+          <p>Round-the-clock support, continuous delivery, and always-on monitoring.</p>
+        </div>
+        <div class="about-global-card reveal">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+          <h3>Diverse perspectives</h3>
+          <p>International talent bringing cultural and technical diversity to every project.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- ═══ CTA ═══ -->
-  <section class="cta-section" style="position:relative;overflow:hidden">
-    <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:100%;height:100%;background:radial-gradient(ellipse at 50% 0%,rgba(37,99,235,0.06),transparent 60%);pointer-events:none" aria-hidden="true"></div>
-    <div class="container" style="max-width:800px;position:relative;z-index:1">
-      <div class="reveal-scale">
-        <h2 style="font-size:clamp(2rem,4vw,3.2rem)">Ready to Build the<br><span class="text-gradient">Future Together</span>?</h2>
-        <p style="font-size:var(--text-lg);margin-top:var(--space-4)">Whether you're building, modernizing, or scaling — our team of engineers is ready to turn your most ambitious ideas into production reality.</p>
-        <div class="cta-actions" style="margin-top:var(--space-8)">
+  <!-- CTA -->
+  <section class="about-cta">
+    <div class="container">
+      <div class="about-cta-inner reveal">
+        <h2>Let's build something together.</h2>
+        <p>Whether you're starting a new project or modernizing an existing platform — we're ready.</p>
+        <div class="about-cta-actions">
           <a href="contact.html" class="btn btn-primary btn-lg">Talk to Our Experts</a>
           <a href="careers.html" class="btn btn-secondary btn-lg">Join Our Team</a>
         </div>
@@ -223,11 +228,11 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand"><a href="../index.html" class="logo"><img src="../assets/logo.jpeg" alt="Code Origin.AI" class="logo-img" height="38" width="87"></a><p>Engineering intelligence for a digital world. Enterprise-grade AI systems, secure platforms, and cloud-native solutions.</p></div>
-        <div class="footer-col"><h5>Services</h5><a href="services.html#ai">AI &amp; Machine Learning</a><a href="services.html#software">Software Engineering</a><a href="services.html#cloud">Cloud &amp; DevOps</a><a href="services.html#security">Cybersecurity</a><a href="services.html#data">Data &amp; Analytics</a></div>
+        <div class="footer-brand"><a href="../index.html" class="logo"><img src="../assets/logo.jpeg" alt="Code Origin.AI" class="logo-img" height="38" width="87"></a><p>Engineering intelligence for a digital world.</p></div>
+        <div class="footer-col"><h5>Services</h5><a href="services.html#ai">AI &amp; Machine Learning</a><a href="services.html#software">Software Engineering</a><a href="services.html#cloud">Cloud &amp; DevOps</a><a href="services.html#security">Cybersecurity</a></div>
         <div class="footer-col"><h5>Company</h5><a href="about.html">About Us</a><a href="careers.html">Careers</a><a href="insights.html">Insights</a><a href="contact.html">Contact</a></div>
-        <div class="footer-col"><h5>Products</h5><a href="products.html">Origin Neural Engine</a><a href="products.html">CodeFlow AI</a><a href="products.html">Sentinel AI</a><a href="products.html">DataPulse Analytics</a></div>
-        <div class="footer-col"><h5>Legal</h5><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="responsible-ai.html">Responsible AI</a><a href="accessibility.html">Accessibility</a></div>
+        <div class="footer-col"><h5>Products</h5><a href="products.html">Origin Neural Engine</a><a href="products.html">CodeFlow AI</a><a href="products.html">Sentinel AI</a></div>
+        <div class="footer-col"><h5>Legal</h5><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="responsible-ai.html">Responsible AI</a><a href="accessibility.html">Accessibility</a></div>
       </div>
       <div class="footer-bottom"><span>&copy; 2025 Code Origin.AI Private Limited. All rights reserved.</span><div class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="security.html">Security</a></div></div>
     </div>
