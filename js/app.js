@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ═══════════════════════════════════════════
   // SCROLL REVEAL ANIMATIONS
   // ═══════════════════════════════════════════
-  const revealElements = document.querySelectorAll('.reveal');
+  const revealElements = document.querySelectorAll('.reveal, .reveal-scale, .reveal-left, .reveal-right, .reveal-blur, .stagger-children');
 
   if ('IntersectionObserver' in window) {
     const revealObserver = new IntersectionObserver((entries) => {
@@ -151,6 +151,30 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     // Fallback: show all elements immediately
     revealElements.forEach(el => el.classList.add('visible'));
+  }
+
+  // ═══════════════════════════════════════════
+  // SUBTLE PARALLAX ON SCROLL
+  // ═══════════════════════════════════════════
+  const parallaxElements = document.querySelectorAll('.hero-orb');
+  let ticking = false;
+
+  function updateParallax() {
+    const scrollY = window.scrollY;
+    parallaxElements.forEach((el, i) => {
+      const speed = 0.02 + (i * 0.015);
+      el.style.transform = `translateY(${scrollY * speed}px)`;
+    });
+    ticking = false;
+  }
+
+  if (parallaxElements.length > 0) {
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(updateParallax);
+        ticking = true;
+      }
+    }, { passive: true });
   }
 
   // ═══════════════════════════════════════════
