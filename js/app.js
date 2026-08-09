@@ -9,16 +9,33 @@ document.addEventListener('DOMContentLoaded', () => {
   // ═══════════════════════════════════════════
   // VIDEO AUTOPLAY HANDLER
   // ═══════════════════════════════════════════
-  const videoPlayer = document.querySelector('.video-player');
+  const videoPlayer = document.querySelector('.video-player') || document.querySelector('.video-main-player');
   if (videoPlayer) {
+    // Handle video load errors - try fallback source
+    videoPlayer.addEventListener('error', function() {
+      const sources = videoPlayer.querySelectorAll('source');
+      let currentIndex = 0;
+      sources.forEach((src, i) => {
+        if (src.getAttribute('src') === videoPlayer.currentSrc) currentIndex = i;
+      });
+      // Try next source
+      if (currentIndex < sources.length - 1) {
+        videoPlayer.src = sources[currentIndex + 1].getAttribute('src');
+        videoPlayer.load();
+      }
+    }, true);
+
     // Ensure video plays (some browsers block autoplay)
     const playVideo = function() {
       videoPlayer.play().catch(function() {
-        // Autoplay blocked — add click-to-play fallback
-        videoPlayer.closest('.video-wrapper').style.cursor = 'pointer';
-        videoPlayer.closest('.video-wrapper').addEventListener('click', function() {
-          videoPlayer.play();
-          this.style.cursor = 'default';
+        // Autoplay blocked — show controls so user can click play
+        videoPlayer.setAttribute('controls', '');
+        videoPlayer.closest('.video-wrapper, .video-main-wrapper').style.cursor = 'pointer';
+        videoPlayer.closest('.video-wrapper, .video-main-wrapper').addEventListener('click', function(e) {
+          if (e.target.tagName !== 'A') {
+            videoPlayer.play();
+            this.style.cursor = 'default';
+          }
         }, { once: true });
       });
     };
@@ -28,6 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
       playVideo();
     } else {
       videoPlayer.addEventListener('loadeddata', playVideo);
+      // Also try after canplay event
+      videoPlayer.addEventListener('canplay', playVideo, { once: true });
     }
   }
 

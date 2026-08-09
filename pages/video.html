@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Code Origin.AI — Watch our company video to learn how we engineer intelligent software, AI systems, and cloud-native solutions.">
+  <title>Video — Code Origin.AI</title>
+  <link rel="canonical" href="https://codeorigin.ai/video">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/jpeg" href="../assets/logo.jpeg">
+  <style>
+    .video-page-hero {
+      padding: 120px 0 40px;
+      text-align: center;
+    }
+    .video-page-hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .video-page-hero p {
+      color: var(--gray-400);
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .video-page-section {
+      padding: 40px 0 100px;
+    }
+    .video-main-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--glass-border);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.03);
+      background: var(--navy-900);
+    }
+    .video-main-player {
+      width: 100%;
+      height: auto;
+      display: block;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      background: #000;
+    }
+    .video-main-wrapper:hover {
+      box-shadow: 0 24px 70px rgba(0,0,0,0.5), 0 0 60px rgba(37,99,235,0.06);
+    }
+    .video-controls-hint {
+      text-align: center;
+      margin-top: 1.5rem;
+      color: var(--gray-500);
+      font-size: 0.9rem;
+    }
+    .video-back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 2rem;
+      color: var(--blue-400);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .video-back-link:hover {
+      color: var(--blue-300);
+    }
+    @media (max-width: 768px) {
+      .video-main-wrapper { border-radius: 12px; }
+      .video-page-hero { padding: 100px 0 30px; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo" aria-label="Code Origin.AI Home"><img src="../assets/logo.jpeg" alt="Code Origin.AI" class="logo-img" height="38" width="87"></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="about.html" class="nav-item">Company</a>
+        <a href="services.html" class="nav-item">Services</a>
+        <a href="products.html" class="nav-item">Products</a>
+        <a href="industries.html" class="nav-item">Industries</a>
+        <a href="insights.html" class="nav-item">Insights</a>
+        <a href="careers.html" class="nav-item">Careers</a>
+      </nav>
+      <div class="header-actions"><a href="contact.html" class="btn btn-primary">Talk to Our Experts</a></div>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    </div>
+  </header>
+  <nav class="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="about.html">Company</a><a href="services.html">Services</a>
+    <a href="products.html">Products</a><a href="industries.html">Industries</a>
+    <a href="insights.html">Insights</a><a href="careers.html">Careers</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main id="main-content">
+    <section class="video-page-hero">
+      <div class="container">
+        <h1>See <span class="text-gradient">Code Origin.AI</span> in Action</h1>
+        <p>Discover how we engineer intelligent software, AI systems, and cloud-native solutions that help organizations build, modernize, and scale.</p>
+      </div>
+    </section>
+
+    <section class="video-page-section">
+      <div class="container">
+        <div class="video-main-wrapper">
+          <video class="video-main-player" controls autoplay muted loop playsinline webkit-playsinline preload="auto" controlsList="nodownload">
+            <source src="https://raw.githubusercontent.com/bhumikacodeoriginai-hub/company-website/main/assets/codeorigin-video.mp4" type="video/mp4">
+            <source src="../assets/codeorigin-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p class="video-controls-hint">Use the controls to play, pause, or adjust volume. Click fullscreen for the best experience.</p>
+        <a href="../index.html" class="video-back-link">&larr; Back to Homepage</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo"><img src="../assets/logo.jpeg" alt="Code Origin.AI" class="logo-img" height="32" width="73"></a>
+          <p class="footer-desc">Engineering Intelligence.<br>Building What Comes Next.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="about.html">About</a>
+          <a href="careers.html">Careers</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <a href="services.html">AI & ML</a>
+          <a href="services.html">Software</a>
+          <a href="services.html">Cloud & DevOps</a>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="security.html">Security</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Code Origin.AI Private Limited. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>
