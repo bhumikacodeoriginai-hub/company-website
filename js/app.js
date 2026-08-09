@@ -435,12 +435,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // ═══════════════════════════════════════════
   // PAGE TRANSITION EFFECT
   // ═══════════════════════════════════════════
-  // Add subtle fade-in on page load
-  document.body.style.opacity = '0';
-  document.body.style.transition = 'opacity 0.3s ease';
-  requestAnimationFrame(() => {
-    document.body.style.opacity = '1';
-  });
+  // Removed: Setting body opacity to 0 caused blank pages when JS errors occurred.
+  // Content is now always visible. The page-loader overlay handles the loading state.
 
   // ═══════════════════════════════════════════
   // SERVICE NAV PANEL TRANSITION STYLE

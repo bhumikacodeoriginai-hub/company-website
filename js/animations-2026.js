@@ -7,6 +7,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // Mark JS as loaded — enables reveal animations (progressive enhancement)
+  document.documentElement.classList.add('js-loaded');
+
   // ═══════════════════════════════════════════
   // SCROLL PROGRESS BAR
   // ═══════════════════════════════════════════

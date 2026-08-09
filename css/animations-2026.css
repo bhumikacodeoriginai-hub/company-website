@@ -103,7 +103,8 @@
 }
 
 /* ═══ ENHANCED REVEAL ANIMATIONS ═══ */
-.reveal {
+/* Elements are visible by default. JS adds .js-loaded to <html> to enable animations */
+html.js-loaded .reveal {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
@@ -111,13 +112,13 @@
               filter 0.8s ease;
   filter: blur(3px);
 }
-.reveal.visible {
+html.js-loaded .reveal.visible {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
 }
 
-.reveal-scale {
+html.js-loaded .reveal-scale {
   opacity: 0;
   transform: scale(0.92);
   transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
@@ -125,61 +126,61 @@
               filter 0.7s ease;
   filter: blur(2px);
 }
-.reveal-scale.visible {
+html.js-loaded .reveal-scale.visible {
   opacity: 1;
   transform: scale(1);
   filter: blur(0);
 }
 
-.reveal-left {
+html.js-loaded .reveal-left {
   opacity: 0;
   transform: translateX(-50px);
   transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
               transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.reveal-left.visible {
+html.js-loaded .reveal-left.visible {
   opacity: 1;
   transform: translateX(0);
 }
 
-.reveal-right {
+html.js-loaded .reveal-right {
   opacity: 0;
   transform: translateX(50px);
   transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
               transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.reveal-right.visible {
+html.js-loaded .reveal-right.visible {
   opacity: 1;
   transform: translateX(0);
 }
 
-.reveal-blur {
+html.js-loaded .reveal-blur {
   opacity: 0;
   filter: blur(12px);
   transform: translateY(20px) scale(0.97);
   transition: opacity 1s ease, filter 1s ease, transform 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.reveal-blur.visible {
+html.js-loaded .reveal-blur.visible {
   opacity: 1;
   filter: blur(0);
   transform: translateY(0) scale(1);
 }
 
 /* Stagger children */
-.stagger-children > * {
+html.js-loaded .stagger-children > * {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
               transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.stagger-children.visible > *:nth-child(1) { transition-delay: 0ms; opacity: 1; transform: translateY(0); }
-.stagger-children.visible > *:nth-child(2) { transition-delay: 80ms; opacity: 1; transform: translateY(0); }
-.stagger-children.visible > *:nth-child(3) { transition-delay: 160ms; opacity: 1; transform: translateY(0); }
-.stagger-children.visible > *:nth-child(4) { transition-delay: 240ms; opacity: 1; transform: translateY(0); }
-.stagger-children.visible > *:nth-child(5) { transition-delay: 320ms; opacity: 1; transform: translateY(0); }
-.stagger-children.visible > *:nth-child(6) { transition-delay: 400ms; opacity: 1; transform: translateY(0); }
-.stagger-children.visible > *:nth-child(7) { transition-delay: 480ms; opacity: 1; transform: translateY(0); }
-.stagger-children.visible > *:nth-child(8) { transition-delay: 560ms; opacity: 1; transform: translateY(0); }
+html.js-loaded .stagger-children.visible > *:nth-child(1) { transition-delay: 0ms; opacity: 1; transform: translateY(0); }
+html.js-loaded .stagger-children.visible > *:nth-child(2) { transition-delay: 80ms; opacity: 1; transform: translateY(0); }
+html.js-loaded .stagger-children.visible > *:nth-child(3) { transition-delay: 160ms; opacity: 1; transform: translateY(0); }
+html.js-loaded .stagger-children.visible > *:nth-child(4) { transition-delay: 240ms; opacity: 1; transform: translateY(0); }
+html.js-loaded .stagger-children.visible > *:nth-child(5) { transition-delay: 320ms; opacity: 1; transform: translateY(0); }
+html.js-loaded .stagger-children.visible > *:nth-child(6) { transition-delay: 400ms; opacity: 1; transform: translateY(0); }
+html.js-loaded .stagger-children.visible > *:nth-child(7) { transition-delay: 480ms; opacity: 1; transform: translateY(0); }
+html.js-loaded .stagger-children.visible > *:nth-child(8) { transition-delay: 560ms; opacity: 1; transform: translateY(0); }
 
 /* ═══ GLASSMORPHISM V2 — Enhanced glass effects ═══ */
 .glass-v2 {
@@ -1106,11 +1107,16 @@
   flex-direction: column;
   gap: 24px;
   transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.6s;
+  /* FAILSAFE: auto-hide after 3s even without JS */
+  animation: loaderAutoHide 0.5s ease 3s forwards;
 }
 .page-loader.hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+@keyframes loaderAutoHide {
+  to { opacity: 0; visibility: hidden; pointer-events: none; }
 }
 .loader-logo {
   width: 80px;
