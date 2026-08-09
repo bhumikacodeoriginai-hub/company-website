@@ -878,11 +878,12 @@
 
 /* ═══ HERO EYEBROW LOGO ═══ */
 .hero-eyebrow-logo {
-  height: 24px;
-  width: 24px;
-  border-radius: 6px;
+  height: 26px;
+  width: auto;
+  max-width: 60px;
+  border-radius: 4px;
   opacity: 1;
-  filter: drop-shadow(0 0 8px rgba(212,164,24,0.4));
+  filter: drop-shadow(0 0 8px rgba(212,164,24,0.5));
   animation: loaderPulse 3s ease-in-out infinite;
 }
 
@@ -1112,12 +1113,13 @@
   pointer-events: none;
 }
 .loader-logo {
-  width: 64px;
-  height: 64px;
-  border-radius: 14px;
+  width: 80px;
+  height: auto;
+  max-height: 80px;
+  border-radius: 8px;
   object-fit: contain;
   animation: loaderPulse 1.5s ease-in-out infinite;
-  filter: drop-shadow(0 0 20px rgba(212,164,24,0.5));
+  filter: drop-shadow(0 0 24px rgba(212,164,24,0.6));
 }
 .loader-bar {
   width: 120px;
