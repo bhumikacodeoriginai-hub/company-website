@@ -175,27 +175,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ═══════════════════════════════════════════
   // SCROLL REVEAL ANIMATIONS
+  // (Handled by animations-2026.js — removed duplicate to prevent double-observation)
   // ═══════════════════════════════════════════
-  const revealElements = document.querySelectorAll('.reveal, .reveal-scale, .reveal-left, .reveal-right, .reveal-blur, .stagger-children, .process-immersive, .world-map-section');
-
-  if ('IntersectionObserver' in window) {
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.08,
-      rootMargin: '0px 0px -40px 0px'
-    });
-
-    revealElements.forEach(el => revealObserver.observe(el));
-  } else {
-    // Fallback: show all elements immediately
-    revealElements.forEach(el => el.classList.add('visible'));
-  }
 
   // ═══════════════════════════════════════════
   // SUBTLE PARALLAX ON SCROLL
