@@ -29,91 +29,202 @@
   </nav>
 
   <main id="main-content">
-  <section class="page-hero">
+
+  <!-- ═══ HERO ═══ -->
+  <section class="page-hero" style="padding-bottom:40px">
     <div class="container">
-      <div class="section-label reveal">Industries</div>
-      <h1 class="reveal">Technology for<br><span class="text-gradient">Every Sector</span></h1>
-      <p class="reveal">Deep domain expertise across industries where intelligent technology creates the most impact. We understand your unique challenges and deliver solutions that drive transformation.</p>
+      <div class="section-label reveal">Industries We Serve</div>
+      <h1 class="reveal">Intelligent Technology<br>for <span class="text-gradient">Every Sector</span></h1>
+      <p class="reveal" style="max-width:680px">We bring deep domain expertise and cutting-edge AI, cloud, and security solutions to the industries where intelligent technology creates the greatest impact and competitive advantage.</p>
     </div>
   </section>
 
-  <section class="section" style="padding-top:0">
+  <!-- ═══ INDUSTRY EXPLORER ═══ -->
+  <section class="section" style="padding-top:var(--space-8)">
     <div class="container">
-      <div class="grid-2" style="gap:var(--space-6)">
-        <div class="card reveal reveal-delay-1" style="padding:var(--space-8)">
-          <h3>Financial Services</h3>
-          <p style="color:var(--gray-400);margin-top:var(--space-3);font-size:var(--text-sm);line-height:1.7">Fraud detection, risk modeling, regulatory compliance automation, algorithmic trading, and personalized banking experiences powered by AI.</p>
-          <h5 style="margin-top:var(--space-5);margin-bottom:var(--space-3);color:var(--gray-300);font-size:var(--text-xs)">Solutions</h5>
-          <div class="flex flex-wrap gap-2">
-            <span class="tag">Fraud Detection</span><span class="tag">Risk AI</span><span class="tag">RegTech</span><span class="tag">Trading</span>
+      <div class="ind-explorer reveal" id="industry-explorer">
+        <!-- Left: Industry Navigation -->
+        <aside class="ind-explorer-nav" role="tablist" aria-label="Select an industry">
+          <button class="ind-nav-btn active" role="tab" aria-selected="true" data-ind="finance">
+            <span class="ind-nav-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="16" height="12" rx="2"/><path d="M2 8h16"/></svg></span>
+            <span class="ind-nav-label">Financial Services</span>
+          </button>
+          <button class="ind-nav-btn" role="tab" aria-selected="false" data-ind="healthcare">
+            <span class="ind-nav-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8h-4V4H8v4H4v4h4v4h4v-4h4z"/></svg></span>
+            <span class="ind-nav-label">Healthcare &amp; Life Sciences</span>
+          </button>
+          <button class="ind-nav-btn" role="tab" aria-selected="false" data-ind="manufacturing">
+            <span class="ind-nav-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 16h16M4 16V8l5-4v4l5-4v12"/></svg></span>
+            <span class="ind-nav-label">Manufacturing &amp; Industrial</span>
+          </button>
+          <button class="ind-nav-btn" role="tab" aria-selected="false" data-ind="retail">
+            <span class="ind-nav-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="17" r="1.5"/><circle cx="15" cy="17" r="1.5"/><path d="M2 2h3l2 10h10l2-7H6"/></svg></span>
+            <span class="ind-nav-label">Retail &amp; E-Commerce</span>
+          </button>
+          <button class="ind-nav-btn" role="tab" aria-selected="false" data-ind="logistics">
+            <span class="ind-nav-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="6" width="10" height="10" rx="1"/><path d="M12 9h4l2 3v4h-6V9z"/><circle cx="6" cy="16" r="1.5"/><circle cx="15" cy="16" r="1.5"/></svg></span>
+            <span class="ind-nav-label">Logistics &amp; Supply Chain</span>
+          </button>
+          <button class="ind-nav-btn" role="tab" aria-selected="false" data-ind="energy">
+            <span class="ind-nav-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 1L4 12h5l-1 7 7-11h-5l1-7z"/></svg></span>
+            <span class="ind-nav-label">Energy &amp; Utilities</span>
+          </button>
+          <button class="ind-nav-btn" role="tab" aria-selected="false" data-ind="realestate">
+            <span class="ind-nav-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 18h14M5 18V8l5-4 5 4v10"/><rect x="8" y="12" width="4" height="6"/></svg></span>
+            <span class="ind-nav-label">Real Estate &amp; Construction</span>
+          </button>
+          <button class="ind-nav-btn" role="tab" aria-selected="false" data-ind="technology">
+            <span class="ind-nav-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="14" height="10" rx="1.5"/><path d="M7 16h6M10 13v3"/></svg></span>
+            <span class="ind-nav-label">Technology &amp; SaaS</span>
+          </button>
+          <button class="ind-nav-btn" role="tab" aria-selected="false" data-ind="professional">
+            <span class="ind-nav-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v14l4-3 2 2 2-2 4 3V4a2 2 0 00-2-2z"/></svg></span>
+            <span class="ind-nav-label">Professional Services</span>
+          </button>
+        </aside>
+
+        <!-- Right: Industry Detail Panel -->
+        <div class="ind-explorer-panel" role="tabpanel" id="ind-panel">
+          <div class="ind-panel-header">
+            <span class="ind-panel-badge" id="ind-badge">Financial Services</span>
+            <h2 id="ind-title">Transforming Financial Services with <span class="text-gradient">Intelligent Technology</span></h2>
+            <p class="ind-panel-desc" id="ind-desc">We help financial institutions harness AI, automation, and cloud-native architecture to manage risk, detect fraud, ensure compliance, and deliver personalized customer experiences at scale.</p>
           </div>
-        </div>
-        <div class="card reveal reveal-delay-2" style="padding:var(--space-8)">
-          <h3>Healthcare</h3>
-          <p style="color:var(--gray-400);margin-top:var(--space-3);font-size:var(--text-sm);line-height:1.7">AI-powered diagnostics, clinical workflow optimization, patient outcome prediction, drug discovery acceleration, and secure health data platforms.</p>
-          <h5 style="margin-top:var(--space-5);margin-bottom:var(--space-3);color:var(--gray-300);font-size:var(--text-xs)">Solutions</h5>
-          <div class="flex flex-wrap gap-2">
-            <span class="tag">Diagnostics AI</span><span class="tag">Clinical NLP</span><span class="tag">EHR</span><span class="tag">Imaging</span>
-          </div>
-        </div>
-        <div class="card reveal reveal-delay-1" style="padding:var(--space-8)">
-          <h3>Manufacturing</h3>
-          <p style="color:var(--gray-400);margin-top:var(--space-3);font-size:var(--text-sm);line-height:1.7">Predictive maintenance, quality inspection automation, supply chain optimization, and smart factory solutions powered by IoT and AI.</p>
-          <h5 style="margin-top:var(--space-5);margin-bottom:var(--space-3);color:var(--gray-300);font-size:var(--text-xs)">Solutions</h5>
-          <div class="flex flex-wrap gap-2">
-            <span class="tag">Predictive Maintenance</span><span class="tag">Quality AI</span><span class="tag">IoT</span><span class="tag">Digital Twin</span>
-          </div>
-        </div>
-        <div class="card reveal reveal-delay-2" style="padding:var(--space-8)">
-          <h3>Retail &amp; E-Commerce</h3>
-          <p style="color:var(--gray-400);margin-top:var(--space-3);font-size:var(--text-sm);line-height:1.7">Personalization engines, demand forecasting, inventory optimization, intelligent search, and omnichannel customer experiences.</p>
-          <h5 style="margin-top:var(--space-5);margin-bottom:var(--space-3);color:var(--gray-300);font-size:var(--text-xs)">Solutions</h5>
-          <div class="flex flex-wrap gap-2">
-            <span class="tag">Personalization</span><span class="tag">Forecasting</span><span class="tag">Search AI</span><span class="tag">Chatbots</span>
-          </div>
-        </div>
-        <div class="card reveal reveal-delay-1" style="padding:var(--space-8)">
-          <h3>Logistics &amp; Transportation</h3>
-          <p style="color:var(--gray-400);margin-top:var(--space-3);font-size:var(--text-sm);line-height:1.7">Route optimization, fleet management, demand prediction, warehouse automation, and last-mile delivery intelligence.</p>
-          <h5 style="margin-top:var(--space-5);margin-bottom:var(--space-3);color:var(--gray-300);font-size:var(--text-xs)">Solutions</h5>
-          <div class="flex flex-wrap gap-2">
-            <span class="tag">Route AI</span><span class="tag">Fleet Mgmt</span><span class="tag">Automation</span><span class="tag">Tracking</span>
-          </div>
-        </div>
-        <div class="card reveal reveal-delay-2" style="padding:var(--space-8)">
-          <h3>Real Estate</h3>
-          <p style="color:var(--gray-400);margin-top:var(--space-3);font-size:var(--text-sm);line-height:1.7">Property valuation AI, smart building management, tenant experience platforms, and investment analytics for real estate organizations.</p>
-          <h5 style="margin-top:var(--space-5);margin-bottom:var(--space-3);color:var(--gray-300);font-size:var(--text-xs)">Solutions</h5>
-          <div class="flex flex-wrap gap-2">
-            <span class="tag">Valuation AI</span><span class="tag">Smart Buildings</span><span class="tag">PropTech</span><span class="tag">Analytics</span>
-          </div>
-        </div>
-        <div class="card reveal reveal-delay-1" style="padding:var(--space-8)">
-          <h3>Technology &amp; SaaS</h3>
-          <p style="color:var(--gray-400);margin-top:var(--space-3);font-size:var(--text-sm);line-height:1.7">AI feature development, platform scaling, developer tooling, intelligent product experiences, and infrastructure modernization.</p>
-          <h5 style="margin-top:var(--space-5);margin-bottom:var(--space-3);color:var(--gray-300);font-size:var(--text-xs)">Solutions</h5>
-          <div class="flex flex-wrap gap-2">
-            <span class="tag">AI Features</span><span class="tag">Platform Scale</span><span class="tag">DevTools</span><span class="tag">SaaS</span>
-          </div>
-        </div>
-        <div class="card reveal reveal-delay-2" style="padding:var(--space-8)">
-          <h3>Professional Services</h3>
-          <p style="color:var(--gray-400);margin-top:var(--space-3);font-size:var(--text-sm);line-height:1.7">Knowledge management, document intelligence, workflow automation, and AI-powered advisory tools for consulting and professional firms.</p>
-          <h5 style="margin-top:var(--space-5);margin-bottom:var(--space-3);color:var(--gray-300);font-size:var(--text-xs)">Solutions</h5>
-          <div class="flex flex-wrap gap-2">
-            <span class="tag">Knowledge AI</span><span class="tag">Document Intel</span><span class="tag">Workflow</span><span class="tag">Advisory</span>
+
+          <div class="ind-panel-body">
+            <!-- Challenges -->
+            <div class="ind-section">
+              <h4 class="ind-section-title">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="9" r="7"/><path d="M9 6v3l2 2"/></svg>
+                Key Challenges
+              </h4>
+              <div class="ind-challenges" id="ind-challenges">
+                <div class="ind-challenge-item">Evolving regulatory requirements across jurisdictions</div>
+                <div class="ind-challenge-item">Sophisticated fraud and cyber threats targeting financial data</div>
+                <div class="ind-challenge-item">Legacy system modernization without disrupting operations</div>
+                <div class="ind-challenge-item">Customer demand for real-time, personalized digital experiences</div>
+              </div>
+            </div>
+
+            <!-- Solutions -->
+            <div class="ind-section">
+              <h4 class="ind-section-title">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l4 4 8-8"/></svg>
+                How We Help
+              </h4>
+              <div class="ind-solutions-grid" id="ind-solutions">
+                <div class="ind-solution-card">
+                  <h5>AI-Powered Fraud Detection</h5>
+                  <p>Real-time transaction monitoring with ML models that adapt to evolving fraud patterns and reduce false positives.</p>
+                </div>
+                <div class="ind-solution-card">
+                  <h5>Regulatory Compliance Automation</h5>
+                  <p>Automated reporting, KYC/AML processing, and compliance monitoring using NLP and rule engines.</p>
+                </div>
+                <div class="ind-solution-card">
+                  <h5>Risk Modeling &amp; Analytics</h5>
+                  <p>Predictive risk models for credit scoring, market risk assessment, and portfolio optimization.</p>
+                </div>
+                <div class="ind-solution-card">
+                  <h5>Digital Banking Platforms</h5>
+                  <p>Cloud-native banking experiences with personalization engines and intelligent customer journeys.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Services & Technology -->
+            <div class="ind-section">
+              <div class="ind-two-col">
+                <div>
+                  <h4 class="ind-section-title">
+                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1L1 5l7 3.5L15 5 8 1zM1 11l7 3.5L15 11M1 8l7 3.5L15 8"/></svg>
+                    Relevant Services
+                  </h4>
+                  <div class="ind-services-list" id="ind-services">
+                    <a href="services.html#ai" class="ind-service-link">AI &amp; Machine Learning</a>
+                    <a href="services.html#data" class="ind-service-link">Data &amp; Analytics</a>
+                    <a href="services.html#security" class="ind-service-link">Cybersecurity</a>
+                    <a href="services.html#cloud" class="ind-service-link">Cloud &amp; DevOps</a>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="ind-section-title">
+                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="14" height="14" rx="2"/><path d="M6 6h6M6 9h6M6 12h3"/></svg>
+                    Technology
+                  </h4>
+                  <div class="ind-tech-tags" id="ind-tech">
+                    <span class="tag">Python</span>
+                    <span class="tag">TensorFlow</span>
+                    <span class="tag">Kafka</span>
+                    <span class="tag">Kubernetes</span>
+                    <span class="tag">Snowflake</span>
+                    <span class="tag">PostgreSQL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="ind-panel-cta">
+              <a href="contact.html" class="btn btn-primary">Discuss Financial Services Solutions &rarr;</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ═══ CROSS-INDUSTRY CAPABILITIES ═══ -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header center reveal">
+        <div class="section-label">Cross-Industry</div>
+        <h2>Capabilities That <span class="text-gradient-subtle">Transcend Sectors</span></h2>
+        <p>Core technology capabilities we bring to every industry engagement.</p>
+      </div>
+      <div class="grid-4 reveal">
+        <div class="card card-sm" style="text-align:center">
+          <div style="width:44px;height:44px;border-radius:50%;background:rgba(37,99,235,0.08);border:1px solid rgba(37,99,235,0.2);display:flex;align-items:center;justify-content:center;margin:0 auto var(--space-3);color:var(--blue-400)">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1L1 5l7 3.5L15 5 8 1zM1 11l7 3.5L15 11M1 8l7 3.5L15 8"/></svg>
+          </div>
+          <h5 style="font-size:var(--text-sm)">AI &amp; ML</h5>
+          <p style="color:var(--gray-500);font-size:var(--text-xs);margin-top:var(--space-1)">Custom models &amp; automation</p>
+        </div>
+        <div class="card card-sm" style="text-align:center">
+          <div style="width:44px;height:44px;border-radius:50%;background:rgba(37,99,235,0.08);border:1px solid rgba(37,99,235,0.2);display:flex;align-items:center;justify-content:center;margin:0 auto var(--space-3);color:var(--blue-400)">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 7h-2A4 4 0 107 12.5h6a2.5 2.5 0 000-5z"/></svg>
+          </div>
+          <h5 style="font-size:var(--text-sm)">Cloud Native</h5>
+          <p style="color:var(--gray-500);font-size:var(--text-xs);margin-top:var(--space-1)">Scalable infrastructure</p>
+        </div>
+        <div class="card card-sm" style="text-align:center">
+          <div style="width:44px;height:44px;border-radius:50%;background:rgba(37,99,235,0.08);border:1px solid rgba(37,99,235,0.2);display:flex;align-items:center;justify-content:center;margin:0 auto var(--space-3);color:var(--blue-400)">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 1L2 4v5c0 4 7 7 7 7s7-3 7-7V4L9 1z"/></svg>
+          </div>
+          <h5 style="font-size:var(--text-sm)">Security</h5>
+          <p style="color:var(--gray-500);font-size:var(--text-xs);margin-top:var(--space-1)">Zero-trust &amp; compliance</p>
+        </div>
+        <div class="card card-sm" style="text-align:center">
+          <div style="width:44px;height:44px;border-radius:50%;background:rgba(37,99,235,0.08);border:1px solid rgba(37,99,235,0.2);display:flex;align-items:center;justify-content:center;margin:0 auto var(--space-3);color:var(--blue-400)">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12l4-4 3 3 5-7"/></svg>
+          </div>
+          <h5 style="font-size:var(--text-sm)">Data Platforms</h5>
+          <p style="color:var(--gray-500);font-size:var(--text-xs);margin-top:var(--space-1)">Real-time analytics</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA ═══ -->
   <section class="cta-section">
     <div class="container" style="max-width:800px">
       <div class="reveal">
         <h2>Your Industry, <span class="text-gradient">Our Expertise</span></h2>
         <p>Let's explore how AI and modern technology can transform your specific industry challenges into competitive advantages.</p>
-        <div class="cta-actions"><a href="contact.html" class="btn btn-primary btn-lg">Discuss Your Industry</a></div>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary btn-lg">Discuss Your Industry</a>
+          <a href="services.html" class="btn btn-secondary btn-lg">View All Services</a>
+        </div>
       </div>
     </div>
   </section>
@@ -132,5 +243,6 @@
     </div>
   </footer>
   <script src="../js/app.js"></script>
+  <script src="../js/industries.js"></script>
 </body>
 </html>
