@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ═══════════════════════════════════════════
   // SCROLL REVEAL ANIMATIONS
   // ═══════════════════════════════════════════
-  const revealElements = document.querySelectorAll('.reveal, .reveal-scale, .reveal-left, .reveal-right, .reveal-blur, .stagger-children');
+  const revealElements = document.querySelectorAll('.reveal, .reveal-scale, .reveal-left, .reveal-right, .reveal-blur, .stagger-children, .process-immersive, .world-map-section');
 
   if ('IntersectionObserver' in window) {
     const revealObserver = new IntersectionObserver((entries) => {
