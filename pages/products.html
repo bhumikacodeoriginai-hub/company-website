@@ -3,122 +3,197 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Code Origin.AI Products — Proprietary AI platforms and tools currently in development.">
+  <meta name="description" content="Code Origin.AI Products — Proprietary AI platforms, security tools, and enterprise solutions currently in development.">
   <title>Products — Code Origin.AI</title>
+  <link rel="canonical" href="https://codeorigin.ai/products">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%232563eb'/><text x='50' y='66' text-anchor='middle' font-size='40' font-weight='bold' fill='white'>CO</text></svg>">
 </head>
 <body>
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
   <header class="header">
     <div class="header-inner">
-      <a href="../index.html" class="logo"><div class="logo-icon">CO</div><div class="logo-text">Code Origin<span>.AI</span></div></a>
-      <nav class="nav">
-        <a href="services.html">Services</a><a href="products.html">Products</a><a href="industries.html">Industries</a><a href="insights.html">Insights</a><a href="careers.html">Careers</a><a href="about.html">About</a>
+      <a href="../index.html" class="logo" aria-label="Code Origin.AI Home"><div class="logo-mark">CO</div><div class="logo-text">Code Origin<span>.AI</span></div></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="about.html" class="nav-item">Company</a><a href="services.html" class="nav-item">Services</a>
+        <a href="products.html" class="nav-item active">Products</a><a href="industries.html" class="nav-item">Industries</a>
+        <a href="insights.html" class="nav-item">Insights</a><a href="careers.html" class="nav-item">Careers</a>
       </nav>
-      <div class="header-cta"><a href="contact.html" class="btn btn-primary">Get Started</a></div>
-      <button class="menu-btn" aria-label="Menu"><span></span></button>
+      <div class="header-actions"><a href="contact.html" class="btn btn-primary">Talk to Our Experts</a></div>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
     </div>
   </header>
-  <nav class="mobile-nav">
-    <a href="services.html">Services</a><a href="products.html">Products</a><a href="industries.html">Industries</a><a href="insights.html">Insights</a><a href="careers.html">Careers</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+  <nav class="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="about.html">Company</a><a href="services.html">Services</a><a href="products.html">Products</a>
+    <a href="industries.html">Industries</a><a href="insights.html">Insights</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a>
   </nav>
 
+  <main id="main-content">
   <section class="page-hero">
     <div class="container">
-      <span class="label reveal">Our Products</span>
-      <h1 class="reveal">Proprietary <span class="text-gradient">AI Platforms</span></h1>
-      <p class="reveal">Next-generation products born from years of research, client engagements, and deep technical expertise. Built to solve the hardest problems in enterprise AI.</p>
+      <div class="section-label reveal">Our Products</div>
+      <h1 class="reveal">Products Built by<br><span class="text-gradient">Code Origin.AI</span></h1>
+      <p class="reveal">Proprietary platforms born from deep engineering expertise and real-world deployment experience. Each product addresses a critical enterprise challenge.</p>
     </div>
   </section>
 
   <section class="section" style="padding-top:0">
     <div class="container">
-      <div class="grid-2" style="gap:2rem">
-
-        <div class="glass-card reveal reveal-delay-1">
-          <span class="badge">In Development</span>
-          <h3 style="margin-top:1.25rem">Origin Neural Engine</h3>
-          <p style="color:var(--gray-400);margin-top:1rem;font-size:.9rem;line-height:1.7">Enterprise AI orchestration platform for deploying, monitoring, and scaling machine learning models in production. Unified control plane for all your AI workloads.</p>
-          <div class="svc-tags" style="margin-top:1.25rem">
-            <span class="tag">MLOps</span><span class="tag">Model Serving</span><span class="tag">Monitoring</span><span class="tag">Auto-Scaling</span>
+      <!-- Origin Neural Engine -->
+      <div class="card reveal" id="neural-engine" style="padding:var(--space-10);margin-bottom:var(--space-8)">
+        <div class="grid-2" style="gap:var(--space-10);align-items:start">
+          <div>
+            <span class="product-status dev">In Development</span>
+            <h2 style="margin-top:var(--space-4)">Origin Neural Engine</h2>
+            <p style="color:var(--gray-400);margin-top:var(--space-4);line-height:1.8">Enterprise AI orchestration platform for deploying, monitoring, and scaling machine learning models in production environments. Unified control plane for all AI workloads.</p>
+            <h5 style="margin-top:var(--space-6);margin-bottom:var(--space-3);color:var(--gray-300)">Problem</h5>
+            <p style="color:var(--gray-500);font-size:var(--text-sm);line-height:1.7">Organizations struggle to move AI from experimentation to production, lacking unified tooling for deployment, monitoring, and governance of ML models at scale.</p>
+          </div>
+          <div>
+            <h5 style="margin-bottom:var(--space-4);color:var(--gray-300)">Capabilities</h5>
+            <div style="display:flex;flex-direction:column;gap:var(--space-2)">
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Model Deployment &amp; Serving</span></div>
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Auto-Scaling &amp; Load Balancing</span></div>
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Model Monitoring &amp; Drift Detection</span></div>
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">A/B Testing &amp; Canary Deployments</span></div>
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Governance &amp; Audit Trail</span></div>
+            </div>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="tag">MLOps</span><span class="tag">Kubernetes</span><span class="tag">ONNX</span><span class="tag">GPU</span>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="glass-card reveal reveal-delay-2">
-          <span class="badge">In Development</span>
-          <h3 style="margin-top:1.25rem">CodeFlow AI</h3>
-          <p style="color:var(--gray-400);margin-top:1rem;font-size:.9rem;line-height:1.7">AI-powered development platform that accelerates software delivery with intelligent code generation, automated testing, and smart code review assistance.</p>
-          <div class="svc-tags" style="margin-top:1.25rem">
-            <span class="tag">Code Gen</span><span class="tag">Auto Testing</span><span class="tag">Code Review</span><span class="tag">IDE Plugin</span>
+      <!-- CodeFlow AI -->
+      <div class="card reveal" id="codeflow" style="padding:var(--space-10);margin-bottom:var(--space-8)">
+        <div class="grid-2" style="gap:var(--space-10);align-items:start">
+          <div>
+            <span class="product-status dev">In Development</span>
+            <h2 style="margin-top:var(--space-4)">CodeFlow AI</h2>
+            <p style="color:var(--gray-400);margin-top:var(--space-4);line-height:1.8">AI-powered development platform that accelerates software delivery with intelligent code generation, automated testing, and smart code review assistance.</p>
+            <h5 style="margin-top:var(--space-6);margin-bottom:var(--space-3);color:var(--gray-300)">Problem</h5>
+            <p style="color:var(--gray-500);font-size:var(--text-sm);line-height:1.7">Development teams spend significant time on repetitive coding tasks, manual testing, and code reviews that could be augmented with AI-powered tooling.</p>
+          </div>
+          <div>
+            <h5 style="margin-bottom:var(--space-4);color:var(--gray-300)">Capabilities</h5>
+            <div style="display:flex;flex-direction:column;gap:var(--space-2)">
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Intelligent Code Generation</span></div>
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Automated Test Generation</span></div>
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">AI Code Review</span></div>
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Documentation Generation</span></div>
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">IDE Integration</span></div>
+            </div>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="tag">LLMs</span><span class="tag">AST</span><span class="tag">IDE Plugin</span><span class="tag">CI/CD</span>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="glass-card reveal reveal-delay-3">
-          <span class="badge">In Development</span>
-          <h3 style="margin-top:1.25rem">Sentinel AI</h3>
-          <p style="color:var(--gray-400);margin-top:1rem;font-size:.9rem;line-height:1.7">AI-driven cybersecurity platform providing real-time threat detection, automated incident response, and predictive threat intelligence for enterprise environments.</p>
-          <div class="svc-tags" style="margin-top:1.25rem">
-            <span class="tag">Threat Detection</span><span class="tag">SIEM</span><span class="tag">Auto Response</span><span class="tag">Zero-Day</span>
+      <!-- Sentinel AI -->
+      <div class="card reveal" id="sentinel" style="padding:var(--space-10);margin-bottom:var(--space-8)">
+        <div class="grid-2" style="gap:var(--space-10);align-items:start">
+          <div>
+            <span class="product-status dev">In Development</span>
+            <h2 style="margin-top:var(--space-4)">Sentinel AI</h2>
+            <p style="color:var(--gray-400);margin-top:var(--space-4);line-height:1.8">AI-driven cybersecurity platform providing real-time threat detection, automated incident response, and predictive threat intelligence for enterprise environments.</p>
+            <h5 style="margin-top:var(--space-6);margin-bottom:var(--space-3);color:var(--gray-300)">Problem</h5>
+            <p style="color:var(--gray-500);font-size:var(--text-sm);line-height:1.7">Security teams are overwhelmed by alert volume and sophisticated attacks that evade traditional rule-based detection systems.</p>
+          </div>
+          <div>
+            <h5 style="margin-bottom:var(--space-4);color:var(--gray-300)">Capabilities</h5>
+            <div style="display:flex;flex-direction:column;gap:var(--space-2)">
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">AI-Powered Threat Detection</span></div>
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Automated Incident Response</span></div>
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Predictive Threat Intelligence</span></div>
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Behavioral Analytics</span></div>
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Compliance Reporting</span></div>
+            </div>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="tag">SIEM</span><span class="tag">SOAR</span><span class="tag">ML</span><span class="tag">Zero-Day</span>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="glass-card reveal reveal-delay-4">
-          <span class="badge">In Development</span>
-          <h3 style="margin-top:1.25rem">DataPulse Analytics</h3>
-          <p style="color:var(--gray-400);margin-top:1rem;font-size:.9rem;line-height:1.7">Real-time data intelligence platform with natural language querying, automated insight generation, and predictive analytics for business teams.</p>
-          <div class="svc-tags" style="margin-top:1.25rem">
-            <span class="tag">NL Query</span><span class="tag">Real-Time</span><span class="tag">Dashboards</span><span class="tag">Predictions</span>
+      <!-- DataPulse -->
+      <div class="card reveal" id="datapulse" style="padding:var(--space-10);margin-bottom:var(--space-8)">
+        <div class="grid-2" style="gap:var(--space-10);align-items:start">
+          <div>
+            <span class="product-status dev">In Development</span>
+            <h2 style="margin-top:var(--space-4)">DataPulse Analytics</h2>
+            <p style="color:var(--gray-400);margin-top:var(--space-4);line-height:1.8">Real-time data intelligence platform with natural language querying and automated insight generation for business teams.</p>
+            <h5 style="margin-top:var(--space-6);margin-bottom:var(--space-3);color:var(--gray-300)">Problem</h5>
+            <p style="color:var(--gray-500);font-size:var(--text-sm);line-height:1.7">Business users need data insights but lack technical skills to write complex queries, leading to bottlenecks with data teams and delayed decision-making.</p>
+          </div>
+          <div>
+            <h5 style="margin-bottom:var(--space-4);color:var(--gray-300)">Capabilities</h5>
+            <div style="display:flex;flex-direction:column;gap:var(--space-2)">
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Natural Language Querying</span></div>
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Automated Insight Generation</span></div>
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Real-Time Dashboards</span></div>
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Predictive Analytics</span></div>
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Data Connectors</span></div>
+            </div>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="tag">NLP</span><span class="tag">SQL Gen</span><span class="tag">Streaming</span><span class="tag">Charts</span>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="glass-card reveal reveal-delay-1">
-          <span class="badge">In Development</span>
-          <h3 style="margin-top:1.25rem">Origin Agent Framework</h3>
-          <p style="color:var(--gray-400);margin-top:1rem;font-size:.9rem;line-height:1.7">Enterprise-grade framework for building, deploying, and managing autonomous AI agents that can reason, plan, and execute complex multi-step workflows.</p>
-          <div class="svc-tags" style="margin-top:1.25rem">
-            <span class="tag">AI Agents</span><span class="tag">Multi-Step</span><span class="tag">Orchestration</span><span class="tag">RAG</span>
+      <!-- Agent Framework -->
+      <div class="card reveal" id="agent-framework" style="padding:var(--space-10)">
+        <div class="grid-2" style="gap:var(--space-10);align-items:start">
+          <div>
+            <span class="product-status dev">In Development</span>
+            <h2 style="margin-top:var(--space-4)">Origin Agent Framework</h2>
+            <p style="color:var(--gray-400);margin-top:var(--space-4);line-height:1.8">Enterprise-grade framework for building, deploying, and managing autonomous AI agents that can reason, plan, and execute complex multi-step workflows.</p>
+            <h5 style="margin-top:var(--space-6);margin-bottom:var(--space-3);color:var(--gray-300)">Problem</h5>
+            <p style="color:var(--gray-500);font-size:var(--text-sm);line-height:1.7">Building reliable AI agents requires sophisticated orchestration, safety guardrails, and monitoring that most teams lack the infrastructure to implement.</p>
+          </div>
+          <div>
+            <h5 style="margin-bottom:var(--space-4);color:var(--gray-300)">Capabilities</h5>
+            <div style="display:flex;flex-direction:column;gap:var(--space-2)">
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Agent Orchestration</span></div>
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Tool &amp; API Integration</span></div>
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Safety Guardrails</span></div>
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Memory &amp; Context Management</span></div>
+              <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Multi-Agent Collaboration</span></div>
+            </div>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="tag">LLMs</span><span class="tag">RAG</span><span class="tag">Orchestration</span><span class="tag">Eval</span>
+            </div>
           </div>
         </div>
-
-        <div class="glass-card reveal reveal-delay-2">
-          <span class="badge">In Development</span>
-          <h3 style="margin-top:1.25rem">CloudForge IaC</h3>
-          <p style="color:var(--gray-400);margin-top:1rem;font-size:.9rem;line-height:1.7">AI-assisted infrastructure-as-code platform that generates, validates, and optimizes cloud infrastructure configurations across multi-cloud environments.</p>
-          <div class="svc-tags" style="margin-top:1.25rem">
-            <span class="tag">Multi-Cloud</span><span class="tag">IaC Gen</span><span class="tag">Cost Optimize</span><span class="tag">Compliance</span>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <section class="section cta-block">
+  <section class="cta-section">
     <div class="container" style="max-width:800px">
-      <div class="reveal" style="text-align:center">
-        <h2>Interested in Early <span class="text-gradient-2">Access</span>?</h2>
-        <p style="color:var(--gray-400);font-size:1.1rem;margin:1.5rem 0 2.5rem;line-height:1.8">Join our waitlist to be the first to know when our products launch. Early adopters get priority access and special pricing.</p>
-        <a href="contact.html" class="btn btn-primary btn-lg">Join Waitlist</a>
+      <div class="reveal">
+        <h2>Interested in Early <span class="text-gradient-subtle">Access</span>?</h2>
+        <p>Our products are currently in development. Contact us to learn more about early access opportunities and timelines.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary btn-lg">Request Early Access</a>
+        </div>
       </div>
     </div>
   </section>
+  </main>
 
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="../index.html" class="logo"><div class="logo-icon">CO</div><div class="logo-text">Code Origin<span>.AI</span></div></a>
-          <p>Engineering intelligence for a digital world. We build enterprise-grade AI systems that transform how organizations operate and innovate.</p>
-        </div>
-        <div class="footer-col"><h4>Services</h4><a href="services.html">AI & Machine Learning</a><a href="services.html">Software Engineering</a><a href="services.html">Cloud & DevOps</a><a href="services.html">Cybersecurity</a><a href="services.html">Data & Analytics</a></div>
-        <div class="footer-col"><h4>Company</h4><a href="about.html">About Us</a><a href="careers.html">Careers</a><a href="insights.html">Insights</a><a href="contact.html">Contact</a></div>
-        <div class="footer-col"><h4>Products</h4><a href="products.html">Origin Neural Engine</a><a href="products.html">CodeFlow AI</a><a href="products.html">Sentinel AI</a><a href="products.html">DataPulse Analytics</a></div>
-        <div class="footer-col"><h4>Connect</h4><a href="#">LinkedIn</a><a href="#">GitHub</a><a href="#">Twitter / X</a><a href="#">Blog</a></div>
+        <div class="footer-brand"><a href="../index.html" class="logo"><div class="logo-mark">CO</div><div class="logo-text">Code Origin<span>.AI</span></div></a><p>Engineering intelligence for a digital world. Enterprise-grade AI systems, secure platforms, and cloud-native solutions.</p></div>
+        <div class="footer-col"><h5>Services</h5><a href="services.html#ai">AI &amp; Machine Learning</a><a href="services.html#software">Software Engineering</a><a href="services.html#cloud">Cloud &amp; DevOps</a><a href="services.html#security">Cybersecurity</a><a href="services.html#data">Data &amp; Analytics</a></div>
+        <div class="footer-col"><h5>Company</h5><a href="about.html">About Us</a><a href="careers.html">Careers</a><a href="insights.html">Insights</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h5>Products</h5><a href="products.html">Origin Neural Engine</a><a href="products.html">CodeFlow AI</a><a href="products.html">Sentinel AI</a><a href="products.html">DataPulse Analytics</a></div>
+        <div class="footer-col"><h5>Legal</h5><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="responsible-ai.html">Responsible AI</a><a href="accessibility.html">Accessibility</a></div>
       </div>
-      <div class="footer-bottom">
-        <span>&copy; 2024 Code Origin.AI. All rights reserved.</span>
-        <div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a></div>
-      </div>
+      <div class="footer-bottom"><span>&copy; 2025 Code Origin.AI Private Limited. All rights reserved.</span><div class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="security.html">Security</a></div></div>
     </div>
   </footer>
   <script src="../js/app.js"></script>

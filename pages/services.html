@@ -3,269 +3,356 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Code Origin.AI Services — Enterprise AI, Software Engineering, Cloud, Security, Data Analytics, and Digital Transformation solutions.">
+  <meta name="description" content="Code Origin.AI Services — Enterprise AI, Software Engineering, Cloud & DevOps, Cybersecurity, Data Analytics, Digital Transformation, Product Engineering, and Quality Engineering.">
   <title>Services — Code Origin.AI</title>
+  <link rel="canonical" href="https://codeorigin.ai/services">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%232563eb'/><text x='50' y='66' text-anchor='middle' font-size='40' font-weight='bold' fill='white'>CO</text></svg>">
 </head>
 <body>
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
 
-  <!-- ═══ HEADER ═══ -->
   <header class="header">
     <div class="header-inner">
-      <a href="../index.html" class="logo">
-        <div class="logo-icon">CO</div>
+      <a href="../index.html" class="logo" aria-label="Code Origin.AI Home">
+        <div class="logo-mark">CO</div>
         <div class="logo-text">Code Origin<span>.AI</span></div>
       </a>
-      <nav class="nav">
-        <a href="services.html">Services</a>
-        <a href="products.html">Products</a>
-        <a href="industries.html">Industries</a>
-        <a href="insights.html">Insights</a>
-        <a href="careers.html">Careers</a>
-        <a href="about.html">About</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="about.html" class="nav-item">Company</a>
+        <a href="services.html" class="nav-item active">Services</a>
+        <a href="products.html" class="nav-item">Products</a>
+        <a href="industries.html" class="nav-item">Industries</a>
+        <a href="insights.html" class="nav-item">Insights</a>
+        <a href="careers.html" class="nav-item">Careers</a>
       </nav>
-      <div class="header-cta">
-        <a href="contact.html" class="btn btn-primary">Get Started</a>
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary">Talk to Our Experts</a>
       </div>
-      <button class="menu-btn" aria-label="Menu"><span></span></button>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
     </div>
   </header>
 
-  <!-- ═══ MOBILE NAV ═══ -->
-  <nav class="mobile-nav">
+  <nav class="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="about.html">Company</a>
     <a href="services.html">Services</a>
     <a href="products.html">Products</a>
     <a href="industries.html">Industries</a>
     <a href="insights.html">Insights</a>
     <a href="careers.html">Careers</a>
-    <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- ═══ PAGE HERO ═══ -->
+  <main id="main-content">
+
+
   <section class="page-hero">
     <div class="container">
-      <span class="label reveal">Our Services</span>
-      <h1 class="reveal">Technology Solutions<br>That <span class="text-gradient">Drive Results</span></h1>
-      <p class="reveal">Comprehensive technology services spanning AI, engineering, cloud, security, and beyond — each tailored to your organization's unique challenges.</p>
+      <div class="section-label reveal">Our Services</div>
+      <h1 class="reveal">Technology Solutions That<br><span class="text-gradient">Drive Results</span></h1>
+      <p class="reveal">Comprehensive technology services spanning AI, engineering, cloud, security, and beyond — each tailored to your organization's unique challenges and goals.</p>
     </div>
   </section>
 
-  <!-- ═══ SERVICE BLOCKS ═══ -->
-  <section class="section">
+  <!-- ═══ AI & MACHINE LEARNING ═══ -->
+  <section class="section" id="ai">
     <div class="container">
-
-      <!-- AI & ML -->
-      <div class="glass-card reveal" style="margin-bottom:2rem;padding:3rem">
-        <div style="display:flex;align-items:flex-start;gap:2rem;flex-wrap:wrap">
-          <div class="svc-icon" style="flex-shrink:0">
-            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      <div class="grid-2" style="gap:var(--space-12);align-items:start">
+        <div class="reveal">
+          <div class="section-label">01</div>
+          <h2>AI &amp; Machine <span class="text-gradient">Learning</span></h2>
+          <p style="color:var(--gray-400);margin-top:var(--space-4);line-height:1.8">We design, train, and deploy custom AI models that solve complex business problems. From computer vision to natural language processing, our ML engineers build systems that learn, adapt, and scale.</p>
+          <h5 style="margin-top:var(--space-8);margin-bottom:var(--space-4);color:var(--gray-300)">Business Challenge</h5>
+          <p style="color:var(--gray-500);font-size:var(--text-sm);line-height:1.7">Organizations need to extract actionable intelligence from vast amounts of data, automate complex decision-making, and deliver personalized experiences — all while maintaining reliability and governance.</p>
+          <a href="contact.html" class="btn btn-primary mt-8">Discuss AI Solutions &rarr;</a>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <h5 style="margin-bottom:var(--space-4);color:var(--gray-300)">Capabilities</h5>
+          <div class="grid-2" style="gap:var(--space-3)">
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Custom Model Development</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Generative AI &amp; LLMs</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">RAG Systems</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">AI Agents &amp; Copilots</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">MLOps &amp; Model Monitoring</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Computer Vision</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">NLP &amp; Language AI</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Predictive Intelligence</span></div>
           </div>
-          <div style="flex:1;min-width:280px">
-            <h2>AI & Machine Learning</h2>
-            <p style="color:var(--gray-400);margin-top:1rem;font-size:.95rem;line-height:1.8">We design, train, and deploy custom AI models that solve complex business problems. From computer vision to natural language processing, our ML engineers build systems that learn, adapt, and scale.</p>
-            <div style="margin-top:2rem">
-              <h4 style="color:var(--gray-200);margin-bottom:1rem;font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em">Capabilities</h4>
-              <div class="grid-3" style="gap:12px">
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Custom Model Development</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Deep Learning Pipelines</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">MLOps & Model Monitoring</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">LLM Fine-Tuning</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Generative AI Solutions</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">AI Strategy Consulting</span></div>
-              </div>
-            </div>
+          <h5 style="margin-top:var(--space-6);margin-bottom:var(--space-3);color:var(--gray-300)">Technology</h5>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">LangChain</span>
+            <span class="tag">Hugging Face</span><span class="tag">OpenAI</span><span class="tag">MLflow</span>
+            <span class="tag">Ray</span><span class="tag">ONNX</span>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Software Engineering -->
-      <div class="glass-card reveal" style="margin-bottom:2rem;padding:3rem">
-        <div style="display:flex;align-items:flex-start;gap:2rem;flex-wrap:wrap">
-          <div class="svc-icon" style="flex-shrink:0">
-            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+  <!-- ═══ SOFTWARE ENGINEERING ═══ -->
+  <section class="section section-alt" id="software">
+    <div class="container">
+      <div class="grid-2" style="gap:var(--space-12);align-items:start">
+        <div class="reveal">
+          <div class="section-label">02</div>
+          <h2>Software <span class="text-gradient-subtle">Engineering</span></h2>
+          <p style="color:var(--gray-400);margin-top:var(--space-4);line-height:1.8">Scalable, maintainable, and performant software solutions built with modern engineering practices. We craft architectures that stand the test of time and grow with your business.</p>
+          <h5 style="margin-top:var(--space-8);margin-bottom:var(--space-4);color:var(--gray-300)">Business Challenge</h5>
+          <p style="color:var(--gray-500);font-size:var(--text-sm);line-height:1.7">Building software that scales requires deep expertise in architecture, clean code practices, and modern development workflows that enable rapid iteration without sacrificing quality.</p>
+          <a href="contact.html" class="btn btn-primary mt-8">Discuss Engineering &rarr;</a>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <h5 style="margin-bottom:var(--space-4);color:var(--gray-300)">Capabilities</h5>
+          <div class="grid-2" style="gap:var(--space-3)">
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Microservices Architecture</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Full Stack Development</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">API Design &amp; Development</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Mobile Applications</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Legacy Modernization</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Performance Optimization</span></div>
           </div>
-          <div style="flex:1;min-width:280px">
-            <h2>Software Engineering</h2>
-            <p style="color:var(--gray-400);margin-top:1rem;font-size:.95rem;line-height:1.8">Scalable, maintainable, and performant software solutions built with modern engineering practices. We craft architectures that stand the test of time and grow with your business.</p>
-            <div style="margin-top:2rem">
-              <h4 style="color:var(--gray-200);margin-bottom:1rem;font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em">Capabilities</h4>
-              <div class="grid-3" style="gap:12px">
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Microservices Architecture</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Full Stack Development</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">API Design & Development</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Mobile Applications</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Legacy Modernization</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Performance Optimization</span></div>
-              </div>
-            </div>
+          <h5 style="margin-top:var(--space-6);margin-bottom:var(--space-3);color:var(--gray-300)">Technology</h5>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Node.js</span>
+            <span class="tag">Go</span><span class="tag">Python</span><span class="tag">Java</span>
+            <span class="tag">GraphQL</span><span class="tag">gRPC</span>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Cloud & DevOps -->
-      <div class="glass-card reveal" style="margin-bottom:2rem;padding:3rem">
-        <div style="display:flex;align-items:flex-start;gap:2rem;flex-wrap:wrap">
-          <div class="svc-icon" style="flex-shrink:0">
-            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+
+  <!-- ═══ CLOUD & DEVOPS ═══ -->
+  <section class="section" id="cloud">
+    <div class="container">
+      <div class="grid-2" style="gap:var(--space-12);align-items:start">
+        <div class="reveal">
+          <div class="section-label">03</div>
+          <h2>Cloud &amp; <span class="text-gradient">DevOps</span></h2>
+          <p style="color:var(--gray-400);margin-top:var(--space-4);line-height:1.8">Cloud-native architectures and DevOps excellence that enable rapid, reliable software delivery. We build infrastructure that scales automatically and recovers gracefully.</p>
+          <h5 style="margin-top:var(--space-8);margin-bottom:var(--space-4);color:var(--gray-300)">Business Challenge</h5>
+          <p style="color:var(--gray-500);font-size:var(--text-sm);line-height:1.7">Organizations need infrastructure that handles unpredictable demand, supports rapid deployment cycles, and maintains cost efficiency across multi-cloud environments.</p>
+          <a href="contact.html" class="btn btn-primary mt-8">Discuss Cloud Strategy &rarr;</a>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <h5 style="margin-bottom:var(--space-4);color:var(--gray-300)">Capabilities</h5>
+          <div class="grid-2" style="gap:var(--space-3)">
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Cloud Migration &amp; Strategy</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Infrastructure as Code</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">CI/CD Pipeline Design</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Kubernetes Orchestration</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Multi-Cloud Architecture</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Cost Optimization</span></div>
           </div>
-          <div style="flex:1;min-width:280px">
-            <h2>Cloud & DevOps</h2>
-            <p style="color:var(--gray-400);margin-top:1rem;font-size:.95rem;line-height:1.8">Cloud-native architectures and DevOps excellence that enable rapid, reliable software delivery. We build infrastructure that scales automatically and recovers gracefully.</p>
-            <div style="margin-top:2rem">
-              <h4 style="color:var(--gray-200);margin-bottom:1rem;font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em">Capabilities</h4>
-              <div class="grid-3" style="gap:12px">
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Cloud Migration & Strategy</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Infrastructure as Code</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">CI/CD Pipeline Design</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Kubernetes Orchestration</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Multi-Cloud Architecture</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Cost Optimization</span></div>
-              </div>
-            </div>
+          <h5 style="margin-top:var(--space-6);margin-bottom:var(--space-3);color:var(--gray-300)">Technology</h5>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">GCP</span>
+            <span class="tag">Kubernetes</span><span class="tag">Terraform</span><span class="tag">Docker</span>
+            <span class="tag">ArgoCD</span><span class="tag">Helm</span>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Cybersecurity -->
-      <div class="glass-card reveal" style="margin-bottom:2rem;padding:3rem">
-        <div style="display:flex;align-items:flex-start;gap:2rem;flex-wrap:wrap">
-          <div class="svc-icon" style="flex-shrink:0">
-            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+  <!-- ═══ CYBERSECURITY ═══ -->
+  <section class="section section-alt" id="security">
+    <div class="container">
+      <div class="grid-2" style="gap:var(--space-12);align-items:start">
+        <div class="reveal">
+          <div class="section-label">04</div>
+          <h2><span class="text-gradient-subtle">Cybersecurity</span></h2>
+          <p style="color:var(--gray-400);margin-top:var(--space-4);line-height:1.8">Comprehensive security solutions that protect your digital assets and ensure compliance. We implement defense-in-depth strategies powered by AI-driven threat detection.</p>
+          <h5 style="margin-top:var(--space-8);margin-bottom:var(--space-4);color:var(--gray-300)">Business Challenge</h5>
+          <p style="color:var(--gray-500);font-size:var(--text-sm);line-height:1.7">The attack surface is expanding rapidly with cloud adoption, AI systems, and distributed workforces. Organizations need proactive security that adapts to evolving threats.</p>
+          <a href="contact.html" class="btn btn-primary mt-8">Discuss Security &rarr;</a>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <h5 style="margin-bottom:var(--space-4);color:var(--gray-300)">Capabilities</h5>
+          <div class="grid-2" style="gap:var(--space-3)">
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Zero-Trust Architecture</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Penetration Testing</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Security Operations (SOC)</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Compliance &amp; Audit</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Incident Response</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">AI Threat Detection</span></div>
           </div>
-          <div style="flex:1;min-width:280px">
-            <h2>Cybersecurity</h2>
-            <p style="color:var(--gray-400);margin-top:1rem;font-size:.95rem;line-height:1.8">Comprehensive security solutions that protect your digital assets and ensure compliance. We implement defense-in-depth strategies powered by AI-driven threat detection.</p>
-            <div style="margin-top:2rem">
-              <h4 style="color:var(--gray-200);margin-bottom:1rem;font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em">Capabilities</h4>
-              <div class="grid-3" style="gap:12px">
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Zero-Trust Architecture</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Penetration Testing</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Security Operations (SOC)</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Compliance & Audit</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Incident Response</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">AI Threat Detection</span></div>
-              </div>
-            </div>
+          <h5 style="margin-top:var(--space-6);margin-bottom:var(--space-3);color:var(--gray-300)">Technology</h5>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag">Vault</span><span class="tag">Snyk</span><span class="tag">OWASP ZAP</span>
+            <span class="tag">Falco</span><span class="tag">Keycloak</span><span class="tag">OPA</span>
+            <span class="tag">Trivy</span><span class="tag">SonarQube</span>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Data & Analytics -->
-      <div class="glass-card reveal" style="margin-bottom:2rem;padding:3rem">
-        <div style="display:flex;align-items:flex-start;gap:2rem;flex-wrap:wrap">
-          <div class="svc-icon" style="flex-shrink:0">
-            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0022 16z"/></svg>
+
+  <!-- ═══ DATA & ANALYTICS ═══ -->
+  <section class="section" id="data">
+    <div class="container">
+      <div class="grid-2" style="gap:var(--space-12);align-items:start">
+        <div class="reveal">
+          <div class="section-label">05</div>
+          <h2>Data &amp; <span class="text-gradient">Analytics</span></h2>
+          <p style="color:var(--gray-400);margin-top:var(--space-4);line-height:1.8">Transform raw data into actionable intelligence. We build modern data platforms that enable real-time analytics, predictive modeling, and data-driven decision making.</p>
+          <h5 style="margin-top:var(--space-8);margin-bottom:var(--space-4);color:var(--gray-300)">Business Challenge</h5>
+          <p style="color:var(--gray-500);font-size:var(--text-sm);line-height:1.7">Data is growing exponentially but most organizations struggle to unify, govern, and extract value from their data assets across fragmented systems and silos.</p>
+          <a href="contact.html" class="btn btn-primary mt-8">Discuss Data Strategy &rarr;</a>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <h5 style="margin-bottom:var(--space-4);color:var(--gray-300)">Capabilities</h5>
+          <div class="grid-2" style="gap:var(--space-3)">
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Data Platform Design</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Real-Time ETL Pipelines</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Business Intelligence</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Predictive Analytics</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Data Governance</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Data Lake Architecture</span></div>
           </div>
-          <div style="flex:1;min-width:280px">
-            <h2>Data & Analytics</h2>
-            <p style="color:var(--gray-400);margin-top:1rem;font-size:.95rem;line-height:1.8">Transform raw data into actionable intelligence. We build modern data platforms that enable real-time analytics, predictive modeling, and data-driven decision making.</p>
-            <div style="margin-top:2rem">
-              <h4 style="color:var(--gray-200);margin-bottom:1rem;font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em">Capabilities</h4>
-              <div class="grid-3" style="gap:12px">
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Data Platform Design</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Real-Time ETL Pipelines</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Business Intelligence</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Predictive Analytics</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Data Governance</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Data Lake Architecture</span></div>
-              </div>
-            </div>
+          <h5 style="margin-top:var(--space-6);margin-bottom:var(--space-3);color:var(--gray-300)">Technology</h5>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag">PostgreSQL</span><span class="tag">Kafka</span><span class="tag">Snowflake</span>
+            <span class="tag">Spark</span><span class="tag">Elasticsearch</span><span class="tag">dbt</span>
+            <span class="tag">Airflow</span><span class="tag">Redshift</span>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Digital Transformation -->
-      <div class="glass-card reveal" style="margin-bottom:2rem;padding:3rem">
-        <div style="display:flex;align-items:flex-start;gap:2rem;flex-wrap:wrap">
-          <div class="svc-icon" style="flex-shrink:0">
-            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+  <!-- ═══ DIGITAL TRANSFORMATION ═══ -->
+  <section class="section section-alt" id="transformation">
+    <div class="container">
+      <div class="grid-2" style="gap:var(--space-12);align-items:start">
+        <div class="reveal">
+          <div class="section-label">06</div>
+          <h2>Digital <span class="text-gradient-subtle">Transformation</span></h2>
+          <p style="color:var(--gray-400);margin-top:var(--space-4);line-height:1.8">End-to-end digital strategy that aligns technology investments with business objectives. We guide organizations through comprehensive modernization journeys.</p>
+          <h5 style="margin-top:var(--space-8);margin-bottom:var(--space-4);color:var(--gray-300)">Business Challenge</h5>
+          <p style="color:var(--gray-500);font-size:var(--text-sm);line-height:1.7">Legacy systems, fragmented processes, and technical debt prevent organizations from moving fast and competing effectively in the digital economy.</p>
+          <a href="contact.html" class="btn btn-primary mt-8">Discuss Transformation &rarr;</a>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <h5 style="margin-bottom:var(--space-4);color:var(--gray-300)">Capabilities</h5>
+          <div class="grid-2" style="gap:var(--space-3)">
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Digital Strategy</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Technology Roadmapping</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Process Automation</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Change Management</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Legacy Modernization</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Innovation Programs</span></div>
           </div>
-          <div style="flex:1;min-width:280px">
-            <h2>Digital Transformation</h2>
-            <p style="color:var(--gray-400);margin-top:1rem;font-size:.95rem;line-height:1.8">End-to-end digital strategy that aligns technology investments with business objectives. We guide organizations through comprehensive modernization journeys.</p>
-            <div style="margin-top:2rem">
-              <h4 style="color:var(--gray-200);margin-bottom:1rem;font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em">Capabilities</h4>
-              <div class="grid-3" style="gap:12px">
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Digital Strategy</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Technology Roadmapping</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Process Automation</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Change Management</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Legacy Modernization</span></div>
-                <div class="glass glass-sm"><span style="font-size:.85rem;color:var(--gray-300)">Innovation Labs</span></div>
-              </div>
-            </div>
+          <h5 style="margin-top:var(--space-6);margin-bottom:var(--space-3);color:var(--gray-300)">Approach</h5>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag">Agile</span><span class="tag">Design Thinking</span><span class="tag">Value Stream</span>
+            <span class="tag">OKRs</span><span class="tag">TOGAF</span><span class="tag">Lean</span>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
+
+  <!-- ═══ PRODUCT ENGINEERING ═══ -->
+  <section class="section" id="product">
+    <div class="container">
+      <div class="grid-2" style="gap:var(--space-12);align-items:start">
+        <div class="reveal">
+          <div class="section-label">07</div>
+          <h2>Product <span class="text-gradient">Engineering</span></h2>
+          <p style="color:var(--gray-400);margin-top:var(--space-4);line-height:1.8">End-to-end product development from concept to scale. We build products that users love, leveraging modern design systems, rapid prototyping, and iterative delivery.</p>
+          <h5 style="margin-top:var(--space-8);margin-bottom:var(--space-4);color:var(--gray-300)">Business Challenge</h5>
+          <p style="color:var(--gray-500);font-size:var(--text-sm);line-height:1.7">Building successful products requires balancing user experience, technical excellence, speed-to-market, and sustainable architecture that supports long-term growth.</p>
+          <a href="contact.html" class="btn btn-primary mt-8">Discuss Product &rarr;</a>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <h5 style="margin-bottom:var(--space-4);color:var(--gray-300)">Capabilities</h5>
+          <div class="grid-2" style="gap:var(--space-3)">
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Product Strategy</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">UX/UI Design</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">MVP Development</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Growth Engineering</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Platform Architecture</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Analytics &amp; Optimization</span></div>
+          </div>
+          <h5 style="margin-top:var(--space-6);margin-bottom:var(--space-3);color:var(--gray-300)">Technology</h5>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">React Native</span>
+            <span class="tag">Figma</span><span class="tag">Amplitude</span><span class="tag">LaunchDarkly</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ QUALITY ENGINEERING ═══ -->
+  <section class="section section-alt" id="quality">
+    <div class="container">
+      <div class="grid-2" style="gap:var(--space-12);align-items:start">
+        <div class="reveal">
+          <div class="section-label">08</div>
+          <h2>Quality <span class="text-gradient-subtle">Engineering</span></h2>
+          <p style="color:var(--gray-400);margin-top:var(--space-4);line-height:1.8">Comprehensive quality assurance and testing automation that ensures reliability, performance, and security across your entire technology portfolio.</p>
+          <h5 style="margin-top:var(--space-8);margin-bottom:var(--space-4);color:var(--gray-300)">Business Challenge</h5>
+          <p style="color:var(--gray-500);font-size:var(--text-sm);line-height:1.7">As systems grow in complexity, maintaining quality requires automated testing pipelines, performance validation, and continuous quality gates integrated into CI/CD workflows.</p>
+          <a href="contact.html" class="btn btn-primary mt-8">Discuss Quality &rarr;</a>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <h5 style="margin-bottom:var(--space-4);color:var(--gray-300)">Capabilities</h5>
+          <div class="grid-2" style="gap:var(--space-3)">
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Test Automation</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Performance Testing</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Security Testing</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">Mobile Testing</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">API Testing</span></div>
+            <div class="card card-sm"><span style="font-size:var(--text-sm);color:var(--gray-300)">CI/CD Quality Gates</span></div>
+          </div>
+          <h5 style="margin-top:var(--space-6);margin-bottom:var(--space-3);color:var(--gray-300)">Technology</h5>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag">Playwright</span><span class="tag">Cypress</span><span class="tag">k6</span>
+            <span class="tag">JMeter</span><span class="tag">Postman</span><span class="tag">Selenium</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ═══ CTA ═══ -->
-  <section class="section cta-block">
+  <section class="cta-section">
     <div class="container" style="max-width:800px">
-      <div class="reveal" style="text-align:center">
+      <div class="reveal">
         <h2>Let's Build Something <span class="text-gradient">Extraordinary</span></h2>
-        <p style="color:var(--gray-400);font-size:1.1rem;margin:1.5rem 0 2.5rem;line-height:1.8">Ready to transform your technology landscape? Let's start a conversation about your goals.</p>
-        <a href="contact.html" class="btn btn-primary btn-lg">Start a Conversation</a>
+        <p>Ready to transform your technology landscape? Let's start a conversation about your goals and challenges.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary btn-lg">Talk to Our Experts</a>
+          <a href="industries.html" class="btn btn-secondary btn-lg">View Industries</a>
+        </div>
       </div>
     </div>
   </section>
+  </main>
 
-  <!-- ═══ FOOTER ═══ -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="../index.html" class="logo">
-            <div class="logo-icon">CO</div>
-            <div class="logo-text">Code Origin<span>.AI</span></div>
-          </a>
-          <p>Engineering intelligence for a digital world. We build enterprise-grade AI systems that transform how organizations operate and innovate.</p>
+          <a href="../index.html" class="logo"><div class="logo-mark">CO</div><div class="logo-text">Code Origin<span>.AI</span></div></a>
+          <p>Engineering intelligence for a digital world. We build enterprise-grade AI systems, secure platforms, and cloud-native solutions.</p>
         </div>
-        <div class="footer-col">
-          <h4>Services</h4>
-          <a href="services.html">AI & Machine Learning</a>
-          <a href="services.html">Software Engineering</a>
-          <a href="services.html">Cloud & DevOps</a>
-          <a href="services.html">Cybersecurity</a>
-          <a href="services.html">Data & Analytics</a>
-        </div>
-        <div class="footer-col">
-          <h4>Company</h4>
-          <a href="about.html">About Us</a>
-          <a href="careers.html">Careers</a>
-          <a href="insights.html">Insights</a>
-          <a href="contact.html">Contact</a>
-        </div>
-        <div class="footer-col">
-          <h4>Products</h4>
-          <a href="products.html">Origin Neural Engine</a>
-          <a href="products.html">CodeFlow AI</a>
-          <a href="products.html">Sentinel AI</a>
-          <a href="products.html">DataPulse Analytics</a>
-        </div>
-        <div class="footer-col">
-          <h4>Connect</h4>
-          <a href="#">LinkedIn</a>
-          <a href="#">GitHub</a>
-          <a href="#">Twitter / X</a>
-          <a href="#">Blog</a>
-        </div>
+        <div class="footer-col"><h5>Services</h5><a href="services.html#ai">AI &amp; Machine Learning</a><a href="services.html#software">Software Engineering</a><a href="services.html#cloud">Cloud &amp; DevOps</a><a href="services.html#security">Cybersecurity</a><a href="services.html#data">Data &amp; Analytics</a></div>
+        <div class="footer-col"><h5>Company</h5><a href="about.html">About Us</a><a href="careers.html">Careers</a><a href="insights.html">Insights</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h5>Products</h5><a href="products.html">Origin Neural Engine</a><a href="products.html">CodeFlow AI</a><a href="products.html">Sentinel AI</a><a href="products.html">DataPulse Analytics</a></div>
+        <div class="footer-col"><h5>Legal</h5><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="responsible-ai.html">Responsible AI</a><a href="accessibility.html">Accessibility</a></div>
       </div>
       <div class="footer-bottom">
-        <span>&copy; 2024 Code Origin.AI. All rights reserved.</span>
-        <div class="footer-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Cookie Policy</a>
-        </div>
+        <span>&copy; 2025 Code Origin.AI Private Limited. All rights reserved.</span>
+        <div class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="security.html">Security</a></div>
       </div>
     </div>
   </footer>
-
   <script src="../js/app.js"></script>
 </body>
 </html>
