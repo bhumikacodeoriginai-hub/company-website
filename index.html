@@ -20,6 +20,7 @@
 
   <link rel="canonical" href="https://codeorigin.ai">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations-2026.css">
   <link rel="icon" type="image/jpeg" href="assets/logo.jpeg">
 
   <!-- Structured Data -->
@@ -205,29 +206,33 @@
 
 
   <!-- ═══ HERO ═══ -->
-  <section class="hero" aria-label="Introduction">
+  <section class="hero fluid-gradient" aria-label="Introduction">
     <div class="hero-canvas" aria-hidden="true">
       <canvas id="hero-3d"></canvas>
     </div>
     <div class="hero-overlay"></div>
+    <!-- Morphing background blobs -->
+    <div class="morph-blob morph-blob-1" aria-hidden="true"></div>
+    <div class="morph-blob morph-blob-2" aria-hidden="true"></div>
+    <div class="morph-blob morph-blob-3" aria-hidden="true"></div>
     <!-- Decorative floating orbs -->
-    <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
-    <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
-    <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-1 float" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-2 float-delayed" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-3 float-slow" aria-hidden="true"></div>
     <div class="hero-content">
       <div class="hero-text">
         <div class="hero-eyebrow">
           <img src="assets/logo.jpeg" alt="" class="hero-eyebrow-logo" height="22" width="50" aria-hidden="true">
           Code Origin.AI Private Limited
         </div>
-        <h1>Engineering Intelligence.<br>Building What <span class="text-gradient">Comes Next.</span></h1>
+        <h1 class="text-shimmer">Engineering Intelligence.<br>Building What <span class="text-gradient">Comes Next.</span></h1>
         <p class="hero-desc">We engineer intelligent software, AI systems, secure digital platforms and cloud-native solutions that help organizations build, modernize and scale.</p>
         <div class="hero-actions">
-          <a href="pages/contact.html" class="btn btn-primary btn-lg">
+          <a href="pages/contact.html" class="btn btn-primary btn-lg btn-magnetic">
             <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l4 4 8-8"/></svg>
             Talk to Our Experts
           </a>
-          <a href="pages/services.html" class="btn btn-secondary btn-lg">
+          <a href="pages/services.html" class="btn btn-secondary btn-lg btn-magnetic">
             <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="9" r="7"/><path d="M9 5v4l3 2"/></svg>
             Explore Capabilities
           </a>
@@ -242,11 +247,12 @@
   <!-- ═══ VIDEO SHOWCASE ═══ -->
   <section class="video-showcase">
     <div class="container">
-      <div class="video-cta-card">
+      <div class="video-cta-card glass-card-animated gradient-border-animated reveal-scale">
+        <div class="particles-bg" aria-hidden="true"></div>
         <div class="video-cta-content">
-          <h3>See Us in Action</h3>
+          <h3 class="neon-text">See Us in Action</h3>
           <p>Watch our videos showcasing intelligent systems and digital solutions we engineer.</p>
-          <a href="pages/gallery.html" class="btn btn-primary">Visit Gallery &rarr;</a>
+          <a href="pages/gallery.html" class="btn btn-primary btn-magnetic">Visit Gallery &rarr;</a>
         </div>
       </div>
     </div>
@@ -277,15 +283,16 @@
 
 
   <!-- ═══ BUSINESS IMPACT ═══ -->
-  <section class="section" id="impact">
+  <section class="section fluid-gradient" id="impact">
+    <div class="particles-bg" aria-hidden="true"></div>
     <div class="container">
-      <div class="section-header reveal">
+      <div class="section-header reveal-blur">
         <div class="section-label">What We Deliver</div>
         <h2>Technology That Moves <span class="text-gradient">Business Forward</span></h2>
         <p>Three pillars that define how we create value for organizations at every stage of their technology journey.</p>
       </div>
       <div class="impact-grid stagger-children">
-        <div class="impact-card reveal reveal-delay-1">
+        <div class="impact-card glass-card-animated reveal reveal-delay-1" data-parallax="0.03">
           <div class="impact-number">01</div>
           <div class="impact-title">Build</div>
           <p class="impact-desc">New digital products and platforms engineered from concept to production with modern architecture and AI-native design.</p>
@@ -296,7 +303,7 @@
             <span class="tag">Mobile &amp; Web</span>
           </div>
         </div>
-        <div class="impact-card reveal reveal-delay-2">
+        <div class="impact-card glass-card-animated reveal reveal-delay-2" data-parallax="0.05">
           <div class="impact-number">02</div>
           <div class="impact-title">Modernize</div>
           <p class="impact-desc">Transform legacy systems and infrastructure into cloud-native, API-first architectures ready for the AI era.</p>
@@ -307,7 +314,7 @@
             <span class="tag">Re-architecture</span>
           </div>
         </div>
-        <div class="impact-card reveal reveal-delay-3">
+        <div class="impact-card glass-card-animated reveal reveal-delay-3" data-parallax="0.04">
           <div class="impact-number">03</div>
           <div class="impact-title">Scale</div>
           <p class="impact-desc">Create secure, scalable cloud-native systems that grow with demand and maintain performance under pressure.</p>
@@ -322,10 +329,13 @@
     </div>
   </section>
 
+  <div class="section-divider"></div>
+
   <!-- ═══ AI INTELLIGENCE ARCHITECTURE ═══ -->
-  <section class="section section-alt" id="intelligence">
+  <section class="section section-alt fluid-gradient" id="intelligence">
+    <div class="particles-bg" aria-hidden="true"></div>
     <div class="container">
-      <div class="section-header reveal">
+      <div class="section-header reveal-blur">
         <div class="section-label">AI Excellence</div>
         <h2>Intelligence <span class="text-gradient-subtle">by Design</span></h2>
         <p>Purpose-built AI systems that transform data into decisions and automation into outcomes.</p>
@@ -422,15 +432,16 @@
   </section>
 
   <!-- ═══ PRODUCT SHOWCASE ═══ -->
-  <section class="section section-alt" id="products">
+  <section class="section section-alt fluid-gradient" id="products">
+    <div class="particles-bg" aria-hidden="true"></div>
     <div class="container">
-      <div class="section-header reveal">
+      <div class="section-header reveal-blur">
         <div class="section-label">Our Products</div>
         <h2>Products Built by <span class="text-gradient-subtle">Code Origin.AI</span></h2>
         <p>Proprietary platforms born from deep engineering expertise and real-world deployment experience.</p>
       </div>
       <div class="product-grid">
-        <div class="product-card reveal reveal-delay-1">
+        <div class="product-card glass-card-animated reveal reveal-delay-1">
           <span class="product-status dev">In Development</span>
           <h3>Origin Neural Engine</h3>
           <p>Enterprise AI orchestration platform for deploying, monitoring, and scaling machine learning models in production environments.</p>
@@ -438,7 +449,7 @@
             <span class="tag">MLOps</span><span class="tag">Model Serving</span><span class="tag">Auto-Scaling</span>
           </div>
         </div>
-        <div class="product-card reveal reveal-delay-2">
+        <div class="product-card glass-card-animated reveal reveal-delay-2">
           <span class="product-status dev">In Development</span>
           <h3>CodeFlow AI</h3>
           <p>AI-powered development platform that accelerates software delivery with intelligent code generation and automated testing.</p>
@@ -446,7 +457,7 @@
             <span class="tag">Code Generation</span><span class="tag">Testing</span><span class="tag">Code Review</span>
           </div>
         </div>
-        <div class="product-card reveal reveal-delay-3">
+        <div class="product-card glass-card-animated reveal reveal-delay-3">
           <span class="product-status dev">In Development</span>
           <h3>Sentinel AI</h3>
           <p>AI-driven cybersecurity platform providing real-time threat detection, automated response, and predictive threat intelligence.</p>
@@ -454,7 +465,7 @@
             <span class="tag">Threat Detection</span><span class="tag">SIEM</span><span class="tag">Auto Response</span>
           </div>
         </div>
-        <div class="product-card reveal reveal-delay-4">
+        <div class="product-card glass-card-animated reveal reveal-delay-4">
           <span class="product-status dev">In Development</span>
           <h3>DataPulse Analytics</h3>
           <p>Real-time data intelligence platform with natural language querying and automated insight generation for business teams.</p>
@@ -468,9 +479,10 @@
 
 
   <!-- ═══ ENGINEERING ARCHITECTURE ═══ -->
-  <section class="section" id="architecture">
+  <section class="section fluid-gradient" id="architecture">
+    <div class="particles-bg" aria-hidden="true"></div>
     <div class="container">
-      <div class="section-header center reveal">
+      <div class="section-header center reveal-blur">
         <div class="section-label">System Design</div>
         <h2>Engineered for <span class="text-gradient">Complexity</span></h2>
         <p>Multi-layered system architecture designed for security, scalability, and performance at every level.</p>
@@ -713,9 +725,9 @@
   </section>
 
   <!-- ═══ ENGINEERING PROCESS ═══ -->
-  <section class="section" id="process">
+  <section class="section fluid-gradient" id="process">
     <div class="container">
-      <div class="section-header center reveal">
+      <div class="section-header center reveal-blur">
         <div class="section-label">Our Process</div>
         <h2>How We <span class="text-gradient">Engineer</span></h2>
         <p>A precision-driven methodology that transforms complex challenges into production-ready solutions.</p>
@@ -894,9 +906,10 @@
   </section>
 
   <!-- ═══ GLOBAL PRESENCE ═══ -->
-  <section class="section" id="global">
+  <section class="section fluid-gradient" id="global">
+    <div class="particles-bg" aria-hidden="true"></div>
     <div class="container">
-      <div class="section-header center reveal">
+      <div class="section-header center reveal-blur">
         <div class="section-label">Global Reach</div>
         <h2>Engineering Across <span class="text-gradient">Boundaries</span></h2>
         <p>Delivering world-class solutions to organizations across continents and time zones.</p>
@@ -966,14 +979,17 @@
   </section>
 
   <!-- ═══ FINAL CTA ═══ -->
-  <section class="cta-section">
+  <section class="cta-section fluid-gradient">
+    <div class="morph-blob morph-blob-1" aria-hidden="true"></div>
+    <div class="morph-blob morph-blob-2" aria-hidden="true"></div>
+    <div class="particles-bg" aria-hidden="true"></div>
     <div class="container" style="max-width:800px">
-      <div class="reveal">
-        <h2>Ready to Build Something <span class="text-gradient">Meaningful</span>?</h2>
+      <div class="reveal-blur">
+        <h2 class="text-shimmer">Ready to Build Something <span class="text-gradient">Meaningful</span>?</h2>
         <p>Let's discuss how our engineering expertise and AI capabilities can accelerate your most ambitious projects.</p>
         <div class="cta-actions">
-          <a href="pages/contact.html" class="btn btn-primary btn-lg">Talk to Our Experts</a>
-          <a href="pages/services.html" class="btn btn-secondary btn-lg">Explore Services</a>
+          <a href="pages/contact.html" class="btn btn-primary btn-lg btn-magnetic pulse-glow">Talk to Our Experts</a>
+          <a href="pages/services.html" class="btn btn-secondary btn-lg btn-magnetic">Explore Services</a>
         </div>
       </div>
     </div>
@@ -1040,5 +1056,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="js/three-hero.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/animations-2026.js"></script>
 </body>
 </html>
