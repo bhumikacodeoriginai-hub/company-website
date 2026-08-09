@@ -1560,3 +1560,214 @@
   .bento-tall { grid-row: span 1; }
   .ai-chat-fab { bottom: 20px; right: 20px; width: 54px; height: 54px; }
 }
+
+
+
+/* ═══════════════════════════════════════════════════════
+   2D / 3D MODE TOGGLE SYSTEM
+   ═══════════════════════════════════════════════════════ */
+
+/* ═══ TOGGLE BUTTON ═══ */
+.mode-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  padding: 4px 6px;
+  border-radius: var(--radius-full);
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--glass-v2-border);
+  transition: all 0.3s ease;
+}
+.mode-toggle:hover {
+  border-color: rgba(212,164,24,0.3);
+  background: rgba(212,164,24,0.05);
+}
+.mode-toggle:focus-visible {
+  outline: 2px solid var(--gold-400);
+  outline-offset: 2px;
+}
+.mode-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--gray-500);
+  transition: color 0.3s, text-shadow 0.3s;
+  padding: 0 4px;
+}
+.mode-label.active {
+  color: var(--gold-400);
+  text-shadow: 0 0 8px rgba(212,164,24,0.5);
+}
+.mode-toggle-track {
+  width: 36px;
+  height: 20px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.08);
+  position: relative;
+  transition: background 0.3s;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.mode-toggle:hover .mode-toggle-track {
+  background: rgba(212,164,24,0.1);
+}
+.mode-toggle-thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--gradient-brand);
+  box-shadow: 0 0 8px rgba(212,164,24,0.5);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s;
+}
+/* 3D active = thumb on right */
+.mode-toggle[aria-checked="true"] .mode-toggle-thumb {
+  transform: translateX(16px);
+}
+/* 2D active = thumb on left */
+.mode-toggle[aria-checked="false"] .mode-toggle-thumb {
+  transform: translateX(0);
+  background: var(--gray-400);
+  box-shadow: 0 0 6px rgba(148,160,184,0.4);
+}
+
+/* ═══ 2D MODE TRANSITIONS ═══ */
+/* Smooth transition for all 3D elements when switching modes */
+.hero-canvas,
+.hero-overlay,
+.morph-blob,
+.hero-orb,
+.particles-bg,
+.cursor-glow,
+.cursor-dot,
+.noise-overlay,
+#light-trails,
+.fluid-gradient::before {
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.6s,
+              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ═══ 2D MODE — When body has .mode-2d class ═══ */
+body.mode-2d .hero-canvas,
+body.mode-2d .hero-overlay {
+  opacity: 0 !important;
+  visibility: hidden;
+}
+body.mode-2d .morph-blob,
+body.mode-2d .hero-orb,
+body.mode-2d .particles-bg,
+body.mode-2d #light-trails,
+body.mode-2d .noise-overlay {
+  opacity: 0 !important;
+  visibility: hidden;
+  pointer-events: none;
+}
+body.mode-2d .cursor-glow,
+body.mode-2d .cursor-dot {
+  display: none !important;
+}
+body.mode-2d .fluid-gradient::before {
+  opacity: 0 !important;
+}
+
+/* 2D mode hero — clean gradient background instead of 3D */
+body.mode-2d .hero {
+  background: linear-gradient(135deg, #0a0a0a 0%, #111111 40%, #1a1a1a 100%);
+}
+body.mode-2d .hero::after {
+  background: none;
+}
+
+/* 2D mode — disable tilt, magnetic, parallax effects */
+body.mode-2d .glass-card-animated:hover,
+body.mode-2d .impact-card:hover {
+  transform: translateY(-4px) !important;
+}
+body.mode-2d .btn-magnetic {
+  transform: none !important;
+}
+
+/* 2D mode — simpler reveal animations (no blur) */
+body.mode-2d .reveal {
+  filter: none;
+}
+body.mode-2d .reveal-blur {
+  filter: none;
+  transform: translateY(20px);
+}
+body.mode-2d .reveal-blur.visible {
+  transform: translateY(0);
+}
+
+/* 2D mode — capability band: static, no animation */
+body.mode-2d .capability-band-track {
+  animation: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: auto;
+  gap: var(--space-6);
+}
+
+/* 2D mode — text shimmer: static gradient */
+body.mode-2d .text-shimmer {
+  animation: none;
+  background-position: 0% 50%;
+}
+
+/* 2D mode — section-alt gets a subtle clean border */
+body.mode-2d .section-alt {
+  background: rgba(20,20,20,0.6);
+}
+
+/* 2D mode — glass cards: cleaner, less blur */
+body.mode-2d .glass-card-animated {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  background: rgba(15,15,15,0.9);
+  border-color: rgba(212,164,24,0.15);
+}
+body.mode-2d .glass-card-animated::before {
+  display: none;
+}
+
+/* 2D mode — no floating animations */
+body.mode-2d .float,
+body.mode-2d .float-delayed,
+body.mode-2d .float-slow {
+  animation: none !important;
+}
+
+/* 2D mode — scroll progress: flat color */
+body.mode-2d .scroll-progress {
+  box-shadow: none;
+}
+
+/* 2D mode — bento items: flat borders */
+body.mode-2d .bento-item:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+/* ═══ MODE TRANSITION OVERLAY ═══ */
+.mode-transition-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99998;
+  background: var(--navy-950);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.mode-transition-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+@media (max-width: 768px) {
+  .mode-toggle {
+    display: none;
+  }
+}
