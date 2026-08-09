@@ -335,7 +335,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         card.style.setProperty('--glow-x', x + 'px');
         card.style.setProperty('--glow-y', y + 'px');
-        card.style.background = `radial-gradient(circle 150px at ${x}px ${y}px, rgba(37,99,235,0.06), transparent), var(--glass-v2-bg)`;
+        card.style.background = `radial-gradient(circle 150px at ${x}px ${y}px, rgba(212,164,24,0.06), transparent), var(--glass-v2-bg)`;
       });
 
       card.addEventListener('mouseleave', () => {

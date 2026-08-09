@@ -19,7 +19,7 @@ let H = window.innerHeight;
 
 // Scene setup
 const scene = new THREE.Scene();
-scene.fog = new THREE.FogExp2(0x0a0e1a, 0.008);
+scene.fog = new THREE.FogExp2(0x000000, 0.008);
 
 const camera = new THREE.PerspectiveCamera(55, W / H, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer({
@@ -34,18 +34,18 @@ renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 1.2;
 camera.position.set(0, 0, isMobile ? 40 : 30);
 
-// Color palette — 2026 neon-dark theme
+// Color palette — Black & Gold luxury theme
 const colors = {
-  primary: 0x2563eb,
-  secondary: 0x7c3aed,
-  accent: 0x06b6d4,
-  neon: 0x00f5ff,
-  pink: 0xec4899,
-  green: 0x10b981,
-  orange: 0xf59e0b,
+  primary: 0xd4a418,
+  secondary: 0xa87e00,
+  accent: 0xffd700,
+  neon: 0xffd700,
+  pink: 0xc8960c,
+  green: 0xe6b820,
+  orange: 0xf0cc44,
   white: 0xffffff,
-  softBlue: 0x3b82f6,
-  deepPurple: 0x6366f1
+  softBlue: 0xd4a418,
+  deepPurple: 0x6b4e00
 };
 
 // ═══ CENTRAL CORE — Morphing Icosahedron ═══
