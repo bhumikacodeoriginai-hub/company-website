@@ -216,18 +216,18 @@ h6 { font-size: var(--text-sm); font-weight: 600; text-transform: uppercase; let
 /* Logo */
 .logo { display: flex; align-items: center; gap: 10px; z-index: 1001; }
 .logo-img {
-  height: 36px !important;
-  max-height: 36px !important;
+  height: 38px !important;
+  max-height: 38px !important;
   width: auto !important;
-  max-width: 160px !important;
-  object-fit: contain;
-  border-radius: 4px;
+  max-width: 150px !important;
+  object-fit: contain !important;
+  border-radius: 0;
   display: block;
-  transition: transform var(--duration-base) var(--ease), filter var(--duration-base);
+  transition: transform 0.25s ease, filter 0.25s ease;
 }
 .logo:hover .logo-img {
-  transform: scale(1.04);
-  filter: brightness(1.1);
+  transform: scale(1.03);
+  filter: brightness(1.08);
 }
 .logo-mark {
   width: 36px; height: 36px; border-radius: 8px;
@@ -1605,10 +1605,10 @@ h6 { font-size: var(--text-sm); font-weight: 600; text-transform: uppercase; let
   pointer-events: none;
 }
 .footer-brand .logo-img {
-  height: 30px !important;
-  max-height: 30px !important;
-  max-width: 140px !important;
-  transition: all 0.3s var(--ease);
+  height: 32px !important;
+  max-height: 32px !important;
+  max-width: 130px !important;
+  transition: all 0.3s ease;
 }
 .footer-brand .logo:hover .logo-img {
   transform: scale(1.05);
@@ -1822,11 +1822,11 @@ h6 { font-size: var(--text-sm); font-weight: 600; text-transform: uppercase; let
 
 /* ═══ HERO ORBS & EYEBROW LOGO ═══ */
 .hero-eyebrow-logo {
-  width: 20px;
-  height: 20px;
-  max-width: 20px;
-  max-height: 20px;
-  border-radius: 3px;
+  width: 22px;
+  height: 22px;
+  max-width: 22px;
+  max-height: 22px;
+  border-radius: 2px;
   object-fit: contain;
   display: inline-block;
   vertical-align: middle;
