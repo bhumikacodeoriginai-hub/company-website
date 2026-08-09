@@ -216,10 +216,13 @@ h6 { font-size: var(--text-sm); font-weight: 600; text-transform: uppercase; let
 /* Logo */
 .logo { display: flex; align-items: center; gap: 10px; z-index: 1001; }
 .logo-img {
-  height: 40px;
+  height: 36px;
+  max-height: 36px;
   width: auto;
+  max-width: 160px;
   object-fit: contain;
   border-radius: 4px;
+  display: block;
   transition: transform var(--duration-base) var(--ease), filter var(--duration-base);
 }
 .logo:hover .logo-img {
@@ -1602,7 +1605,9 @@ h6 { font-size: var(--text-sm); font-weight: 600; text-transform: uppercase; let
   pointer-events: none;
 }
 .footer-brand .logo-img {
-  height: 32px;
+  height: 30px;
+  max-height: 30px;
+  max-width: 140px;
   transition: all 0.3s var(--ease);
 }
 .footer-brand .logo:hover .logo-img {
@@ -1817,10 +1822,14 @@ h6 { font-size: var(--text-sm); font-weight: 600; text-transform: uppercase; let
 
 /* ═══ HERO ORBS & EYEBROW LOGO ═══ */
 .hero-eyebrow-logo {
-  width: 22px;
-  height: 22px;
-  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  border-radius: 3px;
   object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
 }
 .hero-orb {
   position: absolute;
