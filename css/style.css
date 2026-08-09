@@ -2635,6 +2635,32 @@ h6 { font-size: var(--text-sm); font-weight: 600; text-transform: uppercase; let
   padding: 60px 0;
   position: relative;
 }
+.video-cta-card {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(139, 92, 246, 0.08));
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 50px 40px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.video-cta-card:hover {
+  box-shadow: 0 24px 70px rgba(0,0,0,0.4), 0 0 60px rgba(37,99,235,0.06);
+  transform: translateY(-2px);
+}
+.video-cta-content h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+.video-cta-content p {
+  color: var(--gray-400);
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .video-wrapper {
   position: relative;
   border-radius: 16px;
@@ -2646,7 +2672,6 @@ h6 { font-size: var(--text-sm); font-weight: 600; text-transform: uppercase; let
   aspect-ratio: 16 / 9;
   background: var(--navy-900);
 }
-/* Fallback for browsers that don't support aspect-ratio */
 @supports not (aspect-ratio: 16 / 9) {
   .video-wrapper {
     padding-bottom: 56.25%;
@@ -2665,43 +2690,14 @@ h6 { font-size: var(--text-sm); font-weight: 600; text-transform: uppercase; let
   display: block;
   border-radius: 16px;
 }
-.video-overlay-link {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 20px;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 50px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  z-index: 5;
-}
-.video-overlay-link:hover {
-  background: rgba(37, 99, 235, 0.8);
-  border-color: rgba(37, 99, 235, 0.6);
-  transform: scale(1.05);
-}
-.video-play-icon {
-  font-size: 0.9rem;
-}
-.video-play-text {
-  letter-spacing: 0.02em;
-}
 .video-wrapper:hover {
   box-shadow: 0 24px 70px rgba(0,0,0,0.5), 0 0 60px rgba(37,99,235,0.06);
 }
 
 @media (max-width: 768px) {
   .video-showcase { padding: 40px 0; }
+  .video-cta-card { padding: 35px 24px; border-radius: 12px; }
+  .video-cta-content h3 { font-size: 1.4rem; }
   .video-wrapper { border-radius: 12px; }
   .video-player { border-radius: 12px; }
-  .video-overlay-link { bottom: 12px; right: 12px; padding: 8px 14px; font-size: 0.78rem; }
 }

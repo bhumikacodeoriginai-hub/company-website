@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Code Origin.AI Gallery — Watch our videos and explore our visual portfolio showcasing AI systems, engineering excellence, and digital solutions.">
+  <title>Gallery — Code Origin.AI</title>
+  <link rel="canonical" href="https://codeorigin.ai/gallery">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/jpeg" href="../assets/logo.jpeg">
+  <style>
+    .gallery-hero {
+      padding: 120px 0 50px;
+      text-align: center;
+    }
+    .gallery-hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .gallery-hero p {
+      color: var(--gray-400);
+      font-size: 1.1rem;
+      max-width: 620px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .gallery-section {
+      padding: 20px 0 100px;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .gallery-card {
+      background: var(--navy-800, #1a1f36);
+      border: 1px solid var(--glass-border, rgba(255,255,255,0.08));
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .gallery-card:hover {
+      box-shadow: 0 24px 70px rgba(0,0,0,0.5), 0 0 60px rgba(37,99,235,0.08);
+      transform: translateY(-4px);
+    }
+    .gallery-card-video {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      display: block;
+      background: #000;
+      object-fit: cover;
+    }
+    .gallery-card-info {
+      padding: 24px 28px;
+    }
+    .gallery-card-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--white, #fff);
+    }
+    .gallery-card-desc {
+      color: var(--gray-400, #9ca3af);
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+    .gallery-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: rgba(37, 99, 235, 0.15);
+      border: 1px solid rgba(37, 99, 235, 0.3);
+      border-radius: 20px;
+      font-size: 0.75rem;
+      color: var(--blue-400, #60a5fa);
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-hero { padding: 100px 0 30px; }
+      .gallery-card { border-radius: 12px; }
+      .gallery-card-info { padding: 18px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo" aria-label="Code Origin.AI Home"><img src="../assets/logo.jpeg" alt="Code Origin.AI" class="logo-img" height="38" width="87"></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="about.html" class="nav-item">Company</a>
+        <a href="services.html" class="nav-item">Services</a>
+        <a href="products.html" class="nav-item">Products</a>
+        <a href="industries.html" class="nav-item">Industries</a>
+        <a href="insights.html" class="nav-item">Insights</a>
+        <a href="careers.html" class="nav-item">Careers</a>
+      </nav>
+      <div class="header-actions"><a href="contact.html" class="btn btn-primary">Talk to Our Experts</a></div>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    </div>
+  </header>
+  <nav class="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="about.html">Company</a><a href="services.html">Services</a>
+    <a href="products.html">Products</a><a href="industries.html">Industries</a>
+    <a href="insights.html">Insights</a><a href="careers.html">Careers</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main id="main-content">
+    <section class="gallery-hero">
+      <div class="container">
+        <h1>Our <span class="text-gradient">Gallery</span></h1>
+        <p>Explore our visual portfolio — videos, demos, and showcases of the intelligent systems and digital solutions we engineer for enterprises worldwide.</p>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="container">
+        <div class="gallery-grid">
+
+          <!-- Video 1 -->
+          <div class="gallery-card">
+            <video class="gallery-card-video" controls playsinline webkit-playsinline preload="metadata">
+              <source src="https://github.com/bhumikacodeoriginai-hub/company-website/raw/main/assets/videoplayback.mp4" type="video/mp4">
+              <source src="../assets/videoplayback.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="gallery-card-info">
+              <span class="gallery-badge">Featured Video</span>
+              <h3 class="gallery-card-title">Code Origin.AI — Engineering Intelligence</h3>
+              <p class="gallery-card-desc">Discover how we build intelligent software, AI systems, and cloud-native solutions that help organizations transform, modernize, and scale for the future.</p>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="gallery-card">
+            <video class="gallery-card-video" controls playsinline webkit-playsinline preload="metadata">
+              <source src="https://github.com/bhumikacodeoriginai-hub/company-website/raw/main/assets/codeorigin-video.mp4" type="video/mp4">
+              <source src="../assets/codeorigin-video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="gallery-card-info">
+              <span class="gallery-badge">Company Overview</span>
+              <h3 class="gallery-card-title">Code Origin.AI — Company Showcase</h3>
+              <p class="gallery-card-desc">A comprehensive look at our capabilities in AI engineering, cloud architecture, cybersecurity, and enterprise digital transformation.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo"><img src="../assets/logo.jpeg" alt="Code Origin.AI" class="logo-img" height="32" width="73"></a>
+          <p class="footer-desc">Engineering Intelligence.<br>Building What Comes Next.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="about.html">About</a>
+          <a href="careers.html">Careers</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <a href="services.html">AI & ML</a>
+          <a href="services.html">Software</a>
+          <a href="services.html">Cloud & DevOps</a>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="security.html">Security</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Code Origin.AI Private Limited. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>
