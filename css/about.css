@@ -475,3 +475,23 @@
   }
   .splash-particle { display: none; }
 }
+
+
+
+/* ═══ REDUCED MOTION ═══ */
+@media (prefers-reduced-motion: reduce) {
+  .splash-particle,
+  .splash-line,
+  .splash-label,
+  .splash-line-text,
+  .splash-underline {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+  }
+  .about-splash {
+    min-height: auto;
+    padding: 160px 0 80px;
+  }
+}
