@@ -348,4 +348,64 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
+  // ═══════════════════════════════════════════
+  // KINETIC TYPOGRAPHY — Reveal on scroll
+  // ═══════════════════════════════════════════
+  var kineticText = document.getElementById('kinetic-text');
+  if (kineticText) {
+    var kineticObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          kineticText.classList.add('in-view');
+        } else {
+          kineticText.classList.remove('in-view');
+        }
+      });
+    }, { threshold: 0.3 });
+    kineticObserver.observe(kineticText);
+
+    // Parallax scale effect based on scroll
+    if (window.innerWidth > 768) {
+      window.addEventListener('scroll', function() {
+        var rect = kineticText.getBoundingClientRect();
+        var viewH = window.innerHeight;
+        var center = (rect.top + rect.height / 2) / viewH;
+        var scale = 0.7 + Math.max(0, 1 - Math.abs(center - 0.5) * 2) * 0.3;
+        kineticText.style.transform = 'scale(' + scale.toFixed(3) + ')';
+      }, { passive: true });
+    }
+  }
+
+  // ═══════════════════════════════════════════
+  // HORIZONTAL SCROLL — Scroll-linked horizontal movement
+  // ═══════════════════════════════════════════
+  var hscrollTrack = document.getElementById('hscroll-track');
+  var hscrollSection = document.querySelector('.hscroll-section');
+  if (hscrollTrack && hscrollSection && window.innerWidth > 768) {
+    window.addEventListener('scroll', function() {
+      var rect = hscrollSection.getBoundingClientRect();
+      var viewH = window.innerHeight;
+      var progress = Math.max(0, Math.min(1, (viewH - rect.top) / (viewH + rect.height)));
+      var maxScroll = hscrollTrack.scrollWidth - hscrollSection.offsetWidth;
+      var translateX = -progress * maxScroll * 0.7;
+      hscrollTrack.style.transform = 'translateX(' + translateX + 'px)';
+    }, { passive: true });
+  }
+
+  // ═══════════════════════════════════════════
+  // SCROLL INDICATOR — Hide on scroll
+  // ═══════════════════════════════════════════
+  var scrollIndicator = document.querySelector('.scroll-indicator');
+  if (scrollIndicator) {
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 100) {
+        scrollIndicator.style.opacity = '0';
+        scrollIndicator.style.pointerEvents = 'none';
+      } else {
+        scrollIndicator.style.opacity = '1';
+        scrollIndicator.style.pointerEvents = '';
+      }
+    }, { passive: true });
+  }
+
 });
