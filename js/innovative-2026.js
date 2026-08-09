@@ -5,35 +5,22 @@
  */
 'use strict';
 
-(function() {
+document.addEventListener('DOMContentLoaded', function() {
 
   // ═══════════════════════════════════════════
   // 2D / 3D MODE TOGGLE
   // ═══════════════════════════════════════════
-  const modeToggle = document.getElementById('mode-toggle');
+  var modeToggle = document.getElementById('mode-toggle');
   
   if (modeToggle) {
     // Check saved preference
-    const savedMode = localStorage.getItem('codeorigin-view-mode');
-    let is3D = savedMode !== '2d'; // Default to 3D
+    var savedMode = localStorage.getItem('codeorigin-view-mode');
+    var is3D = savedMode !== '2d'; // Default to 3D
 
     // Create transition overlay
-    const overlay = document.createElement('div');
+    var overlay = document.createElement('div');
     overlay.classList.add('mode-transition-overlay');
     document.body.appendChild(overlay);
-
-    function applyMode(animate) {
-      if (animate) {
-        // Flash transition
-        overlay.classList.add('active');
-        setTimeout(() => {
-          updateModeUI();
-          setTimeout(() => overlay.classList.remove('active'), 300);
-        }, 250);
-      } else {
-        updateModeUI();
-      }
-    }
 
     function updateModeUI() {
       if (is3D) {
@@ -50,21 +37,31 @@
       localStorage.setItem('codeorigin-view-mode', is3D ? '3d' : '2d');
     }
 
+    function toggleMode() {
+      is3D = !is3D;
+      // Flash transition
+      overlay.classList.add('active');
+      setTimeout(function() {
+        updateModeUI();
+        setTimeout(function() { overlay.classList.remove('active'); }, 300);
+      }, 200);
+    }
+
     // Apply saved mode on load (no animation)
-    applyMode(false);
+    updateModeUI();
 
     // Click handler
-    modeToggle.addEventListener('click', () => {
-      is3D = !is3D;
-      applyMode(true);
+    modeToggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      toggleMode();
     });
 
     // Keyboard support
-    modeToggle.addEventListener('keydown', (e) => {
+    modeToggle.addEventListener('keydown', function(e) {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
-        is3D = !is3D;
-        applyMode(true);
+        toggleMode();
       }
     });
   }
@@ -311,4 +308,4 @@
     }
   }
 
-})();
+});

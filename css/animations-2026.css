@@ -1579,6 +1579,11 @@
   background: rgba(255,255,255,0.03);
   border: 1px solid var(--glass-v2-border);
   transition: all 0.3s ease;
+  position: relative;
+  z-index: 100;
+}
+.mode-toggle * {
+  cursor: pointer;
 }
 .mode-toggle:hover {
   border-color: rgba(212,164,24,0.3);
