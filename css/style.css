@@ -2569,3 +2569,61 @@ h6 { font-size: var(--text-sm); font-weight: 600; text-transform: uppercase; let
   .global-capabilities { grid-template-columns: 1fr; }
   .world-map-visual { height: 200px; }
 }
+
+
+
+/* ═══ PROCESS ICON CIRCLE — Guaranteed Rendering ═══ */
+.process-icon-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(37,99,235,0.08) 0%, rgba(6,182,212,0.04) 100%);
+  border: 1.5px solid rgba(37,99,235,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue-400);
+  margin: 0 auto;
+  position: relative;
+  transition: all 0.4s var(--ease);
+  box-shadow: 0 4px 20px rgba(37,99,235,0.08);
+  animation: float-subtle 6s ease-in-out infinite;
+}
+.process-node:nth-child(2) .process-icon-circle { animation-delay: -1s; }
+.process-node:nth-child(3) .process-icon-circle { animation-delay: -2s; }
+.process-node:nth-child(4) .process-icon-circle { animation-delay: -3s; }
+.process-node:nth-child(5) .process-icon-circle { animation-delay: -4s; }
+.process-node:nth-child(6) .process-icon-circle { animation-delay: -5s; }
+.process-node:nth-child(7) .process-icon-circle { animation-delay: -0.5s; }
+
+/* Dashed orbit ring */
+.process-icon-circle::before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  border: 1.5px dashed rgba(37,99,235,0.15);
+  animation: orbit-ring 15s linear infinite;
+}
+
+.process-node:hover .process-icon-circle {
+  background: linear-gradient(135deg, rgba(37,99,235,0.15) 0%, rgba(6,182,212,0.08) 100%);
+  border-color: rgba(37,99,235,0.5);
+  transform: scale(1.1);
+  box-shadow: 0 8px 30px rgba(37,99,235,0.2), 0 0 40px rgba(37,99,235,0.08);
+}
+.process-node:hover .process-icon-circle::before {
+  border-color: rgba(37,99,235,0.3);
+  animation-duration: 5s;
+}
+
+/* Override the old process-node-visual to use the new circle */
+.process-immersive .process-node-visual {
+  position: relative;
+  width: 88px;
+  height: 88px;
+  margin: 0 auto var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
