@@ -895,7 +895,7 @@ h6 { font-size: var(--text-sm); font-weight: 600; text-transform: uppercase; let
 }
 
 .reveal {
-  opacity: 0; transform: translateY(30px);
+  /* opacity controlled by animations-2026.css with progressive enhancement */
   transition: opacity var(--duration-slower) var(--ease),
               transform var(--duration-slower) var(--ease);
 }
@@ -1337,29 +1337,27 @@ h6 { font-size: var(--text-sm); font-weight: 600; text-transform: uppercase; let
 }
 
 /* ═══ ENHANCED REVEAL SYSTEM ═══ */
+/* All reveal animations handled by animations-2026.css with progressive enhancement */
+/* Content visible by default — hidden only when JS confirms it's running */
 .reveal-scale {
-  opacity: 0; transform: scale(0.9);
   transition: opacity var(--duration-slower) var(--ease),
               transform var(--duration-slower) var(--ease-spring);
 }
 .reveal-scale.visible { opacity: 1; transform: scale(1); }
 
 .reveal-left {
-  opacity: 0; transform: translateX(-50px);
   transition: opacity var(--duration-slower) var(--ease),
               transform var(--duration-slower) var(--ease);
 }
 .reveal-left.visible { opacity: 1; transform: translateX(0); }
 
 .reveal-right {
-  opacity: 0; transform: translateX(50px);
   transition: opacity var(--duration-slower) var(--ease),
               transform var(--duration-slower) var(--ease);
 }
 .reveal-right.visible { opacity: 1; transform: translateX(0); }
 
 .reveal-blur {
-  opacity: 0; filter: blur(8px); transform: translateY(20px);
   transition: opacity var(--duration-slower) var(--ease),
               filter var(--duration-slower) var(--ease),
               transform var(--duration-slower) var(--ease);
@@ -1368,7 +1366,6 @@ h6 { font-size: var(--text-sm); font-weight: 600; text-transform: uppercase; let
 
 /* Staggered children animation */
 .stagger-children > * {
-  opacity: 0; transform: translateY(20px);
   transition: opacity 0.4s var(--ease), transform 0.4s var(--ease);
 }
 .stagger-children.visible > *:nth-child(1) { transition-delay: 0.05s; }

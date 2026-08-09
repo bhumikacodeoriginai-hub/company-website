@@ -10,6 +10,18 @@ document.addEventListener('DOMContentLoaded', () => {
   // Mark JS as loaded — enables reveal animations (progressive enhancement)
   document.documentElement.classList.add('js-loaded');
 
+  // SAFETY: Immediately make all elements in viewport visible
+  // (IntersectionObserver might miss elements already visible on load)
+  setTimeout(() => {
+    const allReveals = document.querySelectorAll('.reveal, .reveal-scale, .reveal-left, .reveal-right, .reveal-blur, .stagger-children');
+    allReveals.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight + 100) {
+        el.classList.add('visible');
+      }
+    });
+  }, 100);
+
   // ═══════════════════════════════════════════
   // SCROLL PROGRESS BAR
   // ═══════════════════════════════════════════
@@ -384,3 +396,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+// FAILSAFE: Force all content visible after 2 seconds
+// Prevents blank page if IntersectionObserver misses elements
+setTimeout(function() {
+  document.querySelectorAll('.reveal, .reveal-scale, .reveal-left, .reveal-right, .reveal-blur, .stagger-children').forEach(function(el) {
+    el.classList.add('visible');
+  });
+}, 2000);
