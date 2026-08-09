@@ -216,10 +216,10 @@ h6 { font-size: var(--text-sm); font-weight: 600; text-transform: uppercase; let
 /* Logo */
 .logo { display: flex; align-items: center; gap: 10px; z-index: 1001; }
 .logo-img {
-  height: 36px;
-  max-height: 36px;
-  width: auto;
-  max-width: 160px;
+  height: 36px !important;
+  max-height: 36px !important;
+  width: auto !important;
+  max-width: 160px !important;
   object-fit: contain;
   border-radius: 4px;
   display: block;
@@ -1605,9 +1605,9 @@ h6 { font-size: var(--text-sm); font-weight: 600; text-transform: uppercase; let
   pointer-events: none;
 }
 .footer-brand .logo-img {
-  height: 30px;
-  max-height: 30px;
-  max-width: 140px;
+  height: 30px !important;
+  max-height: 30px !important;
+  max-width: 140px !important;
   transition: all 0.3s var(--ease);
 }
 .footer-brand .logo:hover .logo-img {
